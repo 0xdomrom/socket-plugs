@@ -17,4 +17,10 @@ export enum Tokens {
   KEK = "KEK",
   GLTR = "GLTR",
   STIME = "STIME",
+  WEETH = "weETH", // ether.fi
+  RSWETH = "rswETH", // Swell
+  RSETH = "rsETH", // Kelp
+  WEETHC = "weETHC", // Lyra tokenized subaccount shares
+  RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
+  RSETHC = "rsETHC", // Lyra tokenized subaccount shares
 }

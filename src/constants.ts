@@ -1,5 +1,5 @@
 import { ChainSlug } from "@socket.tech/dl-core";
-import { Project, Tokens } from "./enums";
+import { Project } from "./enums";
 
 export const ChainSlugToProject: { [chainSlug in ChainSlug]?: Project } = {
   [ChainSlug.AEVO]: Project.AEVO,

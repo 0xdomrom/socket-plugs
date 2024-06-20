@@ -176,6 +176,14 @@ export const getHookContract = async (
     address = addr[HookContracts.LimitExecutionHook];
     contractName = HookContracts.LimitExecutionHook;
   }
+  if (addr[HookContracts.LyraTSADepositHook]) {
+    address = addr[HookContracts.LyraTSADepositHook];
+    contractName = HookContracts.LyraTSADepositHook;
+  }
+  if (addr[HookContracts.LyraTSAWithdrawHook]) {
+    address = addr[HookContracts.LyraTSAWithdrawHook];
+    contractName = HookContracts.LyraTSAWithdrawHook;
+  }
 
   if (!address || !contractName) {
     return { hookContract: contract, hookContractName: contractName };
