@@ -57,6 +57,20 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+  } else if (hookType == Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK) {
+    contractName = HookContracts.LyraTSAShareHandlerDepositHook;
+    args = [
+      getOwner(),
+      bridgeAddress,
+      useConnnectorPools, // useControllerPools
+    ];
+  } else if (hookType == Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK) {
+    contractName = HookContracts.LyraTSAShareHandlerWithdrawHook;
+    args = [
+      getOwner(),
+      bridgeAddress,
+      useConnnectorPools, // useControllerPools
+    ];
   }
 
   if (!contractName) return deployParams;

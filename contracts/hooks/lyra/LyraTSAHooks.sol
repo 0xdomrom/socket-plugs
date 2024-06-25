@@ -1,12 +1,12 @@
 pragma solidity 0.8.13;
 
-import "./plugins/LimitPlugin.sol";
-import "../interfaces/IController.sol";
-import "./plugins/ConnectorPoolPlugin.sol";
-import "./LimitHook.sol";
+import "../plugins/LimitPlugin.sol";
+import "../../interfaces/IController.sol";
+import "../plugins/ConnectorPoolPlugin.sol";
+import "../LimitHook.sol";
 import {IERC20} from "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
-import "../interfaces/IBridge.sol";
-import {IConnector} from "../interfaces/IConnector.sol";
+import "../../interfaces/IBridge.sol";
+import {IConnector} from "../../interfaces/IConnector.sol";
 
 interface LyraTSA is IERC20 {
     function underlying() external view returns (IERC20);

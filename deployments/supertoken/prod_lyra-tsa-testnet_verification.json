@@ -1,6 +1,36 @@
 {
   "901": [
     [
+      "0xc317b62f8745525f299F19db248DB76Fc51B5642",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x467c0835499271530A8ac05Eb7Df75dD26E2bFEe",
+        false
+      ]
+    ],
+    [
+      "0x4c557e1cE779BC17a36110353F2970bF73D42729",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xD0DEe9Fd4Cc1d2eCB4572c01cDC65603557cc506",
+        false
+      ]
+    ],
+    [
+      "0x493d6bC28C8862dd03b1Fe56a1a66C3637E1c186",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x6481400fb34eea4692E411229d37ceB6a2af63B2",
+        false
+      ]
+    ],
+    [
       "0xdEdD7a99522c080e2f29Af974D0C8F533Eb2b8B8",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -142,6 +172,36 @@
     ]
   ],
   "421614": [
+    [
+      "0x01525ca28D60A7614160F577dAAC14490EA5b093",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xBcB494059969DAaB460E0B5d4f5c2366aab79aa1",
+        false
+      ]
+    ],
+    [
+      "0x52e6adC89Fe39Dd68F5BEbd1d17a2bC7F9688199",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xF151509ABefb08EdaF4CFd95fE6B3Eecb7d5C158",
+        false
+      ]
+    ],
+    [
+      "0xC5C484e0159494f6940273b8fB029203C85cA97b",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x3E0906a5c68681C1EDc81e492f9F0Ff30C460F6b",
+        false
+      ]
+    ],
     [
       "0x008Ef590487F188E23Cd17De7C55d9d906d6b039",
       "ConnectorPlug",
@@ -450,6 +510,26 @@
     ]
   ],
   "11155420": [
+    [
+      "0x1ECeb45316C07Cc08d779cB1653122d7EbB48847",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x4fF761D46Be8100063e388Bec1cb3653C3832908",
+        false
+      ]
+    ],
+    [
+      "0xE0C422fa9DeA8A79aCF3421575EFc85EcA9c2Acf",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x21DaBaa157f2b43606f528098C922d66898C5645",
+        false
+      ]
+    ],
     [
       "0x8519e21355763572edD3DA1C19C71CEa99883e57",
       "ConnectorPlug",

@@ -5,6 +5,8 @@ export enum Hooks {
   YIELD_LIMIT_EXECUTION_HOOK = "YIELD_LIMIT_EXECUTION_HOOK",
   LYRA_TSA_DEPOSIT_HOOK = "LYRA_TSA_DEPOSIT_HOOK",
   LYRA_TSA_WITHDRAW_HOOK = "LYRA_TSA_WITHDRAW_HOOK",
+  LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK = "LYRA_TSA_SHARE_HANDLER_DEPOSIT_HOOK",
+  LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK = "LYRA_TSA_SHARE_HANDLER_WITHDRAW_HOOK",
   // CONTROLLER_YIELD_LIMIT_EXECUTION_HOOK = "CONTROLLER_YIELD_LIMIT_EXECUTION_HOOK",
   // VAULT_YIELD_LIMIT_EXECUTION_HOOK = "VAULT_YIELD_LIMIT_EXECUTION_HOOK",
 }
@@ -44,6 +46,8 @@ export enum HookContracts {
   ExecutionHelper = "ExecutionHelper",
   LyraTSADepositHook = "LyraTSADepositHook",
   LyraTSAWithdrawHook = "LyraTSAWithdrawHook",
+  LyraTSAShareHandlerDepositHook = "LyraTSAShareHandlerDepositHook",
+  LyraTSAShareHandlerWithdrawHook = "LyraTSAShareHandlerWithdrawHook",
 }
 export enum SuperTokenContracts {
   NonSuperToken = "NonSuperToken",

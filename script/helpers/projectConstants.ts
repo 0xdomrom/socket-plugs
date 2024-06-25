@@ -25,7 +25,6 @@ export const getTokenConstants = (tokenName: string): TokenConstants => {
 
 export const getProjectConstants = (): ProjectConstants => {
   if (pc) return pc;
-  console.log(getConstantPath());
   pc = require(getConstantPath()).pc;
   return pc;
 };

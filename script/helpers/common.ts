@@ -184,6 +184,14 @@ export const getHookContract = async (
     address = addr[HookContracts.LyraTSAWithdrawHook];
     contractName = HookContracts.LyraTSAWithdrawHook;
   }
+  if (addr[HookContracts.LyraTSAShareHandlerDepositHook]) {
+    address = addr[HookContracts.LyraTSAShareHandlerDepositHook];
+    contractName = HookContracts.LyraTSAShareHandlerDepositHook;
+  }
+  if (addr[HookContracts.LyraTSAShareHandlerWithdrawHook]) {
+    address = addr[HookContracts.LyraTSAShareHandlerWithdrawHook];
+    contractName = HookContracts.LyraTSAShareHandlerWithdrawHook;
+  }
 
   if (!address || !contractName) {
     return { hookContract: contract, hookContractName: contractName };

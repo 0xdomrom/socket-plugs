@@ -5,7 +5,7 @@ import "forge-std/console.sol";
 import "../contracts/bridge/Controller.sol";
 import {UpdateLimitParams} from "../contracts/common/Structs.sol";
 import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
-import {LyraTSADepositHook, LimitHook} from "../contracts/hooks/LyraTSAHooks.sol";
+import {LyraTSADepositHook, LimitHook} from "../contracts/hooks/lyra/LyraTSAHooks.sol";
 import "../contracts/bridge/Base.sol";
 
 contract LyraTSAZapHookForkTest is Test {

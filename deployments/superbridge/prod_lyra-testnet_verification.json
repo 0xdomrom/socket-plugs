@@ -1,6 +1,46 @@
 {
   "901": [
     [
+      "0xb738e3bD01491DcE968001376C1C1389ac60e868",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xF99E92715024EF3CAAB0328107161ea405D61e01",
+        true
+      ]
+    ],
+    [
+      "0x17a034e4bE8950eD82F85Af97778Ca90b224ad0d",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xbEc0B31bbfA62364EBF6e27454978E33c5d9F4eE",
+        true
+      ]
+    ],
+    [
+      "0x95c7c0a60ad557D2c780A4E00B914c8BFA4b9E1e",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x4508c67469009DA7c5c8A2901554A2195D4E5a5a",
+        true
+      ]
+    ],
+    [
+      "0xD7CA0EcBD8F036364b45E2B1f943dc685aD19Fb5",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x4508c67469009DA7c5c8A2901554A2195D4E5a5a",
+        true
+      ]
+    ],
+    [
       "0xA57ADfCf24c9a1eca8F39958B2B025ce27F0b781",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -141,6 +181,46 @@
   ],
   "421614": [
     [
+      "0x303b35937DF321a5E8Df6f2F41f504A9Bc2Bc29d",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x62a11f238e489A49d840ec337c8e544cc43A7eAd",
+        false
+      ]
+    ],
+    [
+      "0x675Df6b2fF67289CB7f596Af1B49ca5841B1f956",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x236D36C52bC56a37d9094B424A1420BE21f6392c",
+        false
+      ]
+    ],
+    [
+      "0x236661F82f6EAE94d86152E23b07Dd3B08665abd",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x47BB0e22F015BFc25138EfaF4261AB5CA4a887d6",
+        false
+      ]
+    ],
+    [
+      "0x8c2F91dc9cD2eecED1cfA47598CC309CEea2DC47",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x47BB0e22F015BFc25138EfaF4261AB5CA4a887d6",
+        false
+      ]
+    ],
+    [
       "0xc0424453E78C6ee65c12329e8A908EfDEF54ABAa",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -220,6 +300,36 @@
     ]
   ],
   "11155420": [
+    [
+      "0x3D99D4648963593Ed0efD6DFc6B8494Cb195a8c8",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x6961c56923eA4e8FD5450fE7bEE193744222C072",
+        false
+      ]
+    ],
+    [
+      "0x86F1824A0106B97DD6BD16a049b497f4CAC93A6e",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x76eef7cb3DAab7b23fB818E3D82997f38aa1A620",
+        false
+      ]
+    ],
+    [
+      "0xB293594803771a5184a63031224C8C5851064a41",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x6F054A18383b2EC7F709d7f24e69D9DbCC921aD3",
+        false
+      ]
+    ],
     [
       "0xedcA80caa863D1893EdE5E8764B6F4C34051d0E4",
       "ConnectorPlug",

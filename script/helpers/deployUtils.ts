@@ -143,7 +143,8 @@ export async function deployContractWithArgs(
   args: Array<any>,
   signer: Wallet
 ) {
-  for (let i = 0; i < 10; ++i) {
+  const retries = 3;
+  for (let i = 0; i < retries; ++i) {
     if (i > 0) {
       console.log(`Retrying deployment of ${contractName}...`);
     }
@@ -165,7 +166,7 @@ export async function deployContractWithArgs(
       await contract.deployed();
       return contract;
     } catch (error) {
-      if (i == 9) {
+      if (i == retries - 1) {
         throw error;
       }
     }
@@ -242,31 +243,12 @@ export const storeAllAddresses = async (
   fs.writeFileSync(filePath, JSON.stringify(allAddresses, null, 2));
 };
 
-export const storeProjectAddresses = async (addresses: SBAddresses) => {
-  fs.writeFileSync(getDeploymentPath(), JSON.stringify(addresses, null, 2));
-};
-
 let addresses: SBAddresses | STAddresses;
-export const getAllAddresses = (
-  type_override?: string
-): SBAddresses | STAddresses => {
-  if (!type_override && addresses) return addresses;
-  addresses = readJSONFile(getDeploymentPath(type_override));
-  return addresses;
-};
 
 export const getProjectAddresses = (): SBAddresses | STAddresses => {
   if (addresses) return addresses;
   addresses = readJSONFile(getDeploymentPath());
   return addresses;
-};
-
-export const getSuperBridgeAddresses = (): SBAddresses => {
-  return getAllAddresses("superbridge") as SBAddresses;
-};
-
-export const getSuperTokenAddresses = (): STAddresses => {
-  return getProjectAddresses() as STAddresses;
 };
 
 export const storeVerificationParams = async (

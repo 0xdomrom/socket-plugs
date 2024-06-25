@@ -24,7 +24,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       } as any, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA_TESTNET]: {
             [IntegrationTypes.fast]: {
@@ -61,7 +61,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       } as any, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA_TESTNET]: {
             [IntegrationTypes.fast]: {
@@ -94,7 +94,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       } as any, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA_TESTNET]: {
             [IntegrationTypes.fast]: {

@@ -11,7 +11,8 @@
         "11155420": {
           "FAST": "0x7378E8C016d1A512B976CE8Ab885C281b59a521A"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x4c557e1cE779BC17a36110353F2970bF73D42729"
     },
     "rswETHC": {
       "NonMintableToken": "0x797Db58F4c6611253e92B9a3260E3Cc9C69430a5",
@@ -21,7 +22,8 @@
         "421614": {
           "FAST": "0x993eF5d9E4341AE0437a8F02dcA614687123acAB"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x493d6bC28C8862dd03b1Fe56a1a66C3637E1c186"
     },
     "rsETHC": {
       "NonMintableToken": "0xD9f47BEBEe03C90855c209e06f884fa0551c1fDd",
@@ -34,7 +36,8 @@
         "11155420": {
           "FAST": "0xdEdD7a99522c080e2f29Af974D0C8F533Eb2b8B8"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0xc317b62f8745525f299F19db248DB76Fc51B5642"
     }
   },
   "421614": {
@@ -50,7 +53,8 @@
           "FAST": "0xCa80293391423d8B81850Ff051BAd3FcE936EbB7"
         }
       },
-      "LyraTSAWithdrawHook": "0x61138F2620D7c5f3F0F41fdF28B5012D4FF8e95b"
+      "LyraTSAWithdrawHook": "0x61138F2620D7c5f3F0F41fdF28B5012D4FF8e95b",
+      "LyraTSAShareHandlerWithdrawHook": "0x52e6adC89Fe39Dd68F5BEbd1d17a2bC7F9688199"
     },
     "rswETHC": {
       "SuperToken": "0x8faC67324Ad5f24419C37192D586FE1E5293D83a",
@@ -60,7 +64,8 @@
         "901": {
           "FAST": "0x5De869E775B9c033F6AcD2bA287522347c6E9eeD"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0xC5C484e0159494f6940273b8fB029203C85cA97b"
     },
     "rsETHC": {
       "SuperToken": "0xeCAAd20Fe81818E4Ce1EB35E463f681084ab2DD5",
@@ -73,12 +78,13 @@
         "11155420": {
           "FAST": "0xb808a63851678E74d2d08116C46ec9313A3E0c68"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x01525ca28D60A7614160F577dAAC14490EA5b093"
     }
   },
   "11155420": {
     "weETHC": {
-      "SuperToken": "0xb09B085D0cb6E920670dABd81fBd060CD572bC40",
+      "SuperToken": "0xfe051Cc322F5124e53cA89611dD0c9a32F350a1C",
       "Controller": "0x21DaBaa157f2b43606f528098C922d66898C5645",
       "LyraTSAWithdrawHook": "0x8c2F91dc9cD2eecED1cfA47598CC309CEea2DC47",
       "connectors": {
@@ -88,7 +94,8 @@
         "421614": {
           "FAST": "0x236661F82f6EAE94d86152E23b07Dd3B08665abd"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0xE0C422fa9DeA8A79aCF3421575EFc85EcA9c2Acf"
     },
     "rsETHC": {
       "SuperToken": "0xCfD701E3540d769427Bc699C63Ac5940B703fe48",
@@ -101,7 +108,8 @@
         "421614": {
           "FAST": "0x9576aFF10dFdb1d24B507EEb88554dF3427E43D6"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x1ECeb45316C07Cc08d779cB1653122d7EbB48847"
     }
   }
 }

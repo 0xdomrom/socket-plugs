@@ -1,4 +1,5 @@
 import {
+  getProjectAddresses,
   getSuperBridgeAddresses,
   getSuperTokenAddresses,
   ZERO_ADDRESS,
@@ -14,6 +15,10 @@ const chainToExpectedOwner = {
   [ChainSlug.MAINNET]: "0x246d38588b16Dd877c558b245e6D5a711C649fCF",
   [ChainSlug.ARBITRUM]: "0x2CcF21e5912e9ecCcB0ecdEe9744E5c507cf88AE",
   [ChainSlug.LYRA]: "0xB176A44D819372A38cee878fB0603AEd4d26C5a5",
+  [ChainSlug.BASE]: "0xbfA8B86391c5eCAd0eBe2B158D9Cd9866DDBAaDa",
+  [ChainSlug.BLAST]: "0x14232db3852eA44A1be8DB35e82D56191f534D95",
+  [ChainSlug.MODE]: "0x14232db3852eA44A1be8DB35e82D56191f534D95",
+  [ChainSlug.OPTIMISM]: "0xD4C00FE7657791C2A43025dE483F05E49A5f76A6",
 };
 
 async function getOwnerAndNominee(contract: ethers.Contract) {
@@ -46,7 +51,11 @@ async function checkAndChange(
   const [owner, nominee, type] = await getOwnerAndNominee(contract);
   console.log(
     `Owner of ${address} is ${owner}${
-      nominee === ZERO_ADDRESS ? "" : ` (nominee: ${nominee})`
+      nominee === ZERO_ADDRESS
+        ? ""
+        : ` (nominee: ${nominee} ${
+            type === 0 ? "claimOwner()" : "acceptOwnership()"
+          })`
     } on chain: ${chain} (${contractType} for ${token})`
   );
 
@@ -68,6 +77,7 @@ async function handleOwnershipChangeover(
   nominee: string,
   type: 0 | 1
 ) {
+  // console.log(`Handing over ownership of ${contract.address} to ${newOwner}`);
   if (owner === getOwner() && nominee === ZERO_ADDRESS) {
     if (type === 0) {
       const tx = await contract.nominateOwner(newOwner, {
@@ -130,7 +140,11 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
           const [owner, nominee, type] = await getOwnerAndNominee(contract);
           console.log(
             `Owner of ${connectorAddress} is ${owner}${
-              nominee === ZERO_ADDRESS ? "" : ` (nominee: ${nominee})`
+              nominee === ZERO_ADDRESS
+                ? ""
+                : ` (nominee: ${nominee} ${
+                    type === 0 ? "claimOwner()" : "acceptOwnership()"
+                  })`
             } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
           );
 
@@ -150,11 +164,7 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
 
 export const main = async () => {
   try {
-    console.log("\n== SuperBridge Addresses ==\n");
-    await checkAndTransferOwnership(getSuperBridgeAddresses());
-
-    console.log("\n== SuperToken Addresses ==\n");
-    await checkAndTransferOwnership(getSuperTokenAddresses());
+    await checkAndTransferOwnership(getProjectAddresses());
   } catch (error) {
     console.log("Error while sending transaction", error);
   }
