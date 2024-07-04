@@ -1,10 +1,9 @@
 import { Contract } from "ethers";
 
-import { ChainSlug, IntegrationTypes } from "@socket.tech/dl-core";
-import { getProviderFromChainSlug, overrides } from "./networks";
 import {
   getDryRun,
   getMode,
+  getOwner,
   getProjectName,
   getProjectType,
 } from "../constants/config";
@@ -15,6 +14,8 @@ import { getIntegrationTypeConsts } from "./projectConstants";
 import { StaticJsonRpcProvider } from "@ethersproject/providers";
 
 import { ProjectType } from "../../src";
+import { overrides } from "./networks";
+import { ChainSlug, IntegrationTypes } from "@socket.tech/dl-core";
 
 export let allDeploymentPath: string;
 export const getAllDeploymentPath = (
@@ -29,11 +30,13 @@ export const getAllDeploymentPath = (
 };
 
 export let deploymentPath: string;
-export const getDeploymentPath = () => {
-  if (deploymentPath) return deploymentPath;
+export const getDeploymentPath = (type_override?: string) => {
+  if (!type_override && deploymentPath) return deploymentPath;
   deploymentPath = path.join(
     __dirname,
-    `/../../deployments/${getProjectType()}/${getMode()}_${getProjectName()}_addresses.json`
+    `/../../deployments/${
+      type_override ?? getProjectType()
+    }/${getMode()}_${getProjectName()}_addresses.json`
   );
   return deploymentPath;
 };
@@ -119,6 +122,11 @@ export async function execute(
     );
     execSummary.push("");
   } else {
+    if ((await contract.owner()) !== getOwner()) {
+      console.log("!!!! Not owner of contract, skipping");
+      console.log(`xxxxxx Skipping chain: ${chain} function: ${method}`);
+      return;
+    }
     let tx = await contract.functions[method](...args, {
       ...overrides[chain],
     });

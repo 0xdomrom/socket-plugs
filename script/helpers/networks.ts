@@ -23,18 +23,19 @@ export const overrides: {
 } = {
   [ChainSlug.ARBITRUM_SEPOLIA]: {
     type,
-    // gasLimit: 20_000_000,
+    gasLimit,
     gasPrice,
   },
   [ChainSlug.OPTIMISM_SEPOLIA]: {
     type,
     // gasLimit: 20_000_000,
+    // gasPrice: 10_000_000_000,
     gasPrice,
   },
   [ChainSlug.SEPOLIA]: {
     type: 0,
     gasLimit,
-    gasPrice: 25_000_000_000,
+    gasPrice: 10_000_000_000,
   },
   [ChainSlug.AEVO_TESTNET]: {
     type,
@@ -59,17 +60,17 @@ export const overrides: {
   [ChainSlug.LYRA_TESTNET]: {
     type: 1,
     gasLimit,
-    gasPrice: 100_000_000,
+    // gasPrice: 100_000_000,
   },
   [ChainSlug.LYRA]: {
     type: 1,
     gasLimit,
-    gasPrice: 100_000_000,
+    // gasPrice: 100_000_000,
   },
   [ChainSlug.MAINNET]: {
-    type: 1,
-    gasLimit: 4_000_000,
-    gasPrice: 40_000_000_000,
+    // type: 1,
+    gasLimit: 5_000_000,
+    // gasPrice: 10_000_000_000,
   },
   [ChainSlug.SX_NETWORK_TESTNET]: {
     // type: 1,
@@ -88,7 +89,7 @@ export const overrides: {
   },
   [ChainSlug.BASE]: {
     // type: 1,
-    gasLimit,
+    gasLimit: 5_000_000,
     gasPrice,
   },
   [ChainSlug.REYA_CRONOS]: {

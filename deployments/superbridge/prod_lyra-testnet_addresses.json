@@ -72,6 +72,65 @@
           "FAST": "0xBa56CE374eF372332A16d080fd755335F84d59a0"
         }
       }
+    },
+    "rswETH": {
+      "isAppChain": true,
+      "MintableToken": "0xa7456213A5c081F53fEb3A4F64b88A4637Bf3028",
+      "Controller": "0x4508c67469009DA7c5c8A2901554A2195D4E5a5a",
+      "ExecutionHelper": "0x09F4834dAb86146693963D9BC3283076FA876221",
+      "connectors": {
+        "421614": {
+          "FAST": "0x486C887352E9AfE3d81D6643C65c1cf68A781B18"
+        },
+        "11155420": {
+          "FAST": "0xfe1cF1B6d7b1F96a90258FAd2dD3CD4a2770F604"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x95c7c0a60ad557D2c780A4E00B914c8BFA4b9E1e"
+    },
+    "weETH": {
+      "isAppChain": true,
+      "MintableToken": "0x7ef0873bBf91B8Ecac22c0e9466b17c6Cc14B1bd",
+      "Controller": "0xbEc0B31bbfA62364EBF6e27454978E33c5d9F4eE",
+      "LyraTSADepositHook": "0x35af65cfc1d3f583fb936c2a6f94875a82a18e74",
+      "connectors": {
+        "421614": {
+          "FAST": "0xD90CDCdf2DA81223AA2C088A81716f9EE7DFAe88"
+        },
+        "11155420": {
+          "FAST": "0x8FF3f8bc7884fe59425F090d5ec6A570472DfF88"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x17a034e4bE8950eD82F85Af97778Ca90b224ad0d"
+    },
+    "rsETH": {
+      "isAppChain": true,
+      "MintableToken": "0xc3ad6f6E0940df79e12b30F307109fc4Ec2ED7D0",
+      "Controller": "0xF99E92715024EF3CAAB0328107161ea405D61e01",
+      "LyraTSADepositHook": "0x7878AE5af5774d4A993B3C5FBC3DF81049E70800",
+      "connectors": {
+        "421614": {
+          "FAST": "0x96EB7012Dad44CF191B5B7d7E72eF2699EC2B250"
+        },
+        "11155420": {
+          "FAST": "0xA57ADfCf24c9a1eca8F39958B2B025ce27F0b781"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0xb738e3bD01491DcE968001376C1C1389ac60e868"
+    },
+    "sUSDe": {
+      "isAppChain": true,
+      "MintableToken": "0xd87d41f1e4d8b48F3cA18faFc1069b18F9c15B9d",
+      "Controller": "0x40fB94330Db4A4Bd3bAf8725211CDFa67d483439",
+      "LyraTSADepositHook": "0x084D80b1BAf1eAE36b4c66CB7AD12002BfBaaDbe",
+      "connectors": {
+        "421614": {
+          "FAST": "0x70E2f773c1De017EEc73E84C523842593BD6Bc61"
+        },
+        "11155420": {
+          "FAST": "0x26f44E0F9025f7c42595F1B7b899edBA57277dcB"
+        }
+      }
     }
   },
   "421614": {
@@ -92,6 +151,52 @@
       "connectors": {
         "901": {
           "FAST": "0x602029526b76C5116957aa360472B1141314AB7f"
+        }
+      }
+    },
+    "weETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0xE0AcE05Ded5f3653aB0caAAf19E458DAb2E824F2",
+      "Vault": "0x236D36C52bC56a37d9094B424A1420BE21f6392c",
+      "connectors": {
+        "901": {
+          "FAST": "0x9485b9d142E805B86F5B9224D1aCA0acFe6bdd58"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x675Df6b2fF67289CB7f596Af1B49ca5841B1f956"
+    },
+    "rswETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0xadfe82e1fc0f59d87bc69be637b947758505a614",
+      "Vault": "0x47BB0e22F015BFc25138EfaF4261AB5CA4a887d6",
+      "LyraTSADepositHook": "0x61068673DF4E05f630948806C2F67B5625156661",
+      "connectors": {
+        "901": {
+          "FAST": "0x7b4c44F13bd5d8F234DA1A0Af71e75FdB77b2C6E"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x236661F82f6EAE94d86152E23b07Dd3B08665abd"
+    },
+    "rsETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0x8C4516853074c4Bb3bA921fE9e714aC322F7081C",
+      "Vault": "0x62a11f238e489A49d840ec337c8e544cc43A7eAd",
+      "LyraTSADepositHook": "0xD5Cb6ad7b35E1D1bd860B5b57B099f4716Dd7e64",
+      "connectors": {
+        "901": {
+          "FAST": "0xc0424453E78C6ee65c12329e8A908EfDEF54ABAa"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x303b35937DF321a5E8Df6f2F41f504A9Bc2Bc29d"
+    },
+    "sUSDe": {
+      "isAppChain": false,
+      "NonMintableToken": "0xE820506a947396C20fA852AFc17CDf234b76e9a0",
+      "Vault": "0x9576aFF10dFdb1d24B507EEb88554dF3427E43D6",
+      "LyraTSADepositHook": "0x8519e21355763572edD3DA1C19C71CEa99883e57",
+      "connectors": {
+        "901": {
+          "FAST": "0x4722c480E9452f722716980FaDF77dCDf42bbc0f"
         }
       }
     }
@@ -192,6 +297,55 @@
       "connectors": {
         "901": {
           "FAST": "0x5eccd7500D3Dc844E0a3c4e50aA31A313460e5a0"
+        }
+      }
+    },
+    "weETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0x8467d28492bB13cC964C49Fcc2fCA8A8B478836E",
+      "Vault": "0x76eef7cb3DAab7b23fB818E3D82997f38aa1A620",
+      "ExecutionHelper": "0x5De869E775B9c033F6AcD2bA287522347c6E9eeD",
+      "LimitExecutionHook": "0x070Fa08C531fe29f3d1E870cd3eF9Ca0d99F9706",
+      "connectors": {
+        "901": {
+          "FAST": "0x452204A2a6c103D106c86bEb869Ca6EF705eD67C"
+        }
+      },
+      "LyraTSADepositHook": "0xBcB494059969DAaB460E0B5d4f5c2366aab79aa1",
+      "LyraTSAShareHandlerDepositHook": "0x86F1824A0106B97DD6BD16a049b497f4CAC93A6e"
+    },
+    "rswETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0x0b3639A094854796E3b236DB08646ffd21C0B1B2",
+      "Vault": "0x6F054A18383b2EC7F709d7f24e69D9DbCC921aD3",
+      "LimitHook": "0xC3370DBEd53692db0A7A793e0D0cB4868EE2A1F9",
+      "connectors": {
+        "901": {
+          "FAST": "0xCa80293391423d8B81850Ff051BAd3FcE936EbB7"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0xB293594803771a5184a63031224C8C5851064a41"
+    },
+    "rsETH": {
+      "isAppChain": false,
+      "NonMintableToken": "0xE11D1F74C0FC6c4Fe45BEAD7daB6CC8044C234C8",
+      "Vault": "0x6961c56923eA4e8FD5450fE7bEE193744222C072",
+      "LyraTSADepositHook": "0x655e8765370bD80CCe4Df91cbd4aEAc12ff84D93",
+      "connectors": {
+        "901": {
+          "FAST": "0xedcA80caa863D1893EdE5E8764B6F4C34051d0E4"
+        }
+      },
+      "LyraTSAShareHandlerDepositHook": "0x3D99D4648963593Ed0efD6DFc6B8494Cb195a8c8"
+    },
+    "sUSDe": {
+      "isAppChain": false,
+      "NonMintableToken": "0xe21739C53fa561c5334Efd45c6cC3DB9ca99B5C3",
+      "Vault": "0xB544dFE3BD399aa645fC12fd535f966dAa95e872",
+      "LyraTSADepositHook": "0x2eEb4CbAabb72Db0fc125Ad28d7Ca69E5344012e",
+      "connectors": {
+        "901": {
+          "FAST": "0xb3BcFCFDFA906539D862e00c1b1BadfCA3DC257A"
         }
       }
     }

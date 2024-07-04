@@ -8,6 +8,7 @@ import {
   ChainSlug,
   IntegrationTypes,
   getAddresses,
+  DeploymentMode,
 } from "@socket.tech/dl-core";
 import socketABI from "@socket.tech/dl-core/artifacts/abi/Socket.json";
 import { overrides } from "./networks";
@@ -142,22 +143,33 @@ export async function deployContractWithArgs(
   args: Array<any>,
   signer: Wallet
 ) {
-  try {
-    const Contract: ContractFactory = await ethers.getContractFactory(
-      contractName
-    );
+  const retries = 3;
+  for (let i = 0; i < retries; ++i) {
+    if (i > 0) {
+      console.log(`Retrying deployment of ${contractName}...`);
+    }
+    try {
+      const Contract: ContractFactory = await ethers.getContractFactory(
+        contractName
+      );
 
-    const chainId = await signer.getChainId();
-    const chainName = chainIdReverseMap.get(chainId.toString());
-    const chainSlug = ChainSlug[chainName];
+      const chainId = await signer.getChainId();
+      const chainName = chainIdReverseMap.get(chainId.toString());
+      const chainSlug = ChainSlug[chainName];
 
-    const contract: Contract = await Contract.connect(signer).deploy(...args, {
-      ...overrides[chainSlug],
-    });
-    await contract.deployed();
-    return contract;
-  } catch (error) {
-    throw error;
+      const contract: Contract = await Contract.connect(signer).deploy(
+        ...args,
+        {
+          ...overrides[chainSlug],
+        }
+      );
+      await contract.deployed();
+      return contract;
+    } catch (error) {
+      if (i == retries - 1) {
+        throw error;
+      }
+    }
   }
 }
 
@@ -231,22 +243,12 @@ export const storeAllAddresses = async (
   fs.writeFileSync(filePath, JSON.stringify(allAddresses, null, 2));
 };
 
-export const storeProjectAddresses = async (addresses: SBAddresses) => {
-  fs.writeFileSync(getDeploymentPath(), JSON.stringify(addresses, null, 2));
-};
-
 let addresses: SBAddresses | STAddresses;
+
 export const getProjectAddresses = (): SBAddresses | STAddresses => {
   if (addresses) return addresses;
   addresses = readJSONFile(getDeploymentPath());
   return addresses;
-};
-
-export const getSuperBridgeAddresses = (): SBAddresses => {
-  return getProjectAddresses() as SBAddresses;
-};
-export const getSuperTokenAddresses = (): STAddresses => {
-  return getProjectAddresses() as STAddresses;
 };
 
 export const storeVerificationParams = async (

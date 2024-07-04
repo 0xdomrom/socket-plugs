@@ -1,15 +1,19 @@
-import { getSuperBridgeAddresses, ZERO_ADDRESS } from "../helpers";
+import { getProjectAddresses, ZERO_ADDRESS } from "../helpers";
 import { ethers } from "ethers";
 import { getSignerFromChainSlug, overrides } from "../helpers/networks";
-import { isSBAppChain } from "../helpers/projectConstants";
 import { getOwner } from "../constants/config";
 import { OWNABLE_ABI } from "../constants/abis/ownable";
 import { ChainSlug } from "@socket.tech/dl-core";
+import { HookContracts, SBAddresses, STAddresses } from "../../src";
 
 const chainToExpectedOwner = {
-  [ChainSlug.OPTIMISM]: "0xa75509cB7c50362AC59908e2A8c3922aDF3EEF54",
-  [ChainSlug.ARBITRUM]: "0xa75509cB7c50362AC59908e2A8c3922aDF3EEF54",
-  [ChainSlug.AEVO]: "0xa75509cB7c50362AC59908e2A8c3922aDF3EEF54",
+  [ChainSlug.MAINNET]: "0x246d38588b16Dd877c558b245e6D5a711C649fCF",
+  [ChainSlug.ARBITRUM]: "0x2CcF21e5912e9ecCcB0ecdEe9744E5c507cf88AE",
+  [ChainSlug.LYRA]: "0xB176A44D819372A38cee878fB0603AEd4d26C5a5",
+  [ChainSlug.BASE]: "0xbfA8B86391c5eCAd0eBe2B158D9Cd9866DDBAaDa",
+  [ChainSlug.BLAST]: "0x14232db3852eA44A1be8DB35e82D56191f534D95",
+  [ChainSlug.MODE]: "0x14232db3852eA44A1be8DB35e82D56191f534D95",
+  [ChainSlug.OPTIMISM]: "0xD4C00FE7657791C2A43025dE483F05E49A5f76A6",
 };
 
 async function getOwnerAndNominee(contract: ethers.Contract) {
@@ -22,172 +26,140 @@ async function getOwnerAndNominee(contract: ethers.Contract) {
   return [owner, pendingOwner, 1];
 }
 
-export const main = async () => {
-  try {
-    const addresses = getSuperBridgeAddresses();
-    for (const chain of Object.keys(addresses)) {
-      console.log(`\nChecking addresses for chain ${chain}`);
-      if (!chainToExpectedOwner?.[+chain]) {
-        console.error(`Expected owner not found for chain ${chain}`);
-        throw new Error(`Expected owner not found for chain ${chain}`);
-      }
-      console.log(
-        `Expected owner found for chain ${chain}, ${
-          chainToExpectedOwner[+chain]
-        }`
-      );
-      for (const token of Object.keys(addresses[chain])) {
-        if (isSBAppChain(+chain, token)) {
-          // ExchangeRate and Controller
-          const exchangeRateAddress = addresses[chain][token].ExchangeRate;
-          const exchangeRateContract = new ethers.Contract(
-            exchangeRateAddress,
-            OWNABLE_ABI,
-            getSignerFromChainSlug(+chain)
-          );
-          const [exchangeRateOwner, exchangeRateNominee, exchangeRateType] =
-            await getOwnerAndNominee(exchangeRateContract);
-          console.log(
-            `Owner of ${exchangeRateAddress} is ${exchangeRateOwner}${
-              exchangeRateNominee === ZERO_ADDRESS
-                ? ""
-                : ` (nominee: ${exchangeRateNominee})`
-            } on chain: ${chain} (ExchangeRate for token: ${token})`
-          );
+async function checkAndChange(
+  chainAddresses: any,
+  chain: ChainSlug,
+  newOwner: string,
+  contractType: string,
+  token: string
+) {
+  const address = chainAddresses[contractType];
+  if (!address) {
+    console.error(`Contract not found for chain ${chain} ${contractType}`);
+    return;
+  }
+  const contract = new ethers.Contract(
+    address,
+    OWNABLE_ABI,
+    getSignerFromChainSlug(chain)
+  );
+  const [owner, nominee, type] = await getOwnerAndNominee(contract);
+  console.log(
+    `Owner of ${address} is ${owner}${
+      nominee === ZERO_ADDRESS
+        ? ""
+        : ` (nominee: ${nominee} ${
+            type === 0 ? "claimOwner()" : "acceptOwnership()"
+          })`
+    } on chain: ${chain} (${contractType} for ${token})`
+  );
 
-          if (
-            exchangeRateOwner === getOwner() &&
-            exchangeRateNominee === ZERO_ADDRESS
-          ) {
-            if (exchangeRateType === 0) {
-              const tx = await exchangeRateContract.nominateOwner(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            } else {
-              const tx = await exchangeRateContract.transferOwnership(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            }
-          }
+  await handleOwnershipChangeover(
+    contract,
+    newOwner,
+    chain,
+    owner,
+    nominee,
+    type
+  );
+}
 
-          const controllerAddress = addresses[chain][token].Controller;
-          const controllerContract = new ethers.Contract(
-            controllerAddress,
-            OWNABLE_ABI,
-            getSignerFromChainSlug(+chain)
-          );
-          const [controllerOwner, controllerNominee, controllerType] =
-            await getOwnerAndNominee(controllerContract);
-          console.log(
-            `Owner of ${controllerAddress} is ${controllerOwner}${
-              controllerNominee === ZERO_ADDRESS
-                ? ""
-                : ` (nominee: ${controllerNominee})`
-            } on chain: ${chain} (Controller for token: ${token})`
-          );
+async function handleOwnershipChangeover(
+  contract: ethers.Contract,
+  newOwner: string,
+  chain: ChainSlug,
+  owner: string,
+  nominee: string,
+  type: 0 | 1
+) {
+  // console.log(`Handing over ownership of ${contract.address} to ${newOwner}`);
+  if (owner === getOwner() && nominee === ZERO_ADDRESS) {
+    if (type === 0) {
+      const tx = await contract.nominateOwner(newOwner, {
+        ...overrides[chain],
+      });
+      console.log("Nominating, tx hash: ", tx.hash);
+      await tx.wait();
+    } else {
+      const tx = await contract.transferOwnership(newOwner, {
+        ...overrides[chain],
+      });
+      console.log("Nominating, tx hash: ", tx.hash);
+      await tx.wait();
+    }
+  }
+}
 
-          if (
-            controllerOwner === getOwner() &&
-            controllerNominee === ZERO_ADDRESS
-          ) {
-            if (controllerType === 0) {
-              const tx = await controllerContract.nominateOwner(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            } else {
-              const tx = await controllerContract.transferOwnership(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            }
-          }
-        } else {
-          // Vault
-          const vaultAddress = addresses[chain][token].Vault;
-          const vaultContract = new ethers.Contract(
-            vaultAddress,
-            OWNABLE_ABI,
-            getSignerFromChainSlug(+chain)
+async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
+  for (const chain of Object.keys(addresses)) {
+    console.log(`\nChecking addresses for chain ${chain}`);
+    if (!chainToExpectedOwner?.[+chain]) {
+      console.error(`Expected owner not found for chain ${chain}`);
+      throw new Error(`Expected owner not found for chain ${chain}`);
+    }
+    console.log(
+      `Expected owner found for chain ${chain}, ${chainToExpectedOwner[+chain]}`
+    );
+    for (const token of Object.keys(addresses[chain])) {
+      for (const contractType of [
+        "Controller",
+        "Vault",
+        ...Object.keys(HookContracts),
+        "MintableToken",
+        "SuperToken",
+      ]) {
+        if (contractType in addresses[chain][token]) {
+          await checkAndChange(
+            addresses[chain][token],
+            +chain,
+            chainToExpectedOwner[+chain],
+            contractType,
+            token
           );
-          const [vaultOwner, vaultNominee, vaultType] =
-            await getOwnerAndNominee(vaultContract);
-          console.log(
-            `Owner of ${vaultAddress} is ${vaultOwner}${
-              vaultNominee === ZERO_ADDRESS ? "" : ` (nominee: ${vaultNominee})`
-            } on chain: ${chain} (Vault for token: ${token})`
-          );
-
-          if (vaultOwner === getOwner() && vaultNominee === ZERO_ADDRESS) {
-            if (vaultType === 0) {
-              const tx = await vaultContract.nominateOwner(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            } else {
-              const tx = await vaultContract.transferOwnership(
-                chainToExpectedOwner[+chain],
-                { ...overrides[+chain] }
-              );
-              console.log("Nominating, tx hash: ", tx.hash);
-              await tx.wait();
-            }
-          }
         }
+      }
 
-        for (const connectorChain of Object.keys(
-          addresses[chain][token].connectors
+      for (const connectorChain of Object.keys(
+        addresses[chain][token].connectors
+      )) {
+        for (const connectorType of Object.keys(
+          addresses[chain][token].connectors[connectorChain]
         )) {
-          for (const connectorType of Object.keys(
-            addresses[chain][token].connectors[connectorChain]
-          )) {
-            const connectorAddress =
-              addresses[chain][token].connectors[connectorChain][connectorType];
-            const contract = new ethers.Contract(
-              connectorAddress,
-              OWNABLE_ABI,
-              getSignerFromChainSlug(+chain)
-            );
-            const [owner, nominee, type] = await getOwnerAndNominee(contract);
-            console.log(
-              `Owner of ${connectorAddress} is ${owner}${
-                nominee === ZERO_ADDRESS ? "" : ` (nominee: ${nominee})`
-              } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
-            );
+          const connectorAddress =
+            addresses[chain][token].connectors[connectorChain][connectorType];
+          const contract = new ethers.Contract(
+            connectorAddress,
+            OWNABLE_ABI,
+            getSignerFromChainSlug(+chain)
+          );
+          const [owner, nominee, type] = await getOwnerAndNominee(contract);
+          console.log(
+            `Owner of ${connectorAddress} is ${owner}${
+              nominee === ZERO_ADDRESS
+                ? ""
+                : ` (nominee: ${nominee} ${
+                    type === 0 ? "claimOwner()" : "acceptOwnership()"
+                  })`
+            } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
+          );
 
-            if (owner === getOwner() && nominee === ZERO_ADDRESS) {
-              if (type === 0) {
-                const tx = await contract.nominateOwner(
-                  chainToExpectedOwner[+chain],
-                  { ...overrides[+chain] }
-                );
-                console.log("Nominating, tx hash: ", tx.hash);
-                await tx.wait();
-              } else {
-                const tx = await contract.transferOwnership(
-                  chainToExpectedOwner[+chain],
-                  { ...overrides[+chain] }
-                );
-                console.log("Nominating, tx hash: ", tx.hash);
-                await tx.wait();
-              }
-            }
-          }
+          await handleOwnershipChangeover(
+            contract,
+            chainToExpectedOwner[+chain],
+            +chain,
+            owner,
+            nominee,
+            type
+          );
         }
       }
     }
+  }
+}
+
+export const main = async () => {
+  try {
+    await checkAndTransferOwnership(getProjectAddresses());
   } catch (error) {
     console.log("Error while sending transaction", error);
   }
