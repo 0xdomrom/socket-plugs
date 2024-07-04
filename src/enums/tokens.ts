@@ -20,7 +20,9 @@ export enum Tokens {
   WEETH = "weETH", // ether.fi
   RSWETH = "rswETH", // Swell
   RSETH = "rsETH", // Kelp
+  SUSDE = "sUSDe", // ethena usd
   WEETHC = "weETHC", // Lyra tokenized subaccount shares
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares
+  SUSDEBULL = "sUSDeBULL", // Lyra tokenized subaccount shares
 }

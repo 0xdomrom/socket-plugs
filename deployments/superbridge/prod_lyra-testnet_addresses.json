@@ -117,6 +117,20 @@
         }
       },
       "LyraTSAShareHandlerDepositHook": "0xb738e3bD01491DcE968001376C1C1389ac60e868"
+    },
+    "sUSDe": {
+      "isAppChain": true,
+      "MintableToken": "0xd87d41f1e4d8b48F3cA18faFc1069b18F9c15B9d",
+      "Controller": "0x40fB94330Db4A4Bd3bAf8725211CDFa67d483439",
+      "LyraTSADepositHook": "0x084D80b1BAf1eAE36b4c66CB7AD12002BfBaaDbe",
+      "connectors": {
+        "421614": {
+          "FAST": "0x70E2f773c1De017EEc73E84C523842593BD6Bc61"
+        },
+        "11155420": {
+          "FAST": "0x26f44E0F9025f7c42595F1B7b899edBA57277dcB"
+        }
+      }
     }
   },
   "421614": {
@@ -144,7 +158,6 @@
       "isAppChain": false,
       "NonMintableToken": "0xE0AcE05Ded5f3653aB0caAAf19E458DAb2E824F2",
       "Vault": "0x236D36C52bC56a37d9094B424A1420BE21f6392c",
-      "LyraTSADepositHook": "0x5eccd7500D3Dc844E0a3c4e50aA31A313460e5a0",
       "connectors": {
         "901": {
           "FAST": "0x9485b9d142E805B86F5B9224D1aCA0acFe6bdd58"
@@ -175,6 +188,17 @@
         }
       },
       "LyraTSAShareHandlerDepositHook": "0x303b35937DF321a5E8Df6f2F41f504A9Bc2Bc29d"
+    },
+    "sUSDe": {
+      "isAppChain": false,
+      "NonMintableToken": "0xE820506a947396C20fA852AFc17CDf234b76e9a0",
+      "Vault": "0x9576aFF10dFdb1d24B507EEb88554dF3427E43D6",
+      "LyraTSADepositHook": "0x8519e21355763572edD3DA1C19C71CEa99883e57",
+      "connectors": {
+        "901": {
+          "FAST": "0x4722c480E9452f722716980FaDF77dCDf42bbc0f"
+        }
+      }
     }
   },
   "11155111": {
@@ -313,6 +337,17 @@
         }
       },
       "LyraTSAShareHandlerDepositHook": "0x3D99D4648963593Ed0efD6DFc6B8494Cb195a8c8"
+    },
+    "sUSDe": {
+      "isAppChain": false,
+      "NonMintableToken": "0xe21739C53fa561c5334Efd45c6cC3DB9ca99B5C3",
+      "Vault": "0xB544dFE3BD399aa645fC12fd535f966dAa95e872",
+      "LyraTSADepositHook": "0x2eEb4CbAabb72Db0fc125Ad28d7Ca69E5344012e",
+      "connectors": {
+        "901": {
+          "FAST": "0xb3BcFCFDFA906539D862e00c1b1BadfCA3DC257A"
+        }
+      }
     }
   }
 }

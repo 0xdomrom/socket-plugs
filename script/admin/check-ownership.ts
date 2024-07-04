@@ -1,7 +1,6 @@
 import {
   getOwnerAndNominee,
-  getSuperBridgeAddresses,
-  getSuperTokenAddresses,
+  getProjectAddresses,
   ZERO_ADDRESS,
 } from "../helpers";
 import { ethers } from "ethers";
@@ -97,10 +96,7 @@ async function checkAddresses(addresses: SBAddresses | STAddresses) {
 
 export const main = async () => {
   try {
-    console.log("\n== SuperBridge Addresses ==\n");
-    await checkAddresses(getSuperBridgeAddresses());
-    console.log("\n== SuperToken Addresses ==\n");
-    await checkAddresses(getSuperTokenAddresses());
+    await checkAddresses(getProjectAddresses());
   } catch (error) {
     console.log("Error while sending transaction", error);
   }

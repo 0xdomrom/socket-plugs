@@ -1,9 +1,45 @@
 {
   "901": [
     [
+      "0xBAb7809D2dF54D846ED13304A7090a5259E75F39",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x9d7Ae8fe3B7Dc5922019b71724f6C7F1438080A7",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        11155420
+      ]
+    ],
+    [
+      "0xd1BB3141E0B4dEb9d555fE052D26fEb51f3ab344",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x9d7Ae8fe3B7Dc5922019b71724f6C7F1438080A7",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        421614
+      ]
+    ],
+    [
+      "0x8331C9e211E3238601697026c52C39098d05eE09",
+      "LyraTSAWithdrawHook",
+      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x9d7Ae8fe3B7Dc5922019b71724f6C7F1438080A7",
+        false
+      ]
+    ],
+    [
+      "0x9d7Ae8fe3B7Dc5922019b71724f6C7F1438080A7",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x4BAC0257C1a5be3814653789C6e60afF2F5f1DaD"]
+    ],
+    [
       "0xc317b62f8745525f299F19db248DB76Fc51B5642",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x467c0835499271530A8ac05Eb7Df75dD26E2bFEe",
@@ -13,7 +49,7 @@
     [
       "0x4c557e1cE779BC17a36110353F2970bF73D42729",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0xD0DEe9Fd4Cc1d2eCB4572c01cDC65603557cc506",
@@ -23,7 +59,7 @@
     [
       "0x493d6bC28C8862dd03b1Fe56a1a66C3637E1c186",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x6481400fb34eea4692E411229d37ceB6a2af63B2",
@@ -53,7 +89,7 @@
     [
       "0x718442247621a14c08A048139B70553A06712E71",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x467c0835499271530A8ac05Eb7Df75dD26E2bFEe",
@@ -173,9 +209,61 @@
   ],
   "421614": [
     [
+      "0x86F1824A0106B97DD6BD16a049b497f4CAC93A6e",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xB293594803771a5184a63031224C8C5851064a41",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0x21a84f871Ad05C56726f63Df5a0f1aC021c58C64",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xB293594803771a5184a63031224C8C5851064a41",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        11155420
+      ]
+    ],
+    [
+      "0x0f97F03B8D15A48025871411Ef53D07C7CD8206B",
+      "LyraTSAWithdrawHook",
+      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xB293594803771a5184a63031224C8C5851064a41",
+        false
+      ]
+    ],
+    [
+      "0xB293594803771a5184a63031224C8C5851064a41",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x9D1525EE901CcE8C4224754a6204D2d5917C710c"]
+    ],
+    [
+      "0x9D1525EE901CcE8C4224754a6204D2d5917C710c",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "Staked USDe Bull",
+        "sUSDeBULL",
+        18,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
       "0x01525ca28D60A7614160F577dAAC14490EA5b093",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0xBcB494059969DAaB460E0B5d4f5c2366aab79aa1",
@@ -185,7 +273,7 @@
     [
       "0x52e6adC89Fe39Dd68F5BEbd1d17a2bC7F9688199",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0xF151509ABefb08EdaF4CFd95fE6B3Eecb7d5C158",
@@ -195,7 +283,7 @@
     [
       "0xC5C484e0159494f6940273b8fB029203C85cA97b",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x3E0906a5c68681C1EDc81e492f9F0Ff30C460F6b",
@@ -225,7 +313,7 @@
     [
       "0x010e26422790C6Cb3872330980FAa7628FD20294",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0xBcB494059969DAaB460E0B5d4f5c2366aab79aa1",
@@ -511,9 +599,61 @@
   ],
   "11155420": [
     [
+      "0xfC129aAAF2374845a8E9BAfd91F6f79C1d85c215",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x2f7b1ae31904e8b035718D80F404761135e51a17",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0x871D150B1A9Df599f8B5A153e0903037103b6a00",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x2f7b1ae31904e8b035718D80F404761135e51a17",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        421614
+      ]
+    ],
+    [
+      "0x3923962Ad626a9141FdE39Df01a49B0607eC688c",
+      "LyraTSAWithdrawHook",
+      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x2f7b1ae31904e8b035718D80F404761135e51a17",
+        false
+      ]
+    ],
+    [
+      "0x2f7b1ae31904e8b035718D80F404761135e51a17",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0xEbd2921149B72Bbb6BC6a950896e2d10dE9Ad2e2"]
+    ],
+    [
+      "0xEbd2921149B72Bbb6BC6a950896e2d10dE9Ad2e2",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "Staked USDe Bull",
+        "sUSDeBULL",
+        18,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
       "0x1ECeb45316C07Cc08d779cB1653122d7EbB48847",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x4fF761D46Be8100063e388Bec1cb3653C3832908",
@@ -523,7 +663,7 @@
     [
       "0xE0C422fa9DeA8A79aCF3421575EFc85EcA9c2Acf",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x21DaBaa157f2b43606f528098C922d66898C5645",
@@ -553,7 +693,7 @@
     [
       "0x4195dD7764f233fa00F31c978f0933719779687f",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x4fF761D46Be8100063e388Bec1cb3653C3832908",
@@ -605,7 +745,7 @@
     [
       "0x8c2F91dc9cD2eecED1cfA47598CC309CEea2DC47",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x21DaBaa157f2b43606f528098C922d66898C5645",

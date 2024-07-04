@@ -27,7 +27,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       }, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         // hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA]: {
@@ -86,8 +86,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       }, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
-        // hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA]: {
             [IntegrationTypes.fast]: {
@@ -122,9 +121,9 @@ export const pc: ProjectConstants = {
         initialSupplyOwner: "0x0000000000000000000000000000000000000000",
         owner: getOwner(),
         initialSupply: "0",
-      }, // set fields as undefined so token isn't deployed
+      },
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA]: {
             [IntegrationTypes.fast]: {
@@ -172,6 +171,79 @@ export const pc: ProjectConstants = {
             [IntegrationTypes.fast]: {
               sendingLimit: "1000000",
               receivingLimit: "1000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.SUSDEBULL]: {
+      vaultChains: [ChainSlug.LYRA],
+      controllerChains: [
+        ChainSlug.MAINNET,
+        ChainSlug.ARBITRUM,
+        ChainSlug.BASE,
+        ChainSlug.OPTIMISM,
+        ChainSlug.BLAST,
+        ChainSlug.MODE,
+      ],
+      superTokenInfo: {
+        name: "Staked USDe Bull",
+        symbol: "sUSDeBULL",
+        decimals: 18,
+        initialSupplyOwner: "0x0000000000000000000000000000000000000000",
+        owner: getOwner(),
+        initialSupply: "0",
+      } as any,
+      hook: {
+        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.ARBITRUM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.BLAST]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MODE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
               poolCount: 0,
             },
           },

@@ -5,6 +5,7 @@ export const ProjectTypeMap: Record<Project, ProjectType> = {
   [Project.AEVO]: ProjectType.SUPERBRIDGE,
   [Project.AEVO_TESTNET]: ProjectType.SUPERBRIDGE,
   [Project.LYRA]: ProjectType.SUPERBRIDGE,
+  [Project.LYRA_OLD]: ProjectType.SUPERBRIDGE,
   [Project.LYRA_TESTNET]: ProjectType.SUPERBRIDGE,
   [Project.LYRA_TSA]: ProjectType.SUPERTOKEN,
   [Project.LYRA_TSA_TESTNET]: ProjectType.SUPERTOKEN,

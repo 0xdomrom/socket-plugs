@@ -5,7 +5,7 @@ import {
 } from "@socket.tech/dl-core";
 import { Hooks, ProjectConstants } from "../../../../src";
 
-const pc: ProjectConstants = {
+export const pc: ProjectConstants = {
   [DeploymentMode.PROD]: {
     // [Tokens.USDC]: {
     //   isFiatTokenV2_1: true,
@@ -286,5 +286,3 @@ const pc: ProjectConstants = {
     // },
   },
 };
-
-export = pc;
