@@ -23,7 +23,7 @@
     [
       "0x084D80b1BAf1eAE36b4c66CB7AD12002BfBaaDbe",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x40fB94330Db4A4Bd3bAf8725211CDFa67d483439",
@@ -229,7 +229,7 @@
     [
       "0x8519e21355763572edD3DA1C19C71CEa99883e57",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0x9576aFF10dFdb1d24B507EEb88554dF3427E43D6",
@@ -375,7 +375,7 @@
     [
       "0x2eEb4CbAabb72Db0fc125Ad28d7Ca69E5344012e",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
         "0xB544dFE3BD399aa645fC12fd535f966dAa95e872",

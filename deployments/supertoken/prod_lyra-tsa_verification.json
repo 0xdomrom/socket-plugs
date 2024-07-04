@@ -63,7 +63,7 @@
     [
       "0xcAE1214F37b6a88fa41E1312563Cf3103CA09181",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x988ddDb1c7578aFae302143b1c5fda12fD486904",
@@ -367,7 +367,7 @@
     [
       "0xcAe44C93f7B3b519Fc28f9d4F7Ae22dE770a907b",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x81ed5Dc90F708Dd908DccFfd5128B5C3405f74c5",
@@ -553,7 +553,7 @@
     [
       "0x6Bb19e40d3d403796B26bAeaF60a73857a69286f",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0xbF7591de71cAf166269744A370379B0178E3c732",
@@ -829,7 +829,7 @@
     [
       "0x0808b2eBcc93da402985D4C4813e833E6835Ab36",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x504D7959511B3c1e8B76149869106D8Bd6FB51e2",
@@ -1311,7 +1311,7 @@
     [
       "0xb1178803A726e2077947754de9f2f0cbdA29A60F",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0xeb737867Af205Fa5Dd06E0852f6584067236bFDC",
@@ -1579,7 +1579,7 @@
     [
       "0x63806523A9c8B07cEeDB2329771A180D8C902296",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x43b019139946466A010c936a85df14C17C4159c0",
@@ -1860,7 +1860,7 @@
     [
       "0xb7B68E68d8aBE34B34D21e101A6AA963EC5E744d",
       "LyraTSAWithdrawHook",
-      "contracts/hooks/LyraTSAWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x1E0470Ef72d029Bdc87D3B8543Fb62fc04db9670",

@@ -13,7 +13,7 @@
     [
       "0xAF3f1CDd6Fcf67D22dA8C8D4871bafc518b3eD5d",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0xE3E96892D30E0ee1a8131BAf87c891201F7137bf",
@@ -147,7 +147,7 @@
     [
       "0xA79399cD8f80453b5c07349Fa7807dc8Fc48BfEA",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x5324c6d731a3d9D740e880929E2c952bA27408De",
@@ -251,7 +251,7 @@
     [
       "0x5b1E1FA4e4BeBfcD9aC3e19fF16fEe65A2660fee",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x12A3674207E345c79e1AD67F62e3988e6bb06287",
@@ -499,7 +499,7 @@
     [
       "0x218661f041638FaADC4F896Db379457C9860850b",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0xFE00C281729fa7E7AaB453690ed184284F51268C",
@@ -579,7 +579,7 @@
     [
       "0x4061DF0f966Da2E7d973F9f532df87DD7a38DF75",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0xdE45E2bCCb99E0ed1a2876cFC51a71ca5e822641",
@@ -659,7 +659,7 @@
     [
       "0x66237B77330f000c00B38EeA3f9378294c3942A1",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x3c143EA5eBaB50ad6D2B2d14FA719234d1d38F1b",
@@ -739,7 +739,7 @@
     [
       "0x8a420fb1A1ce8D90645571Ed571D1928672a9033",
       "LyraTSADepositHook",
-      "contracts/hooks/LyraTSADepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAHooks.sol",
       [
         "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
         "0x837808498206FBb5C758D79424Cc3DCAD5d9E873",
