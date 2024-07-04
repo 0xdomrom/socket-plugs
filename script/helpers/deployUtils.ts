@@ -13,6 +13,7 @@ import {
 import socketABI from "@socket.tech/dl-core/artifacts/abi/Socket.json";
 import { overrides } from "./networks";
 import {
+  getDryRun,
   getMode,
   getProjectName,
   getProjectType,
@@ -29,6 +30,7 @@ import {
 } from "../../src";
 import {
   deploymentPath,
+  execSummary,
   getAllDeploymentPath,
   getDeploymentPath,
   getVerificationPath,
@@ -70,13 +72,17 @@ export const getOrDeploy = async (
     console.log(
       `${contractName} deployed on ${
         deployUtils.currentChainSlug
-      } for ${getMode()}, ${getProjectName()} at address ${contract.address}`
+      } for ${getMode()}, ${getProjectName()} at address ${
+        getDryRun() ? "DRY RUN" : contract.address
+      }`
     );
 
-    await storeVerificationParams(
-      [contract.address, contractName, path, args],
-      deployUtils.currentChainSlug
-    );
+    if (!getDryRun()) {
+      await storeVerificationParams(
+        [contract.address, contractName, path, args],
+        deployUtils.currentChainSlug
+      );
+    }
   } else {
     contract = await getInstance(contractName, storedContactAddress);
     console.log(
@@ -111,18 +117,22 @@ export const getOrDeployConnector = async (
     console.log(
       `${SuperBridgeContracts.ConnectorPlug} deployed on ${
         deployUtils.currentChainSlug
-      } for ${getMode()}, ${getProjectName()} at address ${contract.address}`
+      } for ${getMode()}, ${getProjectName()} at address ${
+        getDryRun() ? "DRY RUN" : contract.address
+      }`
     );
 
-    await storeVerificationParams(
-      [
-        contract.address,
-        SuperBridgeContracts.ConnectorPlug,
-        "contracts/ConnectorPlug.sol",
-        args,
-      ],
-      deployUtils.currentChainSlug
-    );
+    if (!getDryRun()) {
+      await storeVerificationParams(
+        [
+          contract.address,
+          SuperBridgeContracts.ConnectorPlug,
+          "contracts/ConnectorPlug.sol",
+          args,
+        ],
+        deployUtils.currentChainSlug
+      );
+    }
   } else {
     contract = await getInstance(
       SuperBridgeContracts.ConnectorPlug,
@@ -143,11 +153,12 @@ export async function deployContractWithArgs(
   args: Array<any>,
   signer: Wallet
 ) {
-  const retries = 3;
-  for (let i = 0; i < retries; ++i) {
-    if (i > 0) {
-      console.log(`Retrying deployment of ${contractName}...`);
-    }
+  if (getDryRun()) {
+    execSummary.push("");
+    execSummary.push(
+      `DRY RUN - Deploying ${contractName} on ${getMode()}, ${getProjectName()}`
+    );
+  } else {
     try {
       const Contract: ContractFactory = await ethers.getContractFactory(
         contractName
@@ -166,9 +177,7 @@ export async function deployContractWithArgs(
       await contract.deployed();
       return contract;
     } catch (error) {
-      if (i == retries - 1) {
-        throw error;
-      }
+      throw error;
     }
   }
 }
@@ -216,6 +225,8 @@ export const storeTokenAddresses = async (
   chainSlug: ChainSlug,
   tokenName: Tokens
 ) => {
+  if (getDryRun()) return;
+
   let deploymentAddresses: SBAddresses | STAddresses = readJSONFile(
     getDeploymentPath()
   );
@@ -235,6 +246,8 @@ export const storeAllAddresses = async (
   projectName: Project,
   projectAddresses: SBAddresses | STAddresses
 ) => {
+  if (getDryRun()) return;
+
   const projectType = ProjectTypeMap[projectName];
   let filePath = getAllDeploymentPath(projectType);
   let allAddresses: AllAddresses = readJSONFile(filePath);
@@ -255,6 +268,8 @@ export const storeVerificationParams = async (
   verificationDetail: any[],
   chainSlug: ChainSlug
 ) => {
+  if (getDryRun()) return;
+
   let verificationDetails: object = readJSONFile(getVerificationPath());
 
   if (!verificationDetails[chainSlug]) verificationDetails[chainSlug] = [];

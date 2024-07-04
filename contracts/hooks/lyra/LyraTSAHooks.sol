@@ -93,9 +93,9 @@ abstract contract LyraTSAHookBase is LimitHook {
         transferInfo.amount = consumedAmount;
 
         // No data provided, process normally OR if not all amount is consumed, process normally
-        if (params_.transferInfo.data.length == 64 && pendingAmount == 0) {
+        if (params_.transferInfo.extraData.length == 64 && pendingAmount == 0) {
             (address returnRecipient, address withdrawConnector) = abi.decode(
-                params_.transferInfo.data,
+                params_.transferInfo.extraData,
                 (address, address)
             );
 

@@ -17,16 +17,13 @@ import { ProjectType } from "../../src";
 import { overrides } from "./networks";
 import { ChainSlug, IntegrationTypes } from "@socket.tech/dl-core";
 
-export let allDeploymentPath: string;
 export const getAllDeploymentPath = (
   projectType: ProjectType = getProjectType()
 ) => {
-  if (allDeploymentPath) return allDeploymentPath;
-  allDeploymentPath = path.join(
+  return path.join(
     __dirname,
     `/../../deployments/${projectType}/${getMode()}_addresses.json`
   );
-  return allDeploymentPath;
 };
 
 export let deploymentPath: string;
