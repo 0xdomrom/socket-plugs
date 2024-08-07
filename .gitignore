@@ -25,3 +25,6 @@ dist/
 
 .vscode/
 lcov.info
+
+# IDE files
+.idea/

@@ -80,7 +80,8 @@
         "81457": {
           "FAST": "0x3F574bc32a0bE9514010409FE8CF19e56fd7C83a"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   },
   "10": {
@@ -132,7 +133,8 @@
         "81457": {
           "FAST": "0x3f66F272d33B764960779a301c4183306ae50e10"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   },
   "957": {
@@ -219,7 +221,8 @@
         "81457": {
           "FAST": "0x099D6030A8880A21DA6FDCb68443db6d3dE96BE8"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x93af64374181DA2e924951621E99B960A44f0F3c"
     }
   },
   "8453": {
@@ -293,7 +296,8 @@
         "81457": {
           "FAST": "0x4d6e33bf88Ab44212B10bAc4DA448E41a191cb4C"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   },
   "34443": {
@@ -367,7 +371,8 @@
         "81457": {
           "FAST": "0xedA38E830522e2C847A50d44614b7D2cbF07E0Dc"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   },
   "42161": {
@@ -441,7 +446,8 @@
         "81457": {
           "FAST": "0x6119190Ba4ee319820ec166d30412CA7Be54A3ed"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   },
   "81457": {
@@ -515,7 +521,8 @@
         "42161": {
           "FAST": "0xedA38E830522e2C847A50d44614b7D2cbF07E0Dc"
         }
-      }
+      },
+      "LyraTSAShareHandlerWithdrawHook": "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046"
     }
   }
 }

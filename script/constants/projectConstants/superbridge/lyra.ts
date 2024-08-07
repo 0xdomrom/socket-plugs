@@ -164,7 +164,7 @@ export const pc: ProjectConstants = {
         ChainSlug.MODE,
       ],
       hook: {
-        hookType: Hooks.LYRA_TSA_DEPOSIT_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA]: {
             [IntegrationTypes.fast]: {

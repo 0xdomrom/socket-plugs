@@ -196,7 +196,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       } as any,
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA]: {
             [IntegrationTypes.fast]: {
