@@ -108,16 +108,21 @@ export async function execute(
   chain: number
 ) {
   if (getDryRun()) {
-    execSummary.push("");
+    // execSummary.push("");
+    // execSummary.push(
+    //   `DRY RUN - Call '${method}' on ${contract.address} on chain ${chain} with args:`
+    // );
+    // args.forEach((a) => execSummary.push(a));
+    // execSummary.push(
+    //   "RAW CALLDATA - " +
+    //     (await contract.populateTransaction[method](...args)).data
+    // );
+    // execSummary.push("");
+
     execSummary.push(
-      `DRY RUN - Call '${method}' on ${contract.address} on chain ${chain} with args:`
-    );
-    args.forEach((a) => execSummary.push(a));
-    execSummary.push(
-      "RAW CALLDATA - " +
-        (await contract.populateTransaction[method](...args)).data
-    );
-    execSummary.push("");
+      `// ${chain}\n_call(${contract.address}, hex"${(await contract.populateTransaction[method](...args)).data.slice(2)}");`
+    )
+
   } else {
     if ((await contract.owner()) !== getOwner()) {
       console.log("!!!! Not owner of contract, skipping");

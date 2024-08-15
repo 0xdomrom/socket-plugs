@@ -48,25 +48,27 @@ async function checkAddresses(addresses: SBAddresses | STAddresses) {
       }
 
       const hooks = Object.values(HookContracts);
-      const hookContract = hooks
+      const hookContracts = hooks
         .map((hook) => addresses[chain][token][hook])
-        .filter(Boolean)[0];
+        .filter(Boolean);
 
-      if (!hookContract) {
+      if (hookContracts.length == 0) {
         console.error(`Hook contract not found for chain ${chain} ${token}`);
       } else {
-        const [hookOwner, hookNominee, hookType] = await getOwnerAndNominee(
-          new ethers.Contract(
-            hookContract,
-            OWNABLE_ABI,
-            getSignerFromChainSlug(+chain)
-          )
-        );
-        console.log(
-          `Owner of ${hookContract}(${hookType}) is ${hookOwner}${
-            hookNominee === ZERO_ADDRESS ? "" : ` (nominee: ${hookNominee})`
-          } on chain: ${chain} (Hook for ${token})`
-        );
+        for (const hookContract of hookContracts) {
+          const [hookOwner, hookNominee, hookType] = await getOwnerAndNominee(
+            new ethers.Contract(
+              hookContract,
+              OWNABLE_ABI,
+              getSignerFromChainSlug(+chain)
+            )
+          );
+          console.log(
+            `Owner of ${hookContract}(${hookType}) is ${hookOwner}${
+              hookNominee === ZERO_ADDRESS ? "" : ` (nominee: ${hookNominee})`
+            } on chain: ${chain} (Hook for ${token})`
+          );
+        }
       }
 
       for (const connectorChain of Object.keys(

@@ -1,11 +1,8 @@
 import { Contract } from "ethers";
-import { getOwner, isSuperBridge, isSuperToken } from "../constants/config";
+import { getOwner, isSuperToken } from "../constants/config";
 import { getOrDeploy } from "../helpers";
 import { Hooks, HookContracts, DeployParams } from "../../src";
 import { getBridgeContract } from "../helpers/common";
-import { getDryRun } from "../constants/config";
-import { constants } from "ethers";
-const { AddressZero } = constants;
 
 export const deployHookContracts = async (
   useConnnectorPools: boolean,
@@ -37,6 +34,7 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/${contractName}.sol`;
   } else if (hookType == Hooks.LIMIT_EXECUTION_HOOK) {
     contractName = HookContracts.LimitExecutionHook;
     deployParams = await deployExecutionHelper(deployParams);
@@ -46,6 +44,7 @@ export const deployHookContracts = async (
       deployParams.addresses[HookContracts.ExecutionHelper],
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/${contractName}.sol`;
   } else if (hookType == Hooks.LYRA_TSA_DEPOSIT_HOOK) {
     contractName = HookContracts.LyraTSADepositHook;
     args = [
@@ -53,6 +52,7 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/lyra/LyraTSAHooks.sol`;
   } else if (hookType == Hooks.LYRA_TSA_WITHDRAW_HOOK) {
     contractName = HookContracts.LyraTSAWithdrawHook;
     args = [
@@ -60,6 +60,7 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/lyra/LyraTSAHooks.sol`;
   } else if (hookType == Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK) {
     contractName = HookContracts.LyraTSAShareHandlerDepositHook;
     args = [
@@ -67,6 +68,7 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol`;
   } else if (hookType == Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK) {
     contractName = HookContracts.LyraTSAShareHandlerWithdrawHook;
     args = [
@@ -74,11 +76,10 @@ export const deployHookContracts = async (
       bridgeAddress,
       useConnnectorPools, // useControllerPools
     ];
+    path = `contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol`;
   }
 
   if (!contractName) return deployParams;
-
-  path = `contracts/hooks/${contractName}.sol`;
 
   const hookContract: Contract = await getOrDeploy(
     contractName,
@@ -86,9 +87,7 @@ export const deployHookContracts = async (
     args,
     deployParams
   );
-  deployParams.addresses[contractName] = getDryRun()
-    ? AddressZero
-    : hookContract.address;
+  deployParams.addresses[contractName] = hookContract.address;
 
   // console.log(deployParams.addresses);
   console.log(deployParams.currentChainSlug, "Hook Contracts deployed! ✔");

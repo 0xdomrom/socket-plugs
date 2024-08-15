@@ -3,7 +3,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0xE3E96892D30E0ee1a8131BAf87c891201F7137bf",
@@ -161,7 +161,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x5324c6d731a3d9D740e880929E2c952bA27408De",
@@ -229,7 +229,7 @@
     [
       "0xF7C3e76Ec6E7Dd24EE8Ad5d72155BA94573c51B6",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x12A3674207E345c79e1AD67F62e3988e6bb06287",
@@ -549,7 +549,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0xFE00C281729fa7E7AaB453690ed184284F51268C",
@@ -645,7 +645,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0xdE45E2bCCb99E0ed1a2876cFC51a71ca5e822641",
@@ -741,7 +741,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x3c143EA5eBaB50ad6D2B2d14FA719234d1d38F1b",
@@ -837,7 +837,7 @@
     [
       "0x67e4DBF6865D0bB341fbF27BC4555e5Cb440b660",
       "LyraTSAShareHandlerDepositHook",
-      "contracts/hooks/LyraTSAShareHandlerDepositHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x837808498206FBb5C758D79424Cc3DCAD5d9E873",

@@ -3,7 +3,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x988ddDb1c7578aFae302143b1c5fda12fD486904",
@@ -325,7 +325,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x81ed5Dc90F708Dd908DccFfd5128B5C3405f74c5",
@@ -525,7 +525,7 @@
     [
       "0x93af64374181DA2e924951621E99B960A44f0F3c",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0xbF7591de71cAf166269744A370379B0178E3c732",
@@ -819,7 +819,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x504D7959511B3c1e8B76149869106D8Bd6FB51e2",
@@ -1325,7 +1325,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0xeb737867Af205Fa5Dd06E0852f6584067236bFDC",
@@ -1609,7 +1609,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x43b019139946466A010c936a85df14C17C4159c0",
@@ -1906,7 +1906,7 @@
     [
       "0x43b2Abc17E3e4Ad47ab9A76E9f845aFd119EC046",
       "LyraTSAShareHandlerWithdrawHook",
-      "contracts/hooks/LyraTSAShareHandlerWithdrawHook.sol",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
       [
         "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
         "0x1E0470Ef72d029Bdc87D3B8543Fb62fc04db9670",

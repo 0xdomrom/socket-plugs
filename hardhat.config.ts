@@ -66,6 +66,8 @@ const liveNetworks = [
   HardhatChainName.LYRA,
   HardhatChainName.SX_NETWORK_TESTNET,
   HardhatChainName.BASE,
+  HardhatChainName.BLAST,
+  HardhatChainName.MODE,
   HardhatChainName.REYA_CRONOS,
   HardhatChainName.REYA,
   HardhatChainName.SYNDR_SEPOLIA_L3,
@@ -99,6 +101,8 @@ const config: HardhatUserConfig = {
       optimisticSepolia: process.env.OPTIMISM_API_KEY || "",
       polygon: process.env.POLYGONSCAN_API_KEY || "",
       base: process.env.BASESCAN_API_KEY || "",
+      blast: process.env.BLASTSCAN_API_KEY || "",
+      mode: "none",
       polygonMumbai: process.env.POLYGONSCAN_API_KEY || "",
       lyra: "none",
       "lyra-testnet": "none",
@@ -156,6 +160,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api.basescan.org/api",
           browserURL: "https://basescan.org/",
+        },
+      },
+      {
+        network: "blast",
+        chainId: ChainSlugToId[hardhatChainNameToSlug[HardhatChainName.BLAST]],
+        urls: {
+          apiURL: "https://api.blastscan.io/api",
+          browserURL: "https://blastscan.io/",
+        },
+      },
+      {
+        network: "mode",
+        chainId: ChainSlugToId[hardhatChainNameToSlug[HardhatChainName.MODE]],
+        urls: {
+          apiURL: "https://api.modescan.io/api",
+          browserURL: "https://modescan.io/",
         },
       },
       {

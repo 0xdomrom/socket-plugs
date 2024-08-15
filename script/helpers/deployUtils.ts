@@ -57,7 +57,9 @@ export const getOrDeploy = async (
     throw new Error("No addresses found");
 
   let contract: Contract;
+  console.log({ contractName });
   let storedContactAddress = deployUtils.addresses[contractName];
+
   if (contractName === SuperBridgeContracts.FiatTokenV2_1_Controller) {
     storedContactAddress =
       deployUtils.addresses[SuperBridgeContracts.Controller];
@@ -73,7 +75,7 @@ export const getOrDeploy = async (
       `${contractName} deployed on ${
         deployUtils.currentChainSlug
       } for ${getMode()}, ${getProjectName()} at address ${
-        getDryRun() ? "DRY RUN" : contract.address
+        contract.address
       }`
     );
 
@@ -118,7 +120,7 @@ export const getOrDeployConnector = async (
       `${SuperBridgeContracts.ConnectorPlug} deployed on ${
         deployUtils.currentChainSlug
       } for ${getMode()}, ${getProjectName()} at address ${
-        getDryRun() ? "DRY RUN" : contract.address
+        contract.address
       }`
     );
 

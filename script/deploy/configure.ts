@@ -74,6 +74,8 @@ export const configure = async (allAddresses: SBAddresses | STAddresses) => {
       for (const chain of allChains) {
         // await Promise.all(
         //   allChains.map(async (chain) => {
+        console.log({chain})
+        console.log(addresses[chain]);
         let addr: SBTokenAddresses | STTokenAddresses = (addresses[chain]?.[
           token
         ] ?? {}) as SBTokenAddresses | STTokenAddresses;

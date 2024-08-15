@@ -124,6 +124,7 @@ export const deploy = async () => {
       }
     }
   }
+  console.log(allAddresses)
   await storeAllAddresses(projectName as Project, allAddresses);
   return allAddresses;
 };
@@ -230,7 +231,7 @@ const deployConnectors = async (
       deployParams.addresses = createObj(
         deployParams.addresses,
         ["connectors", sibling.toString(), intType],
-        getDryRun() ? AddressZero : connector.address
+        connector.address
       );
     }
 
@@ -295,9 +296,7 @@ const deployControllerChainContracts = async (
       deployParams
     );
 
-    deployParams.addresses[SuperBridgeContracts.Controller] = getDryRun()
-      ? AddressZero
-      : controller.address;
+    deployParams.addresses[SuperBridgeContracts.Controller] = controller.address;
 
     deployParams = await deployHookContracts(true, deployParams);
     console.log(
@@ -340,9 +339,7 @@ const deployVaultChainContracts = async (
       deployParams
     );
 
-    deployParams.addresses[SuperBridgeContracts.Vault] = getDryRun()
-      ? AddressZero
-      : vault.address;
+    deployParams.addresses[SuperBridgeContracts.Vault] = vault.address;
 
     deployParams = await deployHookContracts(false, deployParams);
     console.log(

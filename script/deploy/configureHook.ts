@@ -76,9 +76,9 @@ export const setHookInBridge = async (
   bridgeContract: Contract,
   hookContract: Contract
 ) => {
-  let storedHookAddress = getDryRun()
-    ? AddressZero
-    : await bridgeContract.hook__();
+  let storedHookAddress = await bridgeContract.hook__();
+  console.log(`Stored hook address: ${storedHookAddress}`);
+  console.log(`Hook address: ${hookContract.address}`);
   if (storedHookAddress === hookContract.address) {
     console.log(`✔   Hook already set on Bridge for chain ${chain}`);
     return;

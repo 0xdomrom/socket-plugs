@@ -55,9 +55,7 @@ export const updateConnectorStatus = async (
         siblingConnectorAddresses[it];
       if (!itConnectorAddress) continue;
 
-      let currentConnectorStatus = getDryRun()
-        ? false
-        : await bridgeContract.callStatic.validConnectors(itConnectorAddress);
+      let currentConnectorStatus = await bridgeContract.callStatic.validConnectors(itConnectorAddress);
       if (currentConnectorStatus !== newConnectorStatus) {
         connectorAddresses.push(itConnectorAddress);
       }
@@ -88,6 +86,7 @@ export const getBridgeContract = async (
   let bridgeContract: Contract,
     bridgeAddress: string = "",
     bridgeContractName: string = "";
+  console.log(addr);
   if (isSuperBridge()) {
     if (isSBAppChain(chain, token)) {
       const a = addr as AppChainAddresses;
@@ -110,6 +109,7 @@ export const getBridgeContract = async (
       bridgeContractName = SuperBridgeContracts.Controller;
     }
   }
+  console.log({ bridgeAddress, bridgeContractName });
 
   if (!bridgeAddress) {
     throw new Error("Bridge address not found");
@@ -305,14 +305,10 @@ export const updateLimitsAndPoolId = async (
         siblingConnectorAddresses[it];
       if (!itConnectorAddress) continue;
       // console.log({ itConnectorAddress });
-      let sendingParams = getDryRun()
-        ? {}
-        : await hookContract.getSendingLimitParams(itConnectorAddress);
+      let sendingParams = await hookContract.getSendingLimitParams(itConnectorAddress);
 
       // console.log({ sendingParams });
-      let receivingParams = getDryRun()
-        ? {}
-        : await hookContract.getReceivingLimitParams(itConnectorAddress);
+      let receivingParams = await hookContract.getReceivingLimitParams(itConnectorAddress);
 
       // mint/lock/deposit limits
       const sendingLimit = getLimitBN(it, chain, token, true);
@@ -360,9 +356,7 @@ export const updateLimitsAndPoolId = async (
         // chain !== ChainSlug.AEVO &&
         // chain !== ChainSlug.AEVO_TESTNET
       ) {
-        const poolId: BigNumber = getDryRun()
-          ? BigNumber.from(0)
-          : await hookContract.connectorPoolIds(itConnectorAddress);
+        const poolId: BigNumber = await hookContract.connectorPoolIds(itConnectorAddress);
         // console.log({ itConnectorAddress, poolId });
         const poolIdHex =
           "0x" + BigInt(poolId.toString()).toString(16).padStart(64, "0");
