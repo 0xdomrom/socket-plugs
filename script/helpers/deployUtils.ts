@@ -74,9 +74,7 @@ export const getOrDeploy = async (
     console.log(
       `${contractName} deployed on ${
         deployUtils.currentChainSlug
-      } for ${getMode()}, ${getProjectName()} at address ${
-        contract.address
-      }`
+      } for ${getMode()}, ${getProjectName()} at address ${contract.address}`
     );
 
     if (!getDryRun()) {
@@ -119,9 +117,7 @@ export const getOrDeployConnector = async (
     console.log(
       `${SuperBridgeContracts.ConnectorPlug} deployed on ${
         deployUtils.currentChainSlug
-      } for ${getMode()}, ${getProjectName()} at address ${
-        contract.address
-      }`
+      } for ${getMode()}, ${getProjectName()} at address ${contract.address}`
     );
 
     if (!getDryRun()) {

@@ -124,7 +124,7 @@ export const deploy = async () => {
       }
     }
   }
-  console.log(allAddresses)
+  console.log(allAddresses);
   await storeAllAddresses(projectName as Project, allAddresses);
   return allAddresses;
 };
@@ -296,7 +296,8 @@ const deployControllerChainContracts = async (
       deployParams
     );
 
-    deployParams.addresses[SuperBridgeContracts.Controller] = controller.address;
+    deployParams.addresses[SuperBridgeContracts.Controller] =
+      controller.address;
 
     deployParams = await deployHookContracts(true, deployParams);
     console.log(

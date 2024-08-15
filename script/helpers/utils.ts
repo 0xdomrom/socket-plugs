@@ -120,9 +120,10 @@ export async function execute(
     // execSummary.push("");
 
     execSummary.push(
-      `// ${chain}\n_call(${contract.address}, hex"${(await contract.populateTransaction[method](...args)).data.slice(2)}");`
-    )
-
+      `// ${chain}\n_call(${contract.address}, hex"${(
+        await contract.populateTransaction[method](...args)
+      ).data.slice(2)}");`
+    );
   } else {
     if ((await contract.owner()) !== getOwner()) {
       console.log("!!!! Not owner of contract, skipping");
