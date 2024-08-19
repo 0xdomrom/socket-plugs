@@ -134,7 +134,7 @@ export const pc: ProjectConstants = {
         initialSupply: "0",
       } as any, // set fields as undefined so token isn't deployed
       hook: {
-        hookType: Hooks.LYRA_TSA_WITHDRAW_HOOK,
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
         limitsAndPoolId: {
           [ChainSlug.LYRA_TESTNET]: {
             [IntegrationTypes.fast]: {
@@ -153,6 +153,86 @@ export const pc: ProjectConstants = {
             [IntegrationTypes.fast]: {
               sendingLimit: "1000000000",
               receivingLimit: "1000000000",
+              poolCount: 1,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.WEETHBULL]: {
+      vaultChains: [ChainSlug.LYRA_TESTNET],
+      controllerChains: [
+        ChainSlug.ARBITRUM_SEPOLIA,
+        ChainSlug.OPTIMISM_SEPOLIA,
+      ],
+      superTokenInfo: {
+        name: "Wrapped eETH Bull",
+        symbol: "weETHBULL",
+        decimals: 18,
+        initialSupplyOwner: "0x0000000000000000000000000000000000000000",
+        owner: getOwner(),
+        initialSupply: "0",
+      } as any, // set fields as undefined so token isn't deployed
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+          [ChainSlug.ARBITRUM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+              poolCount: 1,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+              poolCount: 1,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.WEETHCS]: {
+      vaultChains: [ChainSlug.LYRA_TESTNET],
+      controllerChains: [
+        ChainSlug.ARBITRUM_SEPOLIA,
+        ChainSlug.OPTIMISM_SEPOLIA,
+      ],
+      superTokenInfo: {
+        name: "Wrapped eETH Covered Call Spread",
+        symbol: "weETHCS",
+        decimals: 18,
+        initialSupplyOwner: "0x0000000000000000000000000000000000000000",
+        owner: getOwner(),
+        initialSupply: "0",
+      } as any, // set fields as undefined so token isn't deployed
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+          [ChainSlug.ARBITRUM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+              poolCount: 1,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
               poolCount: 1,
             },
           },

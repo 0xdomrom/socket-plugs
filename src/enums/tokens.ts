@@ -25,4 +25,6 @@ export enum Tokens {
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares
   SUSDEBULL = "sUSDeBULL", // Lyra tokenized subaccount shares
+  WEETHBULL = "weETHBULL", // Lyra tokenized subaccount shares
+  WEETHCS = "weETHCS", // Lyra tokenized subaccount shares
 }
