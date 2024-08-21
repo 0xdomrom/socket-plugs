@@ -92,6 +92,16 @@ export const overrides: {
     gasLimit: 5_000_000,
     gasPrice,
   },
+  [ChainSlug.BLAST]: {
+    // type: 1,
+    gasLimit: 5_000_000,
+    gasPrice,
+  },
+  [ChainSlug.MODE]: {
+    // type: 1,
+    gasLimit: 5_000_000,
+    gasPrice,
+  },
   [ChainSlug.REYA_CRONOS]: {
     type: 1,
     // gasLimit,

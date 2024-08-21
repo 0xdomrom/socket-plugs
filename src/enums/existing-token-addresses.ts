@@ -190,5 +190,7 @@ export const ExistingTokenAddresses: {
     [Tokens.RSWETHC]: "0x5bbef94dcee8f087D5146d2815bC4955C76B2794",
     [Tokens.RSETHC]: "0xd35bb8582809b4BDa4F8bCCE1bde48559f63eCbf",
     [Tokens.SUSDEBULL]: "0x0b4eD379da8eF4FCF06F697c5782CA7b4c3E505E",
+    [Tokens.WEETHCS]: "0x12ab0242b3e8d4502FebCED6C2d52fD23F7262af",
+    [Tokens.WEETHBULL]: "0xe48cdbe3A233Ea577c9ee6959801e7730e516d1A",
   },
 };
