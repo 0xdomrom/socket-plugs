@@ -90,17 +90,17 @@ export const overrides: {
   [ChainSlug.BASE]: {
     // type: 1,
     gasLimit: 5_000_000,
-    gasPrice: 5_000_000_000,
+    gasPrice,
   },
   [ChainSlug.BLAST]: {
     // type: 1,
     gasLimit: 5_000_000,
-    gasPrice: 5_000_000_000,
+    gasPrice,
   },
   [ChainSlug.MODE]: {
     // type: 1,
     gasLimit: 5_000_000,
-    gasPrice: 5_000_000_000,
+    gasPrice,
   },
   [ChainSlug.REYA_CRONOS]: {
     type: 1,
