@@ -16,6 +16,8 @@ const chainToExpectedOwner = {
   [ChainSlug.OPTIMISM]: "0xD4C00FE7657791C2A43025dE483F05E49A5f76A6",
 };
 
+let msTxs = {};
+
 async function getOwnerAndNominee(contract: ethers.Contract) {
   const owner = await contract.owner();
   try {
@@ -53,6 +55,16 @@ async function checkAndChange(
           })`
     } on chain: ${chain} (${contractType} for ${token})`
   );
+
+  if (nominee !== ZERO_ADDRESS) {
+    if (!msTxs[chain]) {
+      msTxs[chain] = [];
+    }
+    msTxs[chain].push([
+      contract.address,
+      type === 0 ? "claimOwner()" : "acceptOwnership()",
+    ]);
+  }
 
   await handleOwnershipChangeover(
     contract,
@@ -143,6 +155,16 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
             } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
           );
 
+          if (nominee !== ZERO_ADDRESS) {
+            if (!msTxs[chain]) {
+              msTxs[chain] = [];
+            }
+            msTxs[chain].push([
+              contract.address,
+              type === 0 ? "claimOwner()" : "acceptOwnership()",
+            ]);
+          }
+
           await handleOwnershipChangeover(
             contract,
             chainToExpectedOwner[+chain],
@@ -160,6 +182,9 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
 export const main = async () => {
   try {
     await checkAndTransferOwnership(getProjectAddresses());
+    if (Object.keys(msTxs).length !== 0) {
+      console.log(msTxs);
+    }
   } catch (error) {
     console.log("Error while sending transaction", error);
   }
