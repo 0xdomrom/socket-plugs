@@ -8,6 +8,8 @@ export enum Tokens {
   SNX = "SNX",
   WSTETH = "wstETH",
   DAI = "DAI",
+  SDAI = "sDAI",
+  PYUSD = "PYUSD",
   GUARD = "GUARD",
   ETH = "ETH",
   MTK = "MTK",
@@ -21,6 +23,7 @@ export enum Tokens {
   RSWETH = "rswETH", // Swell
   RSETH = "rsETH", // Kelp
   SUSDE = "sUSDe", // ethena usd
+  USDE = "USDe", // ethena usd
   WEETHC = "weETHC", // Lyra tokenized subaccount shares
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares

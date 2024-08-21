@@ -26,6 +26,7 @@ function recurseArtifacts(filePath: string) {
 function main() {
   // load in all contracts from ./artifacts
   const allFiles = recurseArtifacts(path.join(__dirname, "../../artifacts"));
+  // allFiles.push(...recurseArtifacts(path.join(__dirname, "../../../../lyra/v2-matching/out")));
   // for each contract, get the abi
   // for each abi, get all errors and work out the selectors
   // for each selector, check if it's in the list of known selectors

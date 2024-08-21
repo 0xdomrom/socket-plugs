@@ -34,9 +34,7 @@
       "0x265736F3AB6825DC968a99fD25d2141d56E80744",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0x4900D5BbB97cea689C301E1805837a78eeBD8573"
-      ]
+      ["0x4900D5BbB97cea689C301E1805837a78eeBD8573"]
     ],
     [
       "0xE79F782626A23c27bf548d57fFF555490E3d0896",
@@ -72,9 +70,7 @@
       "0x6Da6DC63b996DED3cc313d7B20162fd8BCdeaAc0",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0xfdb2a80b21Ed2D6D738e2a4221931A343675382A"
-      ]
+      ["0xfdb2a80b21Ed2D6D738e2a4221931A343675382A"]
     ],
     [
       "0xBAb7809D2dF54D846ED13304A7090a5259E75F39",
@@ -110,9 +106,7 @@
       "0x9d7Ae8fe3B7Dc5922019b71724f6C7F1438080A7",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0x4BAC0257C1a5be3814653789C6e60afF2F5f1DaD"
-      ]
+      ["0x4BAC0257C1a5be3814653789C6e60afF2F5f1DaD"]
     ],
     [
       "0xc317b62f8745525f299F19db248DB76Fc51B5642",
@@ -178,9 +172,7 @@
       "0x467c0835499271530A8ac05Eb7Df75dD26E2bFEe",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0xD9f47BEBEe03C90855c209e06f884fa0551c1fDd"
-      ]
+      ["0xD9f47BEBEe03C90855c209e06f884fa0551c1fDd"]
     ],
     [
       "0x7378E8C016d1A512B976CE8Ab885C281b59a521A",
@@ -216,17 +208,13 @@
       "0x6481400fb34eea4692E411229d37ceB6a2af63B2",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0x797Db58F4c6611253e92B9a3260E3Cc9C69430a5"
-      ]
+      ["0x797Db58F4c6611253e92B9a3260E3Cc9C69430a5"]
     ],
     [
       "0xb9AC88397C5764C51b45AA50B629a8B5D9CeB5DA",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0x797Db58F4c6611253e92B9a3260E3Cc9C69430a5"
-      ]
+      ["0x797Db58F4c6611253e92B9a3260E3Cc9C69430a5"]
     ],
     [
       "0xdC987cf74891ab2E276534cCa208279e9DCf7f1F",
@@ -252,9 +240,7 @@
       "0x64D459cd880c20b33F9Ba183454807B06b7e3fA0",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0xa7456213A5c081F53fEb3A4F64b88A4637Bf3028"
-      ]
+      ["0xa7456213A5c081F53fEb3A4F64b88A4637Bf3028"]
     ],
     [
       "0x5f675ab715BB9D712e4628E74c8e11B46867aCe3",
@@ -290,9 +276,7 @@
       "0xD0DEe9Fd4Cc1d2eCB4572c01cDC65603557cc506",
       "Vault",
       "contracts/bridge/Vault.sol",
-      [
-        "0x79AC9B13810D31066Be547EdA46C40264b39397D"
-      ]
+      ["0x79AC9B13810D31066Be547EdA46C40264b39397D"]
     ]
   ],
   "421614": [
@@ -330,9 +314,7 @@
       "0xfC129aAAF2374845a8E9BAfd91F6f79C1d85c215",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x871D150B1A9Df599f8B5A153e0903037103b6a00"
-      ]
+      ["0x871D150B1A9Df599f8B5A153e0903037103b6a00"]
     ],
     [
       "0x871D150B1A9Df599f8B5A153e0903037103b6a00",
@@ -384,9 +366,7 @@
       "0x4513F3266b8552570ad9e139d0c252a7D06F1b7E",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x00baf0AB12f45d6CEdC06e8b2062C64d2d1Ef896"
-      ]
+      ["0x00baf0AB12f45d6CEdC06e8b2062C64d2d1Ef896"]
     ],
     [
       "0x00baf0AB12f45d6CEdC06e8b2062C64d2d1Ef896",
@@ -438,9 +418,7 @@
       "0xB293594803771a5184a63031224C8C5851064a41",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x9D1525EE901CcE8C4224754a6204D2d5917C710c"
-      ]
+      ["0x9D1525EE901CcE8C4224754a6204D2d5917C710c"]
     ],
     [
       "0x9D1525EE901CcE8C4224754a6204D2d5917C710c",
@@ -522,9 +500,7 @@
       "0xBcB494059969DAaB460E0B5d4f5c2366aab79aa1",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xeCAAd20Fe81818E4Ce1EB35E463f681084ab2DD5"
-      ]
+      ["0xeCAAd20Fe81818E4Ce1EB35E463f681084ab2DD5"]
     ],
     [
       "0xeCAAd20Fe81818E4Ce1EB35E463f681084ab2DD5",
@@ -576,9 +552,7 @@
       "0x3E0906a5c68681C1EDc81e492f9F0Ff30C460F6b",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x8faC67324Ad5f24419C37192D586FE1E5293D83a"
-      ]
+      ["0x8faC67324Ad5f24419C37192D586FE1E5293D83a"]
     ],
     [
       "0x8faC67324Ad5f24419C37192D586FE1E5293D83a",
@@ -617,9 +591,7 @@
       "0x7E0cd8a20D605a232f4777F8644836b3Dc8eFFDe",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xfeB6603F04c33354117C7367084059871A7FeDcD"
-      ]
+      ["0xfeB6603F04c33354117C7367084059871A7FeDcD"]
     ],
     [
       "0xfeB6603F04c33354117C7367084059871A7FeDcD",
@@ -658,9 +630,7 @@
       "0x8DE3A40caceDD87e5981C33eD32e674441dAB8a4",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xb31565A35993a0Db0e9899B424a823B13746fdb0"
-      ]
+      ["0xb31565A35993a0Db0e9899B424a823B13746fdb0"]
     ],
     [
       "0xb31565A35993a0Db0e9899B424a823B13746fdb0",
@@ -699,9 +669,7 @@
       "0x4a22c641649F0582A7BB79D8193CAd25f63f6FCA",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x6caf294DaC985ff653d5aE75b4FF8E0A66025928"
-      ]
+      ["0x6caf294DaC985ff653d5aE75b4FF8E0A66025928"]
     ],
     [
       "0x6caf294DaC985ff653d5aE75b4FF8E0A66025928",
@@ -750,9 +718,7 @@
       "0xF151509ABefb08EdaF4CFd95fE6B3Eecb7d5C158",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xDf72bB31D759c4AB17fbBbc5D1e0D1081C4626BE"
-      ]
+      ["0xDf72bB31D759c4AB17fbBbc5D1e0D1081C4626BE"]
     ],
     [
       "0xDf72bB31D759c4AB17fbBbc5D1e0D1081C4626BE",
@@ -842,9 +808,7 @@
       "0xbe750464c504CC543AF11830eC28C26470d11812",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xbaC0328cd4Af53d52F9266Cdbd5bf46720320A20"
-      ]
+      ["0xbaC0328cd4Af53d52F9266Cdbd5bf46720320A20"]
     ],
     [
       "0xbaC0328cd4Af53d52F9266Cdbd5bf46720320A20",
@@ -896,9 +860,7 @@
       "0x194A1B169800C0D6E248F7D0d305228b12D8e439",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0x3bA36e7e1d32ee2dba8AFAefaE55169e08c7f8db"
-      ]
+      ["0x3bA36e7e1d32ee2dba8AFAefaE55169e08c7f8db"]
     ],
     [
       "0x3bA36e7e1d32ee2dba8AFAefaE55169e08c7f8db",
@@ -950,9 +912,7 @@
       "0x2f7b1ae31904e8b035718D80F404761135e51a17",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xEbd2921149B72Bbb6BC6a950896e2d10dE9Ad2e2"
-      ]
+      ["0xEbd2921149B72Bbb6BC6a950896e2d10dE9Ad2e2"]
     ],
     [
       "0xEbd2921149B72Bbb6BC6a950896e2d10dE9Ad2e2",
@@ -1024,9 +984,7 @@
       "0x4fF761D46Be8100063e388Bec1cb3653C3832908",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xCfD701E3540d769427Bc699C63Ac5940B703fe48"
-      ]
+      ["0xCfD701E3540d769427Bc699C63Ac5940B703fe48"]
     ],
     [
       "0xCfD701E3540d769427Bc699C63Ac5940B703fe48",
@@ -1078,9 +1036,7 @@
       "0x21DaBaa157f2b43606f528098C922d66898C5645",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xb09B085D0cb6E920670dABd81fBd060CD572bC40"
-      ]
+      ["0xb09B085D0cb6E920670dABd81fBd060CD572bC40"]
     ],
     [
       "0xb09B085D0cb6E920670dABd81fBd060CD572bC40",
@@ -1119,9 +1075,7 @@
       "0x5C07E16124FB8DB64ad4165973654EC6a6F6EE2E",
       "Controller",
       "contracts/bridge/Controller.sol",
-      [
-        "0xc0424453E78C6ee65c12329e8A908EfDEF54ABAa"
-      ]
+      ["0xc0424453E78C6ee65c12329e8A908EfDEF54ABAa"]
     ],
     [
       "0xc0424453E78C6ee65c12329e8A908EfDEF54ABAa",

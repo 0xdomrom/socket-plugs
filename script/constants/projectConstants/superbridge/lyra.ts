@@ -218,5 +218,163 @@ export const pc: ProjectConstants = {
         },
       },
     },
+    [Tokens.USDE]: {
+      controllerChains: [ChainSlug.LYRA],
+      vaultChains: [
+        ChainSlug.MAINNET,
+        ChainSlug.ARBITRUM,
+        ChainSlug.BASE,
+        ChainSlug.OPTIMISM,
+      ],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.ARBITRUM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.DAI]: {
+      controllerChains: [ChainSlug.LYRA],
+      vaultChains: [
+        ChainSlug.MAINNET,
+        ChainSlug.ARBITRUM,
+        ChainSlug.BASE,
+        ChainSlug.OPTIMISM,
+      ],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.ARBITRUM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.SDAI]: {
+      controllerChains: [ChainSlug.LYRA],
+      vaultChains: [ChainSlug.MAINNET, ChainSlug.BASE, ChainSlug.OPTIMISM],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.PYUSD]: {
+      controllerChains: [ChainSlug.LYRA],
+      vaultChains: [ChainSlug.MAINNET],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000000",
+              receivingLimit: "1000000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
   },
 };
