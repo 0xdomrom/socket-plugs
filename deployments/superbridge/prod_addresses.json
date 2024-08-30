@@ -187,96 +187,43 @@
   },
   "lyra-testnet": {
     "901": {
-      "DAI": {
+      "LBTC": {
         "isAppChain": true,
-        "MintableToken": "0x1feFa7F9e42cd543d8b25D8226Dff829a3590cf9",
-        "Controller": "0x466a3B6fF27934f37a3449F28e164E5FccE63cf2",
-        "LyraTSAShareHandlerDepositHook": "0xeCdd35f0dCcF93Af6cd803B2F7b3eB703c6f8509",
+        "MintableToken": "0xDF129D5dc9c335B597815b1EBAB2BC0ff1af880c",
+        "Controller": "0xaC5Ef8aEB59B3A0d98Cb3d508BD8D29941E1cc67",
+        "LyraTSAShareHandlerDepositHook": "0xFf5fD7fFAA75c759dbd79Ce0842004Cd98D08Aa7",
         "connectors": {
           "421614": {
-            "FAST": "0xcE4A072cCeCff6Ff48fCbb97d2A3753044ec9748"
+            "FAST": "0xF789D4dafc6Ee6068B645cE8B026097DB3C096DF"
           },
           "11155420": {
-            "FAST": "0xdce4B027E4C8285A97eB4Fc100fEeBDbf89927fb"
+            "FAST": "0x6294D58c2FEB7b71Df1057975E39D7f9Bb56c86f"
           }
         }
-      },
-      "sDAI": {
-        "isAppChain": true,
-        "MintableToken": "0xEd8b70e957027702095060F2961c7feBf5f5c261",
-        "Controller": "0xF36f064Ad4b4878322c85e61d47440D11d81d4a2",
-        "LyraTSAShareHandlerDepositHook": "0x4278D536481996463037d456aa3eBA074Ea1d6b8",
+      }
+    },
+    "421614": {
+      "LBTC": {
+        "isAppChain": false,
+        "NonMintableToken": "0xAFB6Bb95cd70D5367e2C39e9dbEb422B9815339D",
+        "Vault": "0xbaC0328cd4Af53d52F9266Cdbd5bf46720320A20",
+        "LyraTSAShareHandlerDepositHook": "0xbe750464c504CC543AF11830eC28C26470d11812",
         "connectors": {
-          "11155420": {
-            "FAST": "0x65ecBD056aFc3570C6682C7731567F6b4aee46f1"
-          }
-        }
-      },
-      "USDe": {
-        "isAppChain": true,
-        "MintableToken": "0x5A73906EBEE0C4631f66eE84E88925a5577c598C",
-        "Controller": "0xf682F28C97f03DE11d2a192e4B081EE0176c90B7",
-        "LyraTSAShareHandlerDepositHook": "0x00BC2F5076Dae6BEB305AEE24ebfEd09d8b25Bd5",
-        "connectors": {
-          "11155420": {
-            "FAST": "0xA496F8374DC45410548430F9c57c9841d6aC350c"
-          }
-        }
-      },
-      "PYUSD": {
-        "isAppChain": true,
-        "MintableToken": "0xF40946255Cb4B15cf8d053d08CC263070deF49a9",
-        "Controller": "0xAD3dca43D415bAEB63D23cd5B1C696c4Bc78b849",
-        "LyraTSAShareHandlerDepositHook": "0x31ec69d0e1336bbBC5377e4F1a13A48bd55f7298",
-        "connectors": {
-          "11155420": {
-            "FAST": "0x53a36320FC2cE46790A72E9306bbAF947e77ef81"
+          "901": {
+            "FAST": "0x2BBbB3f9495f6d6666648DFEFf7528748f255365"
           }
         }
       }
     },
     "11155420": {
-      "DAI": {
+      "LBTC": {
         "isAppChain": false,
-        "NonMintableToken": "0x04DFA269467fDDDae51F65B9b21C835bDb1A1f55",
-        "Vault": "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
-        "LyraTSAShareHandlerDepositHook": "0x35c7eb2225FDBD66731ffEb5f064525eD0f47C95",
+        "NonMintableToken": "0x42B7B80518244D205Ba775a3B4D60Ec655b3f443",
+        "Vault": "0xd7E44De9013935A30D87669467c7b0e5a6A7991F",
+        "LyraTSAShareHandlerDepositHook": "0xeADea770EE32ca3271053093d2596bfDadbE3862",
         "connectors": {
           "901": {
-            "FAST": "0xb572ab631782E4343B26D5701d04E4E6C9e586Fa"
-          }
-        }
-      },
-      "sDAI": {
-        "isAppChain": false,
-        "NonMintableToken": "0x07243151E40CDD44e8C2DFC513f74218F92dE337",
-        "Vault": "0x3f0A603602EFB90b37D69744AAaE0afe0647A508",
-        "LyraTSAShareHandlerDepositHook": "0x32431Fc75DB4e1D35303e17beabd7D55FF45c248",
-        "connectors": {
-          "901": {
-            "FAST": "0x51b1d521d8575c6DB108096fbD1Bc3D992FDE6e5"
-          }
-        }
-      },
-      "USDe": {
-        "isAppChain": false,
-        "NonMintableToken": "0x4b59ca7FCA10aCb47b26a58a2eaaE801710f9931",
-        "Vault": "0x0a80F0115dAc5293CBEea9d9Bc25e180a700DCAC",
-        "LyraTSAShareHandlerDepositHook": "0x03706de314dB18db74665A502888a2E33e6c4031",
-        "connectors": {
-          "901": {
-            "FAST": "0x82373803C24aFDe24fcC6130f784AFEb8C991493"
-          }
-        }
-      },
-      "PYUSD": {
-        "isAppChain": false,
-        "NonMintableToken": "0x7A01E03D5127b3B0bfD209B6aBcFb16ba5aF404D",
-        "Vault": "0x0DF1962DdD1282450519034e9eC238ed4B7EDA19",
-        "LyraTSAShareHandlerDepositHook": "0xD5AD6D3059f17fB53B7e592F7C89dA558dF0EF4b",
-        "connectors": {
-          "901": {
-            "FAST": "0x77dA9Bf0eE2B0c80840c4776dE748D3D20798609"
+            "FAST": "0x5129aA5f69338aaDF36cDd3c2bDd6575cf03F8E8"
           }
         }
       }

@@ -24,10 +24,13 @@ export enum Tokens {
   RSETH = "rsETH", // Kelp
   SUSDE = "sUSDe", // ethena usd
   USDE = "USDe", // ethena usd
+  LBTC = "LBTC", //Lombard Bitcoin
   WEETHC = "weETHC", // Lyra tokenized subaccount shares
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares
   SUSDEBULL = "sUSDeBULL", // Lyra tokenized subaccount shares
   WEETHBULL = "weETHBULL", // Lyra tokenized subaccount shares
   WEETHCS = "weETHCS", // Lyra tokenized subaccount shares
+  LBTCCS = "LBTCCS", // Lyra tokenized subaccount shares
+  LBTCPS = "LBTCPS", // Lyra tokenized subaccount shares
 }
