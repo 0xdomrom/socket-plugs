@@ -132,6 +132,26 @@
           "FAST": "0xA07EB173d58F7aF2b0267F2B5f6a091E01c17f85"
         }
       }
+    },
+    "LBTCCS": {
+      "SuperToken": "0x5a27765DbE2476240B1265A305c2e3554fD3f341",
+      "Controller": "0x3083B6140eF4916a315162C32b8AA9261572cc4b",
+      "LyraTSAShareHandlerWithdrawHook": "0xa6595d4B2E0559A568E41910de95e1ba9f3E8E55",
+      "connectors": {
+        "957": {
+          "FAST": "0x2D733e70A377FcFc249d273095250762A93F3820"
+        }
+      }
+    },
+    "LBTCPS": {
+      "SuperToken": "0x367711f0377867b51Fe53e30F5125a9A31d3D50b",
+      "Controller": "0x52CB41109b637F03B81b3FD6Dce4E3948b2F0923",
+      "LyraTSAShareHandlerWithdrawHook": "0x2A29dDDd102C54dc541A7393d9F69dE1e6fd0dd3",
+      "connectors": {
+        "957": {
+          "FAST": "0xdb1c2F432e51824b33b9269C4b1Ff6190c1e5F35"
+        }
+      }
     }
   },
   "10": {
@@ -315,6 +335,26 @@
         },
         "81457": {
           "FAST": "0x91e3489da66eD36ebe0Be1013D87449447FD2bFa"
+        }
+      }
+    },
+    "LBTCCS": {
+      "NonMintableToken": "0xbCab1f8BbA323BC55EA8cfaC34edAcf8DBE92dD4",
+      "Vault": "0x0da8090b6e3A25AfE78AB003E00f82DF8f161125",
+      "LyraTSAShareHandlerWithdrawHook": "0x87ffcA6DFF5EdD13945d9f20b7069a1724011D8C",
+      "connectors": {
+        "1": {
+          "FAST": "0xB0A797aa4E8A58a9C2cBF8477f686Fbe2C09D092"
+        }
+      }
+    },
+    "LBTCPS": {
+      "NonMintableToken": "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
+      "Vault": "0x47beB31d2Dd8d9853F03B230c16bF6B827c7B020",
+      "LyraTSAShareHandlerWithdrawHook": "0xD13348F596d50cd1fD1C31e6A762305d6Ce641b0",
+      "connectors": {
+        "1": {
+          "FAST": "0x2B9984F1F979708CE229A6EBE0aaFbA5073C2045"
         }
       }
     }

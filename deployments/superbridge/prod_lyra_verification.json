@@ -1,6 +1,32 @@
 {
   "1": [
     [
+      "0x457379de638CAFeB1759a22457fe893b288E2e89",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x76624ff43D610F64177Bb9c194A2503642e9B803",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        957
+      ]
+    ],
+    [
+      "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
+        "0x76624ff43D610F64177Bb9c194A2503642e9B803",
+        false
+      ]
+    ],
+    [
+      "0x76624ff43D610F64177Bb9c194A2503642e9B803",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x8236a87084f8B84306f72007F36F2618A5634494"]
+    ],
+    [
       "0x37C24e7081eb7f2B16bde81b556d082c0839F754",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -390,6 +416,32 @@
     ]
   ],
   "957": [
+    [
+      "0x52CB41109b637F03B81b3FD6Dce4E3948b2F0923",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x5eFC527B2640681289E31E1e29f94EA397b6c589",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        1
+      ]
+    ],
+    [
+      "0x367711f0377867b51Fe53e30F5125a9A31d3D50b",
+      "LyraTSAShareHandlerDepositHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x8148c7DaAeF98F48e50ecC08f5112fd901B6Df91",
+        "0x5eFC527B2640681289E31E1e29f94EA397b6c589",
+        true
+      ]
+    ],
+    [
+      "0x5eFC527B2640681289E31E1e29f94EA397b6c589",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x36b5C126A3D7B25F6032653A0d18823Ee48a890e"]
+    ],
     [
       "0x3a0701442ef546937d0cd5b4414710119e4fC339",
       "ConnectorPlug",

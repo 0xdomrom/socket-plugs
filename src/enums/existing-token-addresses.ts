@@ -21,6 +21,7 @@ export const ExistingTokenAddresses: {
     [Tokens.USDE]: "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
     [Tokens.PYUSD]: "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
     [Tokens.SDAI]: "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+    [Tokens.LBTC]: "0x8236a87084f8B84306f72007F36F2618A5634494",
   },
   [ChainSlug.OPTIMISM]: {
     [Tokens.USDC]: "0x8e0b7e6062272B5eF4524250bFFF8e5Bd3497757",
@@ -190,6 +191,7 @@ export const ExistingTokenAddresses: {
     [Tokens.USDE]: "0x1569e57B9e1dA866f9b862Acd8b134ea16B234F5",
     [Tokens.PYUSD]: "0x1984Bb061B9301e7ccD6E1731AFb70dfA2b0418D",
     [Tokens.SDAI]: "0x7215a841215cfCcAC7F0894f5F194e8fAa6E5844",
+    [Tokens.LBTC]: "0x36b5C126A3D7B25F6032653A0d18823Ee48a890e",
     // Vault tokens
     [Tokens.WEETHC]: "0xec68928bd83B2E52fF5A8e8c215B6ea72879F521",
     [Tokens.RSWETHC]: "0x5bbef94dcee8f087D5146d2815bC4955C76B2794",
@@ -197,5 +199,7 @@ export const ExistingTokenAddresses: {
     [Tokens.SUSDEBULL]: "0x0b4eD379da8eF4FCF06F697c5782CA7b4c3E505E",
     [Tokens.WEETHCS]: "0x12ab0242b3e8d4502FebCED6C2d52fD23F7262af",
     [Tokens.WEETHBULL]: "0xe48cdbe3A233Ea577c9ee6959801e7730e516d1A",
+    [Tokens.LBTCPS]: "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
+    [Tokens.LBTCCS]: "0xbCab1f8BbA323BC55EA8cfaC34edAcf8DBE92dD4",
   },
 };
