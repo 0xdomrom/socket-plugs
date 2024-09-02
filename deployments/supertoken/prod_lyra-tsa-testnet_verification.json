@@ -1,6 +1,78 @@
 {
   "901": [
     [
+      "0x48A920bf86f47b6629eEA9D0b36A993752A44fB4",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xFB452304c2896C7956299eE703F3C8218c470639",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        11155420
+      ]
+    ],
+    [
+      "0x1959175B5dAf736Bfe41bA5c927dceb5D6CE2696",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xFB452304c2896C7956299eE703F3C8218c470639",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        421614
+      ]
+    ],
+    [
+      "0x9617A5d2CFCf6749A2198C6633e0B9a17a8b0d9b",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xFB452304c2896C7956299eE703F3C8218c470639",
+        false
+      ]
+    ],
+    [
+      "0xFB452304c2896C7956299eE703F3C8218c470639",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x49B9C82582B9916dE295D98b0c55373c300BbaEa"]
+    ],
+    [
+      "0x2B1E0d09468db771DD76C8D67Bd9fE3F1251CF98",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xA4EEc0c2F44DEFf64ab5e9A96c688EF6930c2E12",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        11155420
+      ]
+    ],
+    [
+      "0xCCef516D71b4F8DE79A6b4507AeF7132d883fDb3",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xA4EEc0c2F44DEFf64ab5e9A96c688EF6930c2E12",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        421614
+      ]
+    ],
+    [
+      "0x394c52B82A2d814064046A2cCC77E5F5ec8B375b",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xA4EEc0c2F44DEFf64ab5e9A96c688EF6930c2E12",
+        false
+      ]
+    ],
+    [
+      "0xA4EEc0c2F44DEFf64ab5e9A96c688EF6930c2E12",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x65410Dd3A47f7cdfFd0486D45688F00B142029D7"]
+    ],
+    [
       "0x6220BE333a142177B9907521537f8C10A4Edf2B4",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -280,6 +352,110 @@
     ]
   ],
   "421614": [
+    [
+      "0x3f0A603602EFB90b37D69744AAaE0afe0647A508",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0xb572ab631782E4343B26D5701d04E4E6C9e586Fa",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        11155420
+      ]
+    ],
+    [
+      "0x35c7eb2225FDBD66731ffEb5f064525eD0f47C95",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
+        false
+      ]
+    ],
+    [
+      "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x0dDc91650583532D143539e71a337CE31A35233E"]
+    ],
+    [
+      "0x0dDc91650583532D143539e71a337CE31A35233E",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Bull Put Spread",
+        "LBTCPS",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
+      "0xff6A68d154AC8D92F8Cba92B8a54512a49eE1081",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x43ccF4a0ec4E31C35825C84cBca0a6a9243FBE8B",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0x15F7C65AC9af452E65Eba31C6b4EF4981512f2Fa",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x43ccF4a0ec4E31C35825C84cBca0a6a9243FBE8B",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        11155420
+      ]
+    ],
+    [
+      "0xd19070b4ac52C011733d34be5C6C70dbCb7F0cCE",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0x43ccF4a0ec4E31C35825C84cBca0a6a9243FBE8B",
+        false
+      ]
+    ],
+    [
+      "0x43ccF4a0ec4E31C35825C84cBca0a6a9243FBE8B",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x845D0f36287DbA5F1Db0515584eC26C9Bbc84Ebd"]
+    ],
+    [
+      "0x845D0f36287DbA5F1Db0515584eC26C9Bbc84Ebd",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Covered Call Spread",
+        "LBTCCS",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
     [
       "0xB92f6bD634dCf04f6879457042B9B62D400fb393",
       "ConnectorPlug",
@@ -774,6 +950,110 @@
     ]
   ],
   "11155420": [
+    [
+      "0xE0AbAb28676CC7d4BE7a6ECEF938411DdEe28269",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0x3bc529f1E7ab3eAcFE143336077d71b1Cf128832",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        421614
+      ]
+    ],
+    [
+      "0x7083d4fE8915f5EdCF401B9d81A29185Aa20a909",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5",
+        false
+      ]
+    ],
+    [
+      "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x062F93b9bD9ceb50dcdb1230A9e89CBA36157C33"]
+    ],
+    [
+      "0x062F93b9bD9ceb50dcdb1230A9e89CBA36157C33",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Bull Put Spread",
+        "LBTCPS",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
+      "0x3A3006B74C6c108A141f7EC3815b673B933D6dB7",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0x69C0Cf1Fc16F2545F9D27a567012d3bDB4609F26",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        421614
+      ]
+    ],
+    [
+      "0x1405116418BeA756C3c3b09C1F42212Ac846E7F7",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F",
+        false
+      ]
+    ],
+    [
+      "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x84D8b20275724f31130F76Ecf42a501eDF72C1e0"]
+    ],
+    [
+      "0x84D8b20275724f31130F76Ecf42a501eDF72C1e0",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Covered Call Spread",
+        "LBTCCS",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0x000000A94C901AA5d4da1157B2Dd1c4c6b69815e",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
     [
       "0xF47065CD55D1Dc201f599A1E977b0aB7A2BdfCcf",
       "ConnectorPlug",
