@@ -113,13 +113,18 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
       `Expected owner found for chain ${chain}, ${chainToExpectedOwner[+chain]}`
     );
     for (const token of Object.keys(addresses[chain])) {
-      for (const contractType of [
+      const contractTypes = [
         "Controller",
         "Vault",
         ...Object.keys(HookContracts),
         "MintableToken",
         "SuperToken",
-      ]) {
+      ];
+      if (chain === "957") {
+        contractTypes.push("NonMintableToken");
+      }
+
+      for (const contractType of contractTypes) {
         if (contractType in addresses[chain][token]) {
           await checkAndChange(
             addresses[chain][token],
