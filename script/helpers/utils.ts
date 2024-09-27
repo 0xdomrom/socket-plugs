@@ -107,6 +107,10 @@ export async function execute(
   args: any[],
   chain: number
 ) {
+  console.log(
+    `-- Executing on chain: ${chain} address: ${contract.address} function: ${method}`
+  );
+
   if (getDryRun()) {
     // execSummary.push("");
     // execSummary.push(
