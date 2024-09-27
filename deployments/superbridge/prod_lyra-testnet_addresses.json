@@ -192,6 +192,34 @@
           "FAST": "0x6294D58c2FEB7b71Df1057975E39D7f9Bb56c86f"
         }
       }
+    },
+    "cbBTC": {
+      "isAppChain": true,
+      "MintableToken": "0xcBAD6D120025BB25Df708153E161FB0b37E247d2",
+      "Controller": "0x1D35479f1b372c55153F0507A246fF7022CBBECe",
+      "LyraTSAShareHandlerDepositHook": "0x7E7aB5E7fbcD37a32CfdB418473a06F947Dfbb01",
+      "connectors": {
+        "421614": {
+          "FAST": "0x028c0976511E827E726DF8cE00d528C31Fef62F4"
+        },
+        "11155420": {
+          "FAST": "0xC2D3C26E2b58c025944AAB9B36B8c9Cb8452dea3"
+        }
+      }
+    },
+    "eBTC": {
+      "isAppChain": true,
+      "MintableToken": "0x3867b980E3a9D498495F3a2cf512D1c79AD29f0B",
+      "Controller": "0xf1Cea93541CD83D5990993Dd77831E1b67052a12",
+      "LyraTSAShareHandlerDepositHook": "0xee4284D9095d2002f8F2BaAefC6EE92a4CA5E3E5",
+      "connectors": {
+        "421614": {
+          "FAST": "0xf647BB67D16b2Ff96232fCFbFA30576098e2d3a8"
+        },
+        "11155420": {
+          "FAST": "0x8bfF4912D5704fd4612D1f0cB287a238ECF4f34F"
+        }
+      }
     }
   },
   "421614": {
@@ -269,6 +297,28 @@
       "connectors": {
         "901": {
           "FAST": "0x2BBbB3f9495f6d6666648DFEFf7528748f255365"
+        }
+      }
+    },
+    "cbBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0x689d5CE0737CCa4222E30802924F8062AB198F40",
+      "Vault": "0x3Bb0cE01457aBBf814b9A0Fed80AE77a1f44bdF4",
+      "LyraTSAShareHandlerDepositHook": "0x4552249417502AF9bd9376C1752a326055DdfCE5",
+      "connectors": {
+        "901": {
+          "FAST": "0x5CB3766f01525FAFeeC7Ae8F4906649b935328dd"
+        }
+      }
+    },
+    "eBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0x14871F1d0540fFF43863BD4981f3bd654bD4f998",
+      "Vault": "0x57d3A446E1176c8823fC765aCa29e37d6C2D6A1b",
+      "LyraTSAShareHandlerDepositHook": "0x76D194D82a57ea029821E38177b799172079EfB8",
+      "connectors": {
+        "901": {
+          "FAST": "0x42B7B80518244D205Ba775a3B4D60Ec655b3f443"
         }
       }
     }
@@ -473,6 +523,28 @@
       "connectors": {
         "901": {
           "FAST": "0x5129aA5f69338aaDF36cDd3c2bDd6575cf03F8E8"
+        }
+      }
+    },
+    "cbBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0x0533bC7b3c462F85B45FE423c089665FE3A62f5C",
+      "Vault": "0xd2Dcb89A69d0D0c702013641d00cbf4061E73829",
+      "LyraTSAShareHandlerDepositHook": "0x12ffC64F9aB17C20d6AA8e9307940420584F0539",
+      "connectors": {
+        "901": {
+          "FAST": "0x1cBC10863Ab0fA9eda0e0Fe263C50F40C8350Fa1"
+        }
+      }
+    },
+    "eBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0xEc1C693CE3198c0199a67c55B849f2cAA70Ece51",
+      "Vault": "0x501Eb68aa00308Ce54A7F09b4d1e35eB4e88BF47",
+      "LyraTSAShareHandlerDepositHook": "0x021CE45c4B744E4276C5f2b2D1F7c54F1036347C",
+      "connectors": {
+        "901": {
+          "FAST": "0xCf65888777aef61C84d3bFB3Aecd4bf69B6bE370"
         }
       }
     }
