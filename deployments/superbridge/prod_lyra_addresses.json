@@ -99,6 +99,28 @@
           "FAST": "0x457379de638CAFeB1759a22457fe893b288E2e89"
         }
       }
+    },
+    "cbBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "Vault": "0x5F18C54e4E10287414A47925a24Ea3A8Cf4A9F50",
+      "LyraTSAShareHandlerDepositHook": "0x1EA87f372285409425771F19Eb7938b427DAb148",
+      "connectors": {
+        "957": {
+          "FAST": "0xBc978f47AD1122bdFE85855fcc40b3afdF4b5df3"
+        }
+      }
+    },
+    "eBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642",
+      "Vault": "0x25d35C8796c9dcD3857abE90D802FC17b1FB55A5",
+      "LyraTSAShareHandlerDepositHook": "0xC4230381a4967975Fb52CdF8f87C1658A85f16f4",
+      "connectors": {
+        "957": {
+          "FAST": "0x094570E556C8E58119E21f47759F02F50Ae3bB49"
+        }
+      }
     }
   },
   "10": {
@@ -327,6 +349,31 @@
           "FAST": "0x52CB41109b637F03B81b3FD6Dce4E3948b2F0923"
         }
       }
+    },
+    "cbBTC": {
+      "isAppChain": true,
+      "MintableToken": "0x1EA87f372285409425771F19Eb7938b427DAb148",
+      "Controller": "0x002d349bd4526F8cfaEe4283990710E4E1a57a3d",
+      "LyraTSAShareHandlerDepositHook": "0x16Cd3746EEf978e368781f0281437D6C53807211",
+      "connectors": {
+        "1": {
+          "FAST": "0xdB2F60c2672116a9572cF6750B1e519e7036BF16"
+        },
+        "8453": {
+          "FAST": "0x731952E0762ED67730F6E38db69b1f5C4cE7EbaD"
+        }
+      }
+    },
+    "eBTC": {
+      "isAppChain": true,
+      "MintableToken": "0x4d4e6761D2D8d5AdCa3646987970D63C00704eb5",
+      "Controller": "0xdA7e1F0CED4e68feB63E7b4f1eaE0b8aCD2BF092",
+      "LyraTSAShareHandlerDepositHook": "0x56BC3b30cDE7DA5ca3Ac5A8f83d77fee5744C11a",
+      "connectors": {
+        "1": {
+          "FAST": "0xe7C9AD506Bab95d6963eD2DB1cfa6C41BfdE130b"
+        }
+      }
     }
   },
   "8453": {
@@ -394,6 +441,17 @@
       "connectors": {
         "957": {
           "FAST": "0x10Aa306840b822B8Bd6C025226C2956a9B0d5588"
+        }
+      }
+    },
+    "cbBTC": {
+      "isAppChain": false,
+      "NonMintableToken": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "Vault": "0x76624ff43D610F64177Bb9c194A2503642e9B803",
+      "LyraTSAShareHandlerDepositHook": "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
+      "connectors": {
+        "957": {
+          "FAST": "0x457379de638CAFeB1759a22457fe893b288E2e89"
         }
       }
     }

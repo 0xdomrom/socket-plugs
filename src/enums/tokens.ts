@@ -25,6 +25,8 @@ export enum Tokens {
   SUSDE = "sUSDe", // ethena usd
   USDE = "USDe", // ethena usd
   LBTC = "LBTC", //Lombard Bitcoin
+  CBBTC = "cbBTC", // Coinbase wrapped bitcoin
+  EBTC = "eBTC", // ether.fi bitcoin
   WEETHC = "weETHC", // Lyra tokenized subaccount shares
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares
