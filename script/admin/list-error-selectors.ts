@@ -46,7 +46,29 @@ function main() {
     Object.keys(contract.interface.errors).forEach((x) => uniqueErrors.add(x));
   }
 
-  // console.log(uniqueErrors);
+  // const x = [
+  // "ZeroAddress()",
+  //   "InvalidTokenAddress()",
+  //   "OnlyOwner()",
+  //   "OnlyNominee()",
+  //   "NoPermit(bytes32 role)",
+  //   "UnequalArrayLengths()",
+  //   "InvalidNonce()",
+  //   "MsgValueTooLow()",
+  //   "MsgValueTooHigh()",
+  //   "InsufficientMsgValue()",
+  //   "InsufficientFees()",
+  //   "InvalidMsgValue()",
+  //   "FeesTooHigh()",
+  //   "OnlySocket()",
+  //   "PayloadTooLarge()",
+  // ]
+  //
+  // x.forEach((x: string) => {
+  //   console.log(x, ethers.utils.id(x).slice(0, 10));
+  // });
+
+  console.log(uniqueErrors);
   // keccak the error names
   uniqueErrors.forEach((x: string) => {
     console.log(x, ethers.utils.id(x).slice(0, 10));
