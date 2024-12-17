@@ -1,12 +1,14 @@
-import { getSuperBridgeAddresses } from "../helpers";
 import { Contract } from "ethers";
 import { getProviderFromChainSlug } from "../helpers/networks";
 import { isSBAppChain } from "../helpers/projectConstants";
 import { MINTABLE_ABI } from "../constants/abis/mintable";
+import { getProjectAddresses } from "../helpers";
+
+const txs = [];
 
 export const main = async () => {
   try {
-    const addresses = await getSuperBridgeAddresses();
+    const addresses = getProjectAddresses();
     for (const chain of Object.keys(addresses)) {
       console.log(`\nChecking addresses for chain ${chain}`);
       for (const token of Object.keys(addresses[chain])) {
@@ -35,11 +37,19 @@ export const main = async () => {
             isMinter ? "can" : "cannot"
           } mint`
         );
+
+        if (!isMinter) {
+          txs.push(
+            `cast send --rpc-url <...> --private-key <...> ${tokenAddress} "configureMinter(address,bool)" ${controller} true`
+          );
+        }
       }
     }
   } catch (error) {
     console.error("Error while checking minter", error);
   }
+
+  console.log(txs.join(" && "));
 };
 
 main()

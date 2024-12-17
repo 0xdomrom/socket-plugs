@@ -191,10 +191,8 @@ const config: HardhatUserConfig = {
         chainId:
           ChainSlugToId[hardhatChainNameToSlug[HardhatChainName.LYRA_TESTNET]],
         urls: {
-          apiURL:
-            "https://explorerl2new-prod-testnet-0eakp60405.t.conduit.xyz/api",
-          browserURL:
-            "https://explorerl2new-prod-testnet-0eakp60405.t.conduit.xyz/",
+          apiURL: "https://explorer-prod-testnet-0eakp60405.t.conduit.xyz/api",
+          browserURL: "https://explorer-prod-testnet-0eakp60405.t.conduit.xyz/",
         },
       },
       {

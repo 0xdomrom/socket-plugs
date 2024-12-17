@@ -27,6 +27,10 @@ export enum Tokens {
   LBTC = "LBTC", //Lombard Bitcoin
   CBBTC = "cbBTC", // Coinbase wrapped bitcoin
   EBTC = "eBTC", // ether.fi bitcoin
+  OP = "OP", // Optimism
+  SOLVBTC = "SolvBTC", // Solv wrapped bitcoin
+  SOLVBTCBBN = "SolvBTCBBN", // Solv wrapped babylon bitcoin
+  DEUSD = "deUSD", // Solv wrapped babylon bitcoin
   WEETHC = "weETHC", // Lyra tokenized subaccount shares
   RSWETHC = "rswETHC", // Lyra tokenized subaccount shares
   RSETHC = "rsETHC", // Lyra tokenized subaccount shares

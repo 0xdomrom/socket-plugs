@@ -68,6 +68,36 @@ export const pc: ProjectConstants = {
         },
       },
     },
+    [Tokens.RSETH]: {
+      controllerChains: [ChainSlug.LYRA_TESTNET],
+      vaultChains: [ChainSlug.ARBITRUM_SEPOLIA, ChainSlug.OPTIMISM_SEPOLIA],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000000",
+              receivingLimit: "100000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.ARBITRUM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000000",
+              receivingLimit: "100000000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000000",
+              receivingLimit: "100000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
     [Tokens.SUSDE]: {
       controllerChains: [ChainSlug.LYRA_TESTNET],
       vaultChains: [ChainSlug.ARBITRUM_SEPOLIA, ChainSlug.OPTIMISM_SEPOLIA],
@@ -274,6 +304,98 @@ export const pc: ProjectConstants = {
             [IntegrationTypes.fast]: {
               sendingLimit: "10000000",
               receivingLimit: "10000000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.OP]: {
+      controllerChains: [ChainSlug.LYRA_TESTNET],
+      vaultChains: [ChainSlug.OPTIMISM_SEPOLIA],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.SOLVBTC]: {
+      controllerChains: [ChainSlug.LYRA_TESTNET],
+      vaultChains: [ChainSlug.OPTIMISM_SEPOLIA],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.SOLVBTCBBN]: {
+      controllerChains: [ChainSlug.LYRA_TESTNET],
+      vaultChains: [ChainSlug.OPTIMISM_SEPOLIA],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.DEUSD]: {
+      controllerChains: [ChainSlug.LYRA_TESTNET],
+      vaultChains: [ChainSlug.OPTIMISM_SEPOLIA],
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_DEPOSIT_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA_TESTNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 0,
+            },
+          },
+          [ChainSlug.OPTIMISM_SEPOLIA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
               poolCount: 0,
             },
           },

@@ -23,7 +23,7 @@
       }
     },
     "rswETHC": {
-      "SuperToken": "0xE9A12fB15cC00b59867E4E2f0aCbdCebfd32b3d7",
+      "SuperToken": "0xE9A12fB15cC00b59867E4E2f0aCbdCebfd32b3d7,0xF90b959ae8dfBa2DD793AD05176209835658362b",
       "Controller": "0x96E47fC9c701E8EEF22Fa53e62dc3eBBDcCAEa73",
       "LyraTSAShareHandlerWithdrawHook": "0xeb737867Af205Fa5Dd06E0852f6584067236bFDC",
       "connectors": {
