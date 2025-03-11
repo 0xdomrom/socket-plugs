@@ -176,6 +176,9 @@
       "connectors": {
         "957": {
           "FAST": "0xBEF69d0acC388091c7C9702aCbFB3b8A873e239e"
+        },
+        "8453": {
+          "FAST": "0x96E1e9c80619D2038afe30450b3cBeCb2A7D94cd"
         }
       }
     }
@@ -407,6 +410,9 @@
       "connectors": {
         "1": {
           "FAST": "0x1AA1F6B4a28E7dc88a0BA62543f43878Deaff98e"
+        },
+        "8453": {
+          "FAST": "0x9cDc45E72373B812D050a5A5bFb2D554bb1BBA55"
         }
       }
     }
@@ -548,6 +554,19 @@
         },
         "42161": {
           "FAST": "0xACb06c7B484b624525e1Fd530B085CA035F378f9"
+        }
+      }
+    },
+    "LBTCB": {
+      "SuperToken": "0xe4f79D7e8Bf3639EFb0c63a38A5ffF7942377986",
+      "Controller": "0xFa3FaBeB69227C44326ed66596aDBAd49D11997D",
+      "LyraTSAShareHandlerWithdrawHook": "0x368470c926F5F4092cDb5C12096A20eCCe7F199d",
+      "connectors": {
+        "1": {
+          "FAST": "0xdADa1dbE62951688DE4E26343AbEF10d0C4256C7"
+        },
+        "957": {
+          "FAST": "0x58018E220fC6cDcF46646Eb230D4c99D3a6546d3"
         }
       }
     }

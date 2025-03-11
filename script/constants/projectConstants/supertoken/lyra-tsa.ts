@@ -485,7 +485,7 @@ export const pc: ProjectConstants = {
     },
     [Tokens.LBTCB]: {
       vaultChains: [ChainSlug.LYRA],
-      controllerChains: [ChainSlug.MAINNET],
+      controllerChains: [ChainSlug.MAINNET, ChainSlug.BASE],
       superTokenInfo: {
         name: "LBTC Basis Trade",
         symbol: "LBTCB",

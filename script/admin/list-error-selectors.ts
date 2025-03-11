@@ -47,33 +47,11 @@ function main() {
       // console.log("No abi found for contract: ", file);
       continue;
     }
-    const abi = contractDetails.abi;
+    const abi = contractDetails.abi.filter((x) => x.type === "error");
 
     const contract = new ethers.Contract(`0x${"0".repeat(40)}`, abi);
     Object.keys(contract.interface.errors).forEach((x) => uniqueErrors.add(x));
   }
-
-  // const x = [
-  // "ZeroAddress()",
-  //   "InvalidTokenAddress()",
-  //   "OnlyOwner()",
-  //   "OnlyNominee()",
-  //   "NoPermit(bytes32 role)",
-  //   "UnequalArrayLengths()",
-  //   "InvalidNonce()",
-  //   "MsgValueTooLow()",
-  //   "MsgValueTooHigh()",
-  //   "InsufficientMsgValue()",
-  //   "InsufficientFees()",
-  //   "InvalidMsgValue()",
-  //   "FeesTooHigh()",
-  //   "OnlySocket()",
-  //   "PayloadTooLarge()",
-  // ]
-  //
-  // x.forEach((x: string) => {
-  //   console.log(x, ethers.utils.id(x).slice(0, 10));
-  // });
 
   // console.log(uniqueErrors);
   // keccak the error names

@@ -1,6 +1,16 @@
 {
   "1": [
     [
+      "0x96E1e9c80619D2038afe30450b3cBeCb2A7D94cd",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x6A25C9Ab3576E3fC697a8A66d8cA1b3078Be1D97",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        8453
+      ]
+    ],
+    [
       "0xBEF69d0acC388091c7C9702aCbFB3b8A873e239e",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -1033,6 +1043,16 @@
   ],
   "957": [
     [
+      "0x9cDc45E72373B812D050a5A5bFb2D554bb1BBA55",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x4FdF314CCC61F418b34329C37A5c84710F3ac7e1",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        8453
+      ]
+    ],
+    [
       "0x1AA1F6B4a28E7dc88a0BA62543f43878Deaff98e",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -1574,6 +1594,58 @@
     ]
   ],
   "8453": [
+    [
+      "0x58018E220fC6cDcF46646Eb230D4c99D3a6546d3",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xFa3FaBeB69227C44326ed66596aDBAd49D11997D",
+        "0x12E6e58864cE4402cF2B4B8a8E9c75eAD7280156",
+        957
+      ]
+    ],
+    [
+      "0xdADa1dbE62951688DE4E26343AbEF10d0C4256C7",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xFa3FaBeB69227C44326ed66596aDBAd49D11997D",
+        "0x12E6e58864cE4402cF2B4B8a8E9c75eAD7280156",
+        1
+      ]
+    ],
+    [
+      "0x368470c926F5F4092cDb5C12096A20eCCe7F199d",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0xFa3FaBeB69227C44326ed66596aDBAd49D11997D",
+        false
+      ]
+    ],
+    [
+      "0xFa3FaBeB69227C44326ed66596aDBAd49D11997D",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0xe4f79D7e8Bf3639EFb0c63a38A5ffF7942377986"]
+    ],
+    [
+      "0xe4f79D7e8Bf3639EFb0c63a38A5ffF7942377986",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Basis Trade",
+        "LBTCB",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
     [
       "0x2a9e2E08FB67F702005d591285F4c52BeE7F995C",
       "ConnectorPlug",
