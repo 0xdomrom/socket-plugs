@@ -1,6 +1,110 @@
 {
   "1": [
     [
+      "0xBEF69d0acC388091c7C9702aCbFB3b8A873e239e",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x6A25C9Ab3576E3fC697a8A66d8cA1b3078Be1D97",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        957
+      ]
+    ],
+    [
+      "0x48aB5f6EA0A4940620C8A99725934e9ac97136fB",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0x6A25C9Ab3576E3fC697a8A66d8cA1b3078Be1D97",
+        false
+      ]
+    ],
+    [
+      "0x6A25C9Ab3576E3fC697a8A66d8cA1b3078Be1D97",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0xD5E977760EbD45D022500a0561741322dA5b04Da"]
+    ],
+    [
+      "0xD5E977760EbD45D022500a0561741322dA5b04Da",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "LBTC Basis Trade",
+        "LBTCB",
+        8,
+        "0x0000000000000000000000000000000000000000",
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
+      "0xD3a00E95658b05eBac3246e84f6583251dEd5D93",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        957
+      ]
+    ],
+    [
+      "0x88444394f970B6F21C4f5101003ea513dE3E5406",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        8453
+      ]
+    ],
+    [
+      "0x67c97Bd542B3a7F1F1EcF85CBC4409421ccAe971",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+        "0x943AC2775928318653e91d350574436A1b9b16f9",
+        42161
+      ]
+    ],
+    [
+      "0xaC192A3a71377f9cd51752438cd680418fb803c7",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+        false
+      ]
+    ],
+    [
+      "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x91f3cf61984cc6beB67c24f4A0b75D56CEeF16aB"]
+    ],
+    [
+      "0x91f3cf61984cc6beB67c24f4A0b75D56CEeF16aB",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "Wrapped eETH Basis Trade",
+        "weETHB",
+        18,
+        "0x0000000000000000000000000000000000000000",
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
+    [
       "0xdb1c2F432e51824b33b9269C4b1Ff6190c1e5F35",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -929,6 +1033,78 @@
   ],
   "957": [
     [
+      "0x1AA1F6B4a28E7dc88a0BA62543f43878Deaff98e",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x4FdF314CCC61F418b34329C37A5c84710F3ac7e1",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        1
+      ]
+    ],
+    [
+      "0x40Ca629fCD8b18F41237098A71277EE22994D0f3",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0x4FdF314CCC61F418b34329C37A5c84710F3ac7e1",
+        false
+      ]
+    ],
+    [
+      "0x4FdF314CCC61F418b34329C37A5c84710F3ac7e1",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x2104654d6Da663961a86AC3Cf1751981C5dc62E8"]
+    ],
+    [
+      "0x907F345e3d6c9E8d7868C828eEB6886546947B5C",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        8453
+      ]
+    ],
+    [
+      "0x6fC66EE31f72270f923911D1F04ef8E913Eb9Be1",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        42161
+      ]
+    ],
+    [
+      "0x3f0F3f6d37e74b81a6419a093e6A4B0f3BFbb8aD",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339",
+        1
+      ]
+    ],
+    [
+      "0x2Be9FBf271681c06324e281e1f6EB9687D817cc8",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+        false
+      ]
+    ],
+    [
+      "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+      "Vault",
+      "contracts/bridge/Vault.sol",
+      ["0x513Dc0e3407CA3A6E073A2f2d43fd61498db5739"]
+    ],
+    [
       "0x2B9984F1F979708CE229A6EBE0aaFbA5073C2045",
       "ConnectorPlug",
       "contracts/ConnectorPlug.sol",
@@ -1398,6 +1574,68 @@
     ]
   ],
   "8453": [
+    [
+      "0x2a9e2E08FB67F702005d591285F4c52BeE7F995C",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+        "0x12E6e58864cE4402cF2B4B8a8E9c75eAD7280156",
+        957
+      ]
+    ],
+    [
+      "0xACb06c7B484b624525e1Fd530B085CA035F378f9",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+        "0x12E6e58864cE4402cF2B4B8a8E9c75eAD7280156",
+        42161
+      ]
+    ],
+    [
+      "0x4518308f435F5cf08952D8eB2e1be33a49B6Ba08",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+        "0x12E6e58864cE4402cF2B4B8a8E9c75eAD7280156",
+        1
+      ]
+    ],
+    [
+      "0xF1Ff6756c83c90745fBA51E8585e4b40247629EB",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+        false
+      ]
+    ],
+    [
+      "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0x3F609a42224b83B720f8593F5d40eAa066ef70dE"]
+    ],
+    [
+      "0x3F609a42224b83B720f8593F5d40eAa066ef70dE",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "Wrapped eETH Basis Trade",
+        "weETHB",
+        18,
+        "0x0000000000000000000000000000000000000000",
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
     [
       "0xA07EB173d58F7aF2b0267F2B5f6a091E01c17f85",
       "ConnectorPlug",
@@ -2548,6 +2786,68 @@
     ]
   ],
   "42161": [
+    [
+      "0x99c11806A37a5C7729d13fA9Fc3E7eB9A94F281C",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        "0x37cc674582049b579571E2fFd890a4d99355f6Ba",
+        957
+      ]
+    ],
+    [
+      "0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        "0x37cc674582049b579571E2fFd890a4d99355f6Ba",
+        8453
+      ]
+    ],
+    [
+      "0x01259207A40925b794C8ac320456F7F6c8FE2636",
+      "ConnectorPlug",
+      "contracts/ConnectorPlug.sol",
+      [
+        "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        "0x37cc674582049b579571E2fFd890a4d99355f6Ba",
+        1
+      ]
+    ],
+    [
+      "0xB8D20c2B7a1Ad2EE33Bc50eF10876eD3035b5e7b",
+      "LyraTSAShareHandlerWithdrawHook",
+      "contracts/hooks/lyra/LyraTSAShareHandlerHooks.sol",
+      [
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        false
+      ]
+    ],
+    [
+      "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+      "Controller",
+      "contracts/bridge/Controller.sol",
+      ["0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD"]
+    ],
+    [
+      "0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD",
+      "SuperToken",
+      "contracts/token/SuperToken.sol",
+      [
+        "Wrapped eETH Basis Trade",
+        "weETHB",
+        18,
+        "0x0000000000000000000000000000000000000000",
+        "0xA82994cc5e9D94FED2916f762e03245FcBE79f23",
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ],
     [
       "0xC6ea9524058a4E8B312B87cE3040F81ce9840ff1",
       "ConnectorPlug",

@@ -26,7 +26,14 @@ function recurseArtifacts(filePath: string) {
 function main() {
   // load in all contracts from ./artifacts
   const allFiles = recurseArtifacts(path.join(__dirname, "../../artifacts"));
-  // allFiles.push(...recurseArtifacts(path.join(__dirname, "../../../../lyra/v2-matching/out")));
+  allFiles.push(
+    ...recurseArtifacts(path.join(__dirname, "../../../../drv/v2-matching/out"))
+  );
+  allFiles.push(
+    ...recurseArtifacts(
+      path.join(__dirname, "../../../../drv/v2-matching/lib/v2-core/out")
+    )
+  );
   // for each contract, get the abi
   // for each abi, get all errors and work out the selectors
   // for each selector, check if it's in the list of known selectors
@@ -45,6 +52,28 @@ function main() {
     const contract = new ethers.Contract(`0x${"0".repeat(40)}`, abi);
     Object.keys(contract.interface.errors).forEach((x) => uniqueErrors.add(x));
   }
+
+  // const x = [
+  // "ZeroAddress()",
+  //   "InvalidTokenAddress()",
+  //   "OnlyOwner()",
+  //   "OnlyNominee()",
+  //   "NoPermit(bytes32 role)",
+  //   "UnequalArrayLengths()",
+  //   "InvalidNonce()",
+  //   "MsgValueTooLow()",
+  //   "MsgValueTooHigh()",
+  //   "InsufficientMsgValue()",
+  //   "InsufficientFees()",
+  //   "InvalidMsgValue()",
+  //   "FeesTooHigh()",
+  //   "OnlySocket()",
+  //   "PayloadTooLarge()",
+  // ]
+  //
+  // x.forEach((x: string) => {
+  //   console.log(x, ethers.utils.id(x).slice(0, 10));
+  // });
 
   // console.log(uniqueErrors);
   // keccak the error names

@@ -232,85 +232,85 @@
   },
   "lyra-tsa-testnet": {
     "901": {
-      "LBTCCS": {
-        "NonMintableToken": "0x65410Dd3A47f7cdfFd0486D45688F00B142029D7",
-        "Vault": "0xA4EEc0c2F44DEFf64ab5e9A96c688EF6930c2E12",
-        "LyraTSAShareHandlerWithdrawHook": "0x394c52B82A2d814064046A2cCC77E5F5ec8B375b",
+      "weETHB": {
+        "NonMintableToken": "0x9ffB0Ee4447c491E3c842b62184BB0669A12b9e4",
+        "Vault": "0x1c32093c8987dF9B39dD569FFe51E30d0B32219B",
+        "LyraTSAShareHandlerWithdrawHook": "0xDf0C651E3AeA701927c6438bc625554D8cb7f535",
         "connectors": {
           "421614": {
-            "FAST": "0xCCef516D71b4F8DE79A6b4507AeF7132d883fDb3"
+            "FAST": "0x58e0A8Af1C3169AA331ad95967BF661eB08d49C4"
           },
           "11155420": {
-            "FAST": "0x2B1E0d09468db771DD76C8D67Bd9fE3F1251CF98"
+            "FAST": "0xbfBCA5C94999794505201c42353d1C8216Abc003"
           }
         }
       },
-      "LBTCPS": {
-        "NonMintableToken": "0x49B9C82582B9916dE295D98b0c55373c300BbaEa",
-        "Vault": "0xFB452304c2896C7956299eE703F3C8218c470639",
-        "LyraTSAShareHandlerWithdrawHook": "0x9617A5d2CFCf6749A2198C6633e0B9a17a8b0d9b",
+      "LBTCB": {
+        "NonMintableToken": "0x0Eb95740A626500f80E1652186E32416477880b5",
+        "Vault": "0x4ed9599B50Beb4E496A7ffb87724122FDF180e47",
+        "LyraTSAShareHandlerWithdrawHook": "0x1B982D20037AA3D13B5CAaBE2e3bc8d10C73A9E9",
         "connectors": {
           "421614": {
-            "FAST": "0x1959175B5dAf736Bfe41bA5c927dceb5D6CE2696"
+            "FAST": "0x267C17ceA10d75B65Bd65Ed4f5D4375d1cEbb74E"
           },
           "11155420": {
-            "FAST": "0x48A920bf86f47b6629eEA9D0b36A993752A44fB4"
+            "FAST": "0xE9DEad39Fe7bdf8380169aa25b76Fec7870B68C7"
           }
         }
       }
     },
     "421614": {
-      "LBTCCS": {
-        "SuperToken": "0x845D0f36287DbA5F1Db0515584eC26C9Bbc84Ebd",
-        "Controller": "0x43ccF4a0ec4E31C35825C84cBca0a6a9243FBE8B",
-        "LyraTSAShareHandlerWithdrawHook": "0xd19070b4ac52C011733d34be5C6C70dbCb7F0cCE",
+      "weETHB": {
+        "SuperToken": "0x7b206Fa0dBF0Cb5b8c3D644C47BbdDd8858Ed2fb",
+        "Controller": "0xDE1778Db568Dc33049Bc8E745D9b7d7e4C528118",
+        "LyraTSAShareHandlerWithdrawHook": "0xbdEF5202585f5876D0A509CF9fd6C6a59ea79BB8",
         "connectors": {
           "901": {
-            "FAST": "0xff6A68d154AC8D92F8Cba92B8a54512a49eE1081"
+            "FAST": "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F"
           },
           "11155420": {
-            "FAST": "0x15F7C65AC9af452E65Eba31C6b4EF4981512f2Fa"
+            "FAST": "0x84D8b20275724f31130F76Ecf42a501eDF72C1e0"
           }
         }
       },
-      "LBTCPS": {
-        "SuperToken": "0x0dDc91650583532D143539e71a337CE31A35233E",
-        "Controller": "0x6B1316f3DbF5a14243E1BA30e3DC9419f9E03701",
-        "LyraTSAShareHandlerWithdrawHook": "0x35c7eb2225FDBD66731ffEb5f064525eD0f47C95",
+      "LBTCB": {
+        "SuperToken": "0x1405116418BeA756C3c3b09C1F42212Ac846E7F7",
+        "Controller": "0x69C0Cf1Fc16F2545F9D27a567012d3bDB4609F26",
+        "LyraTSAShareHandlerWithdrawHook": "0x3A3006B74C6c108A141f7EC3815b673B933D6dB7",
         "connectors": {
           "901": {
-            "FAST": "0x3f0A603602EFB90b37D69744AAaE0afe0647A508"
+            "FAST": "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5"
           },
           "11155420": {
-            "FAST": "0xb572ab631782E4343B26D5701d04E4E6C9e586Fa"
+            "FAST": "0x062F93b9bD9ceb50dcdb1230A9e89CBA36157C33"
           }
         }
       }
     },
     "11155420": {
-      "LBTCCS": {
-        "SuperToken": "0x84D8b20275724f31130F76Ecf42a501eDF72C1e0",
-        "Controller": "0xB4cB0cBB907752865F61aB13893A4FeD569ed57F",
-        "LyraTSAShareHandlerWithdrawHook": "0x1405116418BeA756C3c3b09C1F42212Ac846E7F7",
+      "weETHB": {
+        "SuperToken": "0xDE9458C0750D0401cbD90678715dE6Cee2e1FD6D",
+        "Controller": "0x5630809011cb726370464F472b711d70B4e8920A",
+        "LyraTSAShareHandlerWithdrawHook": "0x10076F301F0907C6Ec3c1D335d2E9Fb08ec6D27e",
         "connectors": {
           "901": {
-            "FAST": "0x3A3006B74C6c108A141f7EC3815b673B933D6dB7"
+            "FAST": "0x0C5c17fDf5B24F49d2483Eb6B78d8d958350D5e1"
           },
           "421614": {
-            "FAST": "0x69C0Cf1Fc16F2545F9D27a567012d3bDB4609F26"
+            "FAST": "0xbf67809d6d0447bC260691E5C9B7C0C07cff14Fe"
           }
         }
       },
-      "LBTCPS": {
-        "SuperToken": "0x062F93b9bD9ceb50dcdb1230A9e89CBA36157C33",
-        "Controller": "0xD189a6CA6c67AbB04521a679CC4A94C5DFD4a0D5",
-        "LyraTSAShareHandlerWithdrawHook": "0x7083d4fE8915f5EdCF401B9d81A29185Aa20a909",
+      "LBTCB": {
+        "SuperToken": "0x22104a0Dd0c89A661c1D6e4F5883DC1D9e294b7D",
+        "Controller": "0xAC1b434ebe5E118B973c71F801da9780cbDCeC5A",
+        "LyraTSAShareHandlerWithdrawHook": "0x9F80c4F17c5A8D1f3b2e16eD3bAdB8870dd61162",
         "connectors": {
           "901": {
-            "FAST": "0xE0AbAb28676CC7d4BE7a6ECEF938411DdEe28269"
+            "FAST": "0xb36fB5729DA0201E46a562Cbd4883D3F094d4F21"
           },
           "421614": {
-            "FAST": "0x3bc529f1E7ab3eAcFE143336077d71b1Cf128832"
+            "FAST": "0x6cdE49599f0D3B1e13dE6e77448ac6Aff3492e05"
           }
         }
       }
@@ -318,45 +318,93 @@
   },
   "lyra-tsa": {
     "1": {
-      "LBTCCS": {
-        "SuperToken": "0x5a27765DbE2476240B1265A305c2e3554fD3f341",
-        "Controller": "0x3083B6140eF4916a315162C32b8AA9261572cc4b",
-        "LyraTSAShareHandlerWithdrawHook": "0xa6595d4B2E0559A568E41910de95e1ba9f3E8E55",
+      "weETHB": {
+        "SuperToken": "0x91f3cf61984cc6beB67c24f4A0b75D56CEeF16aB",
+        "Controller": "0xE9C464957Cc4Fd2766F2D7e289DAE582C6c03207",
+        "LyraTSAShareHandlerWithdrawHook": "0xaC192A3a71377f9cd51752438cd680418fb803c7",
         "connectors": {
           "957": {
-            "FAST": "0x2D733e70A377FcFc249d273095250762A93F3820"
+            "FAST": "0xD3a00E95658b05eBac3246e84f6583251dEd5D93"
+          },
+          "8453": {
+            "FAST": "0x88444394f970B6F21C4f5101003ea513dE3E5406"
+          },
+          "42161": {
+            "FAST": "0x67c97Bd542B3a7F1F1EcF85CBC4409421ccAe971"
           }
         }
       },
-      "LBTCPS": {
-        "SuperToken": "0x367711f0377867b51Fe53e30F5125a9A31d3D50b",
-        "Controller": "0x52CB41109b637F03B81b3FD6Dce4E3948b2F0923",
-        "LyraTSAShareHandlerWithdrawHook": "0x2A29dDDd102C54dc541A7393d9F69dE1e6fd0dd3",
+      "LBTCB": {
+        "SuperToken": "0xD5E977760EbD45D022500a0561741322dA5b04Da",
+        "Controller": "0x6A25C9Ab3576E3fC697a8A66d8cA1b3078Be1D97",
+        "LyraTSAShareHandlerWithdrawHook": "0x48aB5f6EA0A4940620C8A99725934e9ac97136fB",
         "connectors": {
           "957": {
-            "FAST": "0xdb1c2F432e51824b33b9269C4b1Ff6190c1e5F35"
+            "FAST": "0xBEF69d0acC388091c7C9702aCbFB3b8A873e239e"
           }
         }
       }
     },
     "957": {
-      "LBTCCS": {
-        "NonMintableToken": "0xbCab1f8BbA323BC55EA8cfaC34edAcf8DBE92dD4",
-        "Vault": "0x0da8090b6e3A25AfE78AB003E00f82DF8f161125",
-        "LyraTSAShareHandlerWithdrawHook": "0x87ffcA6DFF5EdD13945d9f20b7069a1724011D8C",
+      "weETHB": {
+        "NonMintableToken": "0x513Dc0e3407CA3A6E073A2f2d43fd61498db5739",
+        "Vault": "0x8DaA114D004d987542f3acdA9567557500a7ABc6",
+        "LyraTSAShareHandlerWithdrawHook": "0x2Be9FBf271681c06324e281e1f6EB9687D817cc8",
         "connectors": {
           "1": {
-            "FAST": "0xB0A797aa4E8A58a9C2cBF8477f686Fbe2C09D092"
+            "FAST": "0x3f0F3f6d37e74b81a6419a093e6A4B0f3BFbb8aD"
+          },
+          "8453": {
+            "FAST": "0x907F345e3d6c9E8d7868C828eEB6886546947B5C"
+          },
+          "42161": {
+            "FAST": "0x6fC66EE31f72270f923911D1F04ef8E913Eb9Be1"
           }
         }
       },
-      "LBTCPS": {
-        "NonMintableToken": "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
-        "Vault": "0x47beB31d2Dd8d9853F03B230c16bF6B827c7B020",
-        "LyraTSAShareHandlerWithdrawHook": "0xD13348F596d50cd1fD1C31e6A762305d6Ce641b0",
+      "LBTCB": {
+        "NonMintableToken": "0x2104654d6Da663961a86AC3Cf1751981C5dc62E8",
+        "Vault": "0x4FdF314CCC61F418b34329C37A5c84710F3ac7e1",
+        "LyraTSAShareHandlerWithdrawHook": "0x40Ca629fCD8b18F41237098A71277EE22994D0f3",
         "connectors": {
           "1": {
-            "FAST": "0x2B9984F1F979708CE229A6EBE0aaFbA5073C2045"
+            "FAST": "0x1AA1F6B4a28E7dc88a0BA62543f43878Deaff98e"
+          }
+        }
+      }
+    },
+    "8453": {
+      "weETHB": {
+        "SuperToken": "0x3F609a42224b83B720f8593F5d40eAa066ef70dE",
+        "Controller": "0xbE79E08E7b5cf8A6631933516D7885fFAE6fD6cf",
+        "LyraTSAShareHandlerWithdrawHook": "0xF1Ff6756c83c90745fBA51E8585e4b40247629EB",
+        "connectors": {
+          "1": {
+            "FAST": "0x4518308f435F5cf08952D8eB2e1be33a49B6Ba08"
+          },
+          "957": {
+            "FAST": "0x2a9e2E08FB67F702005d591285F4c52BeE7F995C"
+          },
+          "42161": {
+            "FAST": "0xACb06c7B484b624525e1Fd530B085CA035F378f9"
+          }
+        }
+      }
+    },
+    "42161": {
+      "weETHB": {
+        "SuperToken": "0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD",
+        "Controller": "0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        "LyraTSAShareHandlerWithdrawHook": "0xB8D20c2B7a1Ad2EE33Bc50eF10876eD3035b5e7b",
+        "connectors": {
+          "1": {
+            "FAST": "0x01259207A40925b794C8ac320456F7F6c8FE2636"
+          },
+          "957": {
+            "FAST": "0x99c11806A37a5C7729d13fA9Fc3E7eB9A94F281C"
+          },
+          "8453": {
+            "FAST": "0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083"
           }
         }
       }

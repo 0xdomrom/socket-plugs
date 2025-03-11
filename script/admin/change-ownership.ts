@@ -102,86 +102,94 @@ async function handleOwnershipChangeover(
   }
 }
 
-async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
-  for (const chain of Object.keys(addresses)) {
-    console.log(`\nChecking addresses for chain ${chain}`);
-    if (!chainToExpectedOwner?.[+chain]) {
-      console.error(`Expected owner not found for chain ${chain}`);
-      throw new Error(`Expected owner not found for chain ${chain}`);
+async function checkChainOwnership(
+  chain: string,
+  addresses: SBAddresses | STAddresses
+) {
+  console.log(`\nChecking addresses for chain ${chain}`);
+  if (!chainToExpectedOwner?.[+chain]) {
+    console.error(`Expected owner not found for chain ${chain}`);
+    throw new Error(`Expected owner not found for chain ${chain}`);
+  }
+  console.log(
+    `Expected owner found for chain ${chain}, ${chainToExpectedOwner[+chain]}`
+  );
+  for (const token of Object.keys(addresses[chain])) {
+    const contractTypes = [
+      "Controller",
+      "Vault",
+      ...Object.keys(HookContracts),
+      "MintableToken",
+      "SuperToken",
+    ];
+    if (chain === "957") {
+      contractTypes.push("NonMintableToken");
     }
-    console.log(
-      `Expected owner found for chain ${chain}, ${chainToExpectedOwner[+chain]}`
-    );
-    for (const token of Object.keys(addresses[chain])) {
-      const contractTypes = [
-        "Controller",
-        "Vault",
-        ...Object.keys(HookContracts),
-        "MintableToken",
-        "SuperToken",
-      ];
-      if (chain === "957") {
-        contractTypes.push("NonMintableToken");
-      }
 
-      for (const contractType of contractTypes) {
-        if (contractType in addresses[chain][token]) {
-          await checkAndChange(
-            addresses[chain][token],
-            +chain,
-            chainToExpectedOwner[+chain],
-            contractType,
-            token
-          );
-        }
+    for (const contractType of contractTypes) {
+      if (contractType in addresses[chain][token]) {
+        await checkAndChange(
+          addresses[chain][token],
+          +chain,
+          chainToExpectedOwner[+chain],
+          contractType,
+          token
+        );
       }
+    }
 
-      for (const connectorChain of Object.keys(
-        addresses[chain][token].connectors
+    for (const connectorChain of Object.keys(
+      addresses[chain][token].connectors
+    )) {
+      for (const connectorType of Object.keys(
+        addresses[chain][token].connectors[connectorChain]
       )) {
-        for (const connectorType of Object.keys(
-          addresses[chain][token].connectors[connectorChain]
-        )) {
-          const connectorAddress =
-            addresses[chain][token].connectors[connectorChain][connectorType];
-          const contract = new ethers.Contract(
-            connectorAddress,
-            OWNABLE_ABI,
-            getSignerFromChainSlug(+chain)
-          );
-          const [owner, nominee, type] = await getOwnerAndNominee(contract);
-          console.log(
-            `Owner of ${connectorAddress} is ${owner}${
-              nominee === ZERO_ADDRESS
-                ? ""
-                : ` (nominee: ${nominee} ${
-                    type === 0 ? "claimOwner()" : "acceptOwnership()"
-                  })`
-            } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
-          );
+        const connectorAddress =
+          addresses[chain][token].connectors[connectorChain][connectorType];
+        const contract = new ethers.Contract(
+          connectorAddress,
+          OWNABLE_ABI,
+          getSignerFromChainSlug(+chain)
+        );
+        const [owner, nominee, type] = await getOwnerAndNominee(contract);
+        console.log(
+          `Owner of ${connectorAddress} is ${owner}${
+            nominee === ZERO_ADDRESS
+              ? ""
+              : ` (nominee: ${nominee} ${
+                  type === 0 ? "claimOwner()" : "acceptOwnership()"
+                })`
+          } on chain: ${chain} (Connector for ${token}, conn-chain: ${connectorChain}, conn-type: ${connectorType}`
+        );
 
-          if (nominee !== ZERO_ADDRESS) {
-            if (!msTxs[chain]) {
-              msTxs[chain] = [];
-            }
-            msTxs[chain].push([
-              contract.address,
-              type === 0 ? "claimOwner()" : "acceptOwnership()",
-            ]);
+        if (nominee !== ZERO_ADDRESS) {
+          if (!msTxs[chain]) {
+            msTxs[chain] = [];
           }
-
-          await handleOwnershipChangeover(
-            contract,
-            chainToExpectedOwner[+chain],
-            +chain,
-            owner,
-            nominee,
-            type
-          );
+          msTxs[chain].push([
+            contract.address,
+            type === 0 ? "claimOwner()" : "acceptOwnership()",
+          ]);
         }
+
+        await handleOwnershipChangeover(
+          contract,
+          chainToExpectedOwner[+chain],
+          +chain,
+          owner,
+          nominee,
+          type
+        );
       }
     }
   }
+}
+
+async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
+  const promises = Object.keys(addresses).map((chain) =>
+    checkChainOwnership(chain, addresses)
+  );
+  await Promise.all(promises);
 }
 
 export const main = async () => {

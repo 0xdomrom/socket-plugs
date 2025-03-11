@@ -87,7 +87,6 @@ export const getBridgeContract = async (
   let bridgeContract: Contract,
     bridgeAddress: string = "",
     bridgeContractName: string = "";
-  console.log(addr);
   if (isSuperBridge()) {
     if (isSBAppChain(chain, token)) {
       const a = addr as AppChainAddresses;
@@ -110,7 +109,6 @@ export const getBridgeContract = async (
       bridgeContractName = SuperBridgeContracts.Controller;
     }
   }
-  console.log({ bridgeAddress, bridgeContractName });
 
   if (!bridgeAddress) {
     throw new Error("Bridge address not found");
@@ -240,7 +238,7 @@ export const checkAndGrantRole = async (
     // Get owner and signer
     const owner = await contract.owner();
     const signer = getSignerFromChainSlug(chain);
-    console.log({ owner, signer });
+    // console.log({ owner, signer });
 
     // Check if the signer is the owner
     if (owner !== signer.address) {
@@ -318,8 +316,8 @@ export const updateLimitsAndPoolId = async (
       // mint/lock/deposit limits
       const sendingLimit = getLimitBN(it, chain, token, true);
       const sendingRate = getRateBN(it, chain, token, true);
+
       if (
-        getDryRun() ||
         !sendingLimit.eq(sendingParams["maxLimit"]) ||
         !sendingRate.eq(sendingParams["ratePerSecond"])
       ) {
@@ -339,7 +337,6 @@ export const updateLimitsAndPoolId = async (
       const receivingRate = getRateBN(it, chain, token, false);
 
       if (
-        getDryRun() ||
         !receivingLimit.eq(receivingParams["maxLimit"]) ||
         !receivingRate.eq(receivingParams["ratePerSecond"])
       ) {

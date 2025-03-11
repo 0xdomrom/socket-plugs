@@ -368,9 +368,50 @@ export const pc: ProjectConstants = {
         },
       },
     },
+    [Tokens.WEETHB]: {
+      vaultChains: [ChainSlug.LYRA],
+      controllerChains: [ChainSlug.MAINNET, ChainSlug.ARBITRUM, ChainSlug.BASE],
+      superTokenInfo: {
+        name: "Wrapped eETH Basis Trade",
+        symbol: "weETHB",
+        decimals: 18,
+        initialSupplyOwner: "0x0000000000000000000000000000000000000000",
+        owner: getOwner(),
+        initialSupply: "0",
+      } as any, // set fields as undefined so token isn't deployed
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+          [ChainSlug.ARBITRUM]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "1000000",
+              receivingLimit: "1000000",
+            },
+          },
+        },
+      },
+    },
     [Tokens.LBTCCS]: {
       vaultChains: [ChainSlug.LYRA],
-      controllerChains: [ChainSlug.MAINNET],
+      controllerChains: [ChainSlug.MAINNET, ChainSlug.BASE],
       superTokenInfo: {
         name: "LBTC Covered Call Spread",
         symbol: "LBTCCS",
@@ -389,6 +430,13 @@ export const pc: ProjectConstants = {
             },
           },
           [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 1,
+            },
+          },
+          [ChainSlug.BASE]: {
             [IntegrationTypes.fast]: {
               sendingLimit: "100000",
               receivingLimit: "100000",
@@ -419,6 +467,50 @@ export const pc: ProjectConstants = {
             },
           },
           [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 1,
+            },
+          },
+          [ChainSlug.BASE]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 1,
+            },
+          },
+        },
+      },
+    },
+    [Tokens.LBTCB]: {
+      vaultChains: [ChainSlug.LYRA],
+      controllerChains: [ChainSlug.MAINNET],
+      superTokenInfo: {
+        name: "LBTC Basis Trade",
+        symbol: "LBTCB",
+        decimals: 8,
+        initialSupplyOwner: "0x0000000000000000000000000000000000000000",
+        owner: getOwner(),
+        initialSupply: "0",
+      } as any, // set fields as undefined so token isn't deployed
+      hook: {
+        hookType: Hooks.LYRA_TSA_SHAREHANDLER_WITHDRAW_HOOK,
+        limitsAndPoolId: {
+          [ChainSlug.LYRA]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+            },
+          },
+          [ChainSlug.MAINNET]: {
+            [IntegrationTypes.fast]: {
+              sendingLimit: "100000",
+              receivingLimit: "100000",
+              poolCount: 1,
+            },
+          },
+          [ChainSlug.BASE]: {
             [IntegrationTypes.fast]: {
               sendingLimit: "100000",
               receivingLimit: "100000",
