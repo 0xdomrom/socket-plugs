@@ -372,8 +372,8 @@ export const pc: ProjectConstants = {
       vaultChains: [ChainSlug.LYRA],
       controllerChains: [ChainSlug.MAINNET, ChainSlug.ARBITRUM, ChainSlug.BASE],
       superTokenInfo: {
-        name: "Wrapped eETH Basis Trade",
-        symbol: "weETHB",
+        name: "Basis traded weETH",
+        symbol: "bweETH",
         decimals: 18,
         initialSupplyOwner: "0x0000000000000000000000000000000000000000",
         owner: getOwner(),
@@ -487,8 +487,8 @@ export const pc: ProjectConstants = {
       vaultChains: [ChainSlug.LYRA],
       controllerChains: [ChainSlug.MAINNET, ChainSlug.BASE],
       superTokenInfo: {
-        name: "LBTC Basis Trade",
-        symbol: "LBTCB",
+        name: "Basis traded LBTC",
+        symbol: "bLBTC",
         decimals: 8,
         initialSupplyOwner: "0x0000000000000000000000000000000000000000",
         owner: getOwner(),
