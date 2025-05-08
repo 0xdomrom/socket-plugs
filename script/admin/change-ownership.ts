@@ -35,6 +35,10 @@ async function checkAndChange(
   contractType: string,
   token: string
 ) {
+  if (chain === ChainSlug.BLAST) {
+    console.log("[NOTICE] Skipping BLAST chain");
+    return;
+  }
   const address = chainAddresses[contractType];
   if (!address) {
     console.error(`Contract not found for chain ${chain} ${contractType}`);
@@ -84,6 +88,10 @@ async function handleOwnershipChangeover(
   nominee: string,
   type: 0 | 1
 ) {
+  if (chain === ChainSlug.BLAST) {
+    console.log("[NOTICE] Skipping BLAST chain");
+    return;
+  }
   // console.log(`Handing over ownership of ${contract.address} to ${newOwner}`);
   if (owner === getOwner() && nominee === ZERO_ADDRESS) {
     if (type === 0) {
@@ -106,6 +114,10 @@ async function checkChainOwnership(
   chain: string,
   addresses: SBAddresses | STAddresses
 ) {
+  if (chain === "81457") {
+    console.log("[NOTICE] Skipping BLAST chain");
+    return;
+  }
   console.log(`\nChecking addresses for chain ${chain}`);
   if (!chainToExpectedOwner?.[+chain]) {
     console.error(`Expected owner not found for chain ${chain}`);
