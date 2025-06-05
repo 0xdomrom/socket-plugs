@@ -1,7 +1,7 @@
 import { getProjectAddresses, ZERO_ADDRESS } from "../helpers";
 import { ethers } from "ethers";
 import { getSignerFromChainSlug, overrides } from "../helpers/networks";
-import { getOwner } from "../constants/config";
+import { getConfigs, getOwner, printConfigs } from "../constants/config";
 import { OWNABLE_ABI } from "../constants/abis/ownable";
 import { ChainSlug } from "@socket.tech/dl-core";
 import { HookContracts, SBAddresses, STAddresses } from "../../src";
@@ -206,7 +206,23 @@ async function checkAndTransferOwnership(addresses: SBAddresses | STAddresses) {
 
 export const main = async () => {
   try {
-    await checkAndTransferOwnership(getProjectAddresses());
+    const { tokens } = getConfigs();
+    printConfigs();
+    const addresses = await getProjectAddresses();
+    const addressesToCheck = {};
+    for (const chain of Object.keys(addresses)) {
+      for (const token of tokens) {
+        if (addresses[chain][token]) {
+          if (!addressesToCheck[chain]) {
+            addressesToCheck[chain] = {};
+          }
+          addressesToCheck[chain][token] = addresses[chain][token];
+          break;
+        }
+      }
+    }
+
+    await checkAndTransferOwnership(addressesToCheck);
     if (Object.keys(msTxs).length !== 0) {
       console.log(msTxs);
     }

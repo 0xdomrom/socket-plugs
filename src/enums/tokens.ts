@@ -41,4 +41,6 @@ export enum Tokens {
   LBTCPS = "LBTCPS", // Lyra tokenized subaccount shares
   LBTCB = "LBTCB", // Lyra tokenized subaccount shares
   WEETHB = "weETHB", // Lyra tokenized subaccount shares
+  OLAS = "OLAS",
+  AAVE = "AAVE",
 }
