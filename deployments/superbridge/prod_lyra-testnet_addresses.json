@@ -72,6 +72,17 @@
           "FAST": "0xBa56CE374eF372332A16d080fd755335F84d59a0"
         }
       }
+    },
+    "WETH-strat": {
+      "isAppChain": true,
+      "ExchangeRate": "0xe9646EFb660bCAe3Cc671050EDaF0A19e5dd51bB",
+      "MintableToken": "0x3a34565D81156cF0B1b9bC5f14FD00333bcf6B93",
+      "Controller": "0xF25f317E7d41beBF4A6d5B91f00714c8665CAeC7",
+      "connectors": {
+        "11155420": {
+          "FAST": "0x668A08283311c3Bc0c66a5d4D0f7EC54Ce08962c"
+        }
+      }
     }
   },
   "421614": {
@@ -192,6 +203,16 @@
       "connectors": {
         "901": {
           "FAST": "0x5eccd7500D3Dc844E0a3c4e50aA31A313460e5a0"
+        }
+      }
+    },
+    "WETH-strat": {
+      "isAppChain": false,
+      "NonMintableToken": "0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3",
+      "Vault": "0xCB21E1D6A4ddb7E3dD7D87339b546C381A151D6E",
+      "connectors": {
+        "901": {
+          "FAST": "0x0E002D6504F2be6A5500C434782A6d1dC88c483a"
         }
       }
     }

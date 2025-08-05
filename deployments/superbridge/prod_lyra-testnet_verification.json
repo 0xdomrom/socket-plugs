@@ -1,6 +1,31 @@
 {
   "901": [
     [
+      "0x668A08283311c3Bc0c66a5d4D0f7EC54Ce08962c",
+      "ConnectorPlug",
+      "contracts/superbridge/ConnectorPlug.sol",
+      [
+        "0xF25f317E7d41beBF4A6d5B91f00714c8665CAeC7",
+        "0xFDC28fA368c33DEC7853d63B65FC5Cfe01B212fc",
+        11155420
+      ]
+    ],
+    [
+      "0xF25f317E7d41beBF4A6d5B91f00714c8665CAeC7",
+      "Controller",
+      "contracts/superbridge/Controller.sol",
+      [
+        "0x3a34565D81156cF0B1b9bC5f14FD00333bcf6B93",
+        "0xe9646EFb660bCAe3Cc671050EDaF0A19e5dd51bB"
+      ]
+    ],
+    [
+      "0xe9646EFb660bCAe3Cc671050EDaF0A19e5dd51bB",
+      "ExchangeRate",
+      "contracts/superbridge/ExchangeRate.sol",
+      []
+    ],
+    [
       "0x110D2486277956877b1984538274fa09bEEaf764",
       "ConnectorPlug",
       "contracts/superbridge/ConnectorPlug.sol",
@@ -330,7 +355,9 @@
       "0xec4f19e2F2251F1E24a9275551Eb82367c65A03f",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x565810cbfa3Cf1390963E5aFa2fB953795686339"]
+      [
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339"
+      ]
     ],
     [
       "0x771d1Ae208377453D478dF08BbC38034F72aC833",
@@ -356,7 +383,9 @@
       "0x1281C1464449DB73bdAa30928BCC63Dc25D8D187",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x8537307810fC40F4073A12a38554D4Ff78EfFf41"]
+      [
+        "0x8537307810fC40F4073A12a38554D4Ff78EfFf41"
+      ]
     ]
   ],
   "11155111": [
@@ -374,7 +403,9 @@
       "0x383848aA8e899E9B913aA54fC81E67a53640FC71",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x2A69EFA58248647D57D0A3a09e7ED38D2a8343d2"]
+      [
+        "0x2A69EFA58248647D57D0A3a09e7ED38D2a8343d2"
+      ]
     ],
     [
       "0x9485b9d142E805B86F5B9224D1aCA0acFe6bdd58",
@@ -390,7 +421,9 @@
       "0x5eccd7500D3Dc844E0a3c4e50aA31A313460e5a0",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x236D36C52bC56a37d9094B424A1420BE21f6392c"]
+      [
+        "0x236D36C52bC56a37d9094B424A1420BE21f6392c"
+      ]
     ],
     [
       "0x0Fcfee220f4e3FA1e3fA361525Cee0334DdDB8a3",
@@ -416,7 +449,9 @@
       "0xd9cB39b5ad36C6D2ec4E8d5337B62a1C1B71BAcc",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0xE67ABDA0D43f7AC8f37876bBF00D1DFadbB93aaa"]
+      [
+        "0xE67ABDA0D43f7AC8f37876bBF00D1DFadbB93aaa"
+      ]
     ],
     [
       "0x14aC5b3580dD1e546CD7287Cd1faDba9A8736628",
@@ -432,7 +467,9 @@
       "0xB3F7C40bAb3d9200655fB439433E19173a8428C1",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x771d1Ae208377453D478dF08BbC38034F72aC833"]
+      [
+        "0x771d1Ae208377453D478dF08BbC38034F72aC833"
+      ]
     ],
     [
       "0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9",
@@ -468,10 +505,30 @@
       "0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x565810cbfa3Cf1390963E5aFa2fB953795686339"]
+      [
+        "0x565810cbfa3Cf1390963E5aFa2fB953795686339"
+      ]
     ]
   ],
   "11155420": [
+    [
+      "0x0E002D6504F2be6A5500C434782A6d1dC88c483a",
+      "ConnectorPlug",
+      "contracts/superbridge/ConnectorPlug.sol",
+      [
+        "0xCB21E1D6A4ddb7E3dD7D87339b546C381A151D6E",
+        "0xEA59E2b1539b514290dD3dCEa989Ea36279aC6F2",
+        901
+      ]
+    ],
+    [
+      "0xCB21E1D6A4ddb7E3dD7D87339b546C381A151D6E",
+      "Vault",
+      "contracts/superbridge/Vault.sol",
+      [
+        "0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3"
+      ]
+    ],
     [
       "0x5eccd7500D3Dc844E0a3c4e50aA31A313460e5a0",
       "ConnectorPlug",
@@ -486,7 +543,9 @@
       "0x236D36C52bC56a37d9094B424A1420BE21f6392c",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0xCb151d6F6f5dad8a45d9a40aCE29bad0e66fFb51"]
+      [
+        "0xCb151d6F6f5dad8a45d9a40aCE29bad0e66fFb51"
+      ]
     ],
     [
       "0x2A69EFA58248647D57D0A3a09e7ED38D2a8343d2",
@@ -502,7 +561,9 @@
       "0x0E2b82Bd37dD466E0EC10e8605d12c3882b16150",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x9D7b6f4ffE5d654d67A013599Efbe669d56B6134"]
+      [
+        "0x9D7b6f4ffE5d654d67A013599Efbe669d56B6134"
+      ]
     ],
     [
       "0xE46401d94ebF0ccdCc5337Bb7DA940DBD032e177",
@@ -518,7 +579,9 @@
       "0x0A7104f2cBeC2E9c7FDC91097D7b7099078E85eB",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x251F53D6E1f79d548f1013F3A78F18841750C76A"]
+      [
+        "0x251F53D6E1f79d548f1013F3A78F18841750C76A"
+      ]
     ],
     [
       "0x58900B39387633A0a0C80D1dBDFe879F20b4F2fb",
@@ -534,7 +597,9 @@
       "0x1FA7AB72BbE747C56FcFcbC66B53c75848a7B7BD",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3"]
+      [
+        "0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3"
+      ]
     ],
     [
       "0xAD1d1CB08A0a6f758136A41E218c7C35B62A25Ac",
@@ -560,7 +625,9 @@
       "0xB3F7C40bAb3d9200655fB439433E19173a8428C1",
       "Vault",
       "contracts/superbridge/Vault.sol",
-      ["0x6D290609b3F5F02D52F28d97C75a443ED8564cBf"]
+      [
+        "0x6D290609b3F5F02D52F28d97C75a443ED8564cBf"
+      ]
     ]
   ]
 }

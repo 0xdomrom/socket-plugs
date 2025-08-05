@@ -27,6 +27,7 @@ export const main = async () => {
     const addresses = await getProjectAddresses();
     for (const chain of Object.keys(addresses)) {
       if (chain === "default") continue;
+      if (+chain != 957 && +chain != 1) continue;
       console.log(`\nChecking addresses for chain ${chain}`);
       for (const currency of Object.keys(addresses[chain])) {
         if (isAppChain(+chain)) {

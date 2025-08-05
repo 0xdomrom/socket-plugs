@@ -38,9 +38,18 @@ contract Controller is IHub, Gauge, Ownable(msg.sender) {
 
     uint256 public totalMinted;
 
+    // depositor => isPermitted
+    bool public permitListEnabled = false;
+    mapping(address => bool) public isPermitted;
+
+
     error ConnectorUnavailable();
     error InvalidPoolId();
     error ZeroAmount();
+    error NotPermitted();
+
+    event PermitListEnabledUpdated(bool enabled);
+    event PermittedUpdated(address[] addresses, bool isPermitted);
     event ExchangeRateUpdated(address exchangeRate);
     event ConnectorPoolIdUpdated(address connector, uint256 poolId);
     event LimitParamsUpdated(UpdateLimitParams[] updates);
@@ -67,6 +76,21 @@ contract Controller is IHub, Gauge, Ownable(msg.sender) {
     constructor(address token_, address exchangeRate_) {
         token__ = IMintableERC20(token_);
         exchangeRate__ = IExchangeRate(exchangeRate_);
+    }
+
+    function setPermitListEnabled(bool enabled_) external onlyOwner {
+        permitListEnabled = enabled_;
+        emit PermitListEnabledUpdated(enabled_);
+    }
+
+    function setPermitted(
+        address[] calldata addresses_,
+        bool isPermitted_
+    ) external onlyOwner {
+        for (uint256 i; i < addresses_.length; i++) {
+            isPermitted[addresses_[i]] = isPermitted_;
+        }
+        emit PermittedUpdated(addresses_, isPermitted_);
     }
 
     function updateExchangeRate(address exchangeRate_) external onlyOwner {
@@ -115,6 +139,7 @@ contract Controller is IHub, Gauge, Ownable(msg.sender) {
         uint256 msgGasLimit_,
         address connector_
     ) external payable {
+        if (permitListEnabled && !isPermitted[msg.sender]) revert NotPermitted();
         if (burnAmount_ == 0) revert ZeroAmount();
 
         if (_burnLimitParams[connector_].maxLimit == 0)

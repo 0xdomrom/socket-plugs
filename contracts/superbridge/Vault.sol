@@ -30,9 +30,16 @@ contract Vault is Gauge, IHub, Ownable(msg.sender) {
     // connector => unlockLimitParams
     mapping(address => LimitParams) _unlockLimitParams;
 
+    // depositor => isPermitted
+    bool public permitListEnabled = false;
+    mapping(address => bool) public isPermitted;
+
     error ConnectorUnavailable();
     error ZeroAmount();
+    error NotPermitted();
 
+    event PermitListEnabledUpdated(bool enabled);
+    event PermittedUpdated(address[] addresses, bool isPermitted);
     event LimitParamsUpdated(UpdateLimitParams[] updates);
     event TokensDeposited(
         address connector,
@@ -60,6 +67,21 @@ contract Vault is Gauge, IHub, Ownable(msg.sender) {
 
     constructor(address token_) {
         token__ = ERC20(token_);
+    }
+
+    function setPermitListEnabled(bool enabled_) external onlyOwner {
+        permitListEnabled = enabled_;
+        emit PermitListEnabledUpdated(enabled_);
+    }
+
+    function setPermitted(
+        address[] calldata addresses_,
+        bool isPermitted_
+    ) external onlyOwner {
+        for (uint256 i; i < addresses_.length; i++) {
+            isPermitted[addresses_[i]] = isPermitted_;
+        }
+        emit PermittedUpdated(addresses_, isPermitted_);
     }
 
     function updateLimitParams(
@@ -90,6 +112,7 @@ contract Vault is Gauge, IHub, Ownable(msg.sender) {
         uint256 msgGasLimit_,
         address connector_
     ) external payable {
+        if (permitListEnabled && !isPermitted[msg.sender]) revert NotPermitted();
         if (amount_ == 0) revert ZeroAmount();
 
         if (_lockLimitParams[connector_].maxLimit == 0)

@@ -84,31 +84,6 @@ const pc: ProjectConstants = {
             poolCount: 0,
           },
         },
-        [ChainSlug.ARBITRUM_SEPOLIA]: {
-          [IntegrationTypes.fast]: {
-            depositLimit: "5000",
-            depositRate: "0.05787037",
-            withdrawLimit: "500",
-            withdrawRate: "0.00578703",
-            poolCount: 0,
-          },
-        },
-        [ChainSlug.SEPOLIA]: {
-          [IntegrationTypes.fast]: {
-            depositLimit: "5000",
-            depositRate: "0.05787037",
-            withdrawLimit: "500",
-            withdrawRate: "0.00578703",
-            poolCount: 0,
-          },
-          [IntegrationTypes.native]: {
-            depositLimit: "5000",
-            depositRate: "0.05787037",
-            withdrawLimit: "0",
-            withdrawRate: "0",
-            poolCount: 0,
-          },
-        },
       },
     },
     [Tokens.SNX]: {
