@@ -112,7 +112,8 @@ contract Vault is Gauge, IHub, Ownable(msg.sender) {
         uint256 msgGasLimit_,
         address connector_
     ) external payable {
-        if (permitListEnabled && !isPermitted[msg.sender]) revert NotPermitted();
+        if (permitListEnabled && !isPermitted[msg.sender])
+            revert NotPermitted();
         if (amount_ == 0) revert ZeroAmount();
 
         if (_lockLimitParams[connector_].maxLimit == 0)

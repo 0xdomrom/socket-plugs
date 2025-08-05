@@ -42,7 +42,6 @@ contract Controller is IHub, Gauge, Ownable(msg.sender) {
     bool public permitListEnabled = false;
     mapping(address => bool) public isPermitted;
 
-
     error ConnectorUnavailable();
     error InvalidPoolId();
     error ZeroAmount();
@@ -139,7 +138,8 @@ contract Controller is IHub, Gauge, Ownable(msg.sender) {
         uint256 msgGasLimit_,
         address connector_
     ) external payable {
-        if (permitListEnabled && !isPermitted[msg.sender]) revert NotPermitted();
+        if (permitListEnabled && !isPermitted[msg.sender])
+            revert NotPermitted();
         if (burnAmount_ == 0) revert ZeroAmount();
 
         if (_burnLimitParams[connector_].maxLimit == 0)
