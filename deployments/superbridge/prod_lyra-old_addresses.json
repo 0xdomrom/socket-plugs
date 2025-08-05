@@ -22,6 +22,16 @@
         }
       }
     },
+    "WETH-strat": {
+      "isAppChain": false,
+      "NonMintableToken": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "Vault": "0x9371352CCef6f5b36EfDFE90942fFE622Ab77F1D",
+      "connectors": {
+        "957": {
+          "FAST": "0xDb39c6502e6DaaC4d9EFe6383029bda464ea043c"
+        }
+      }
+    },
     "WBTC": {
       "isAppChain": false,
       "NonMintableToken": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
@@ -193,6 +203,17 @@
         },
         "42161": {
           "FAST": "0xE49B4fE6F37e1814520E529eC1A7A9AC118ec77d"
+        }
+      }
+    },
+    "WETH-strat": {
+      "isAppChain": true,
+      "ExchangeRate": "0xd46A171AFE43C5563DBa1C9D627854EF470c75C2",
+      "MintableToken": "0x15CEcd5190A43C7798dD2058308781D0662e678E",
+      "Controller": "0x55a5BDa19900D8Aa4F97c0Fd96b761CbCB1a44cD",
+      "connectors": {
+        "1": {
+          "FAST": "0xDc39b141aDA0F30d52F51801A6bA5A191994D9ff"
         }
       }
     },
