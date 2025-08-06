@@ -43,4 +43,5 @@ export enum Tokens {
   WEETHB = "weETHB", // Lyra tokenized subaccount shares
   OLAS = "OLAS",
   AAVE = "AAVE",
+  MUSD = "MUSD", // Mezo USD
 }

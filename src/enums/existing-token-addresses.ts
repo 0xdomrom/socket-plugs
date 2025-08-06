@@ -29,6 +29,7 @@ export const ExistingTokenAddresses: {
     [Tokens.DEUSD]: "0x15700b564ca08d9439c58ca5053166e8317aa138",
     [Tokens.OLAS]: "0x0001a500a6b18995b03f44bb040a5ffc28e45cb0",
     [Tokens.AAVE]: "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+    [Tokens.MUSD]: "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
   },
   [ChainSlug.OPTIMISM]: {
     [Tokens.USDC]: "0x8e0b7e6062272B5eF4524250bFFF8e5Bd3497757",
@@ -173,6 +174,7 @@ export const ExistingTokenAddresses: {
     [Tokens.WEETHC]: "0xfe051Cc322F5124e53cA89611dD0c9a32F350a1C",
     [Tokens.RSWETHC]: "0x51741cbDcd28e770729f1c98d02Ab41E565A5960",
     [Tokens.SUSDE]: "0xe21739C53fa561c5334Efd45c6cC3DB9ca99B5C3",
+    [Tokens.MUSD]: "0x60BaAb7E9d27Ca7ad50892C94D199b3669FbD310",
   },
   [ChainSlug.AEVO_TESTNET]: {
     [Tokens.USDC]: "0x4D435C00E09034ec2113F63088CCD0be0a0fd06e",
@@ -213,6 +215,7 @@ export const ExistingTokenAddresses: {
     [Tokens.LBTCPS]: "0x49B9C82582B9916dE295D98b0c55373c300BbaEa",
     [Tokens.LBTCB]: "0x0Eb95740A626500f80E1652186E32416477880b5",
     [Tokens.WEETHB]: "0x9ffB0Ee4447c491E3c842b62184BB0669A12b9e4",
+    [Tokens.MUSD]: "0xEac55f18256497dD12A4FFB4c6658d74f8bc6Bed",
   },
   [ChainSlug.LYRA]: {
     [Tokens.USDC]: "0x6879287835A86F50f784313dBEd5E5cCC5bb8481",
@@ -250,5 +253,6 @@ export const ExistingTokenAddresses: {
     [Tokens.LBTCPS]: "0x5Fc48A32437Ff4BBab2A22646c3c9344ba003971",
     [Tokens.LBTCCS]: "0xbCab1f8BbA323BC55EA8cfaC34edAcf8DBE92dD4",
     [Tokens.LBTCB]: "0x2104654d6Da663961a86AC3Cf1751981C5dc62E8",
+    [Tokens.MUSD]: "0xa30aB68436d26b3c6c303B777354105055Fc3A30",
   },
 };
