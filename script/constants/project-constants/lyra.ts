@@ -39,8 +39,8 @@ const pc: ProjectConstants = {
             poolCount: 0,
           },
           [IntegrationTypes.native]: {
-            depositLimit: "10000000",
-            depositRate: "115.74",
+            depositLimit: "0",
+            depositRate: "0",
             withdrawLimit: "0",
             withdrawRate: "0",
             poolCount: 0,
@@ -63,17 +63,17 @@ const pc: ProjectConstants = {
       nonAppChains: {
         [ChainSlug.OPTIMISM]: {
           [IntegrationTypes.fast]: {
-            depositLimit: "10000000",
-            depositRate: "115.74",
-            withdrawLimit: "1000000",
-            withdrawRate: "11.574",
+            depositLimit: "0",
+            depositRate: "0",
+            withdrawLimit: "3000000",
+            withdrawRate: "115.74",
             poolCount: 0,
           },
         },
         [ChainSlug.ARBITRUM]: {
           [IntegrationTypes.fast]: {
-            depositLimit: "10000000",
-            depositRate: "115.74",
+            depositLimit: "0",
+            depositRate: "0",
             withdrawLimit: "1000000",
             withdrawRate: "11.574",
             poolCount: 0,
