@@ -18,6 +18,7 @@ node_modules
 cache_hardhat/
 artifacts/
 src/types
+.yarn/
 
 #Hardhat plugin files
 typechain-types/

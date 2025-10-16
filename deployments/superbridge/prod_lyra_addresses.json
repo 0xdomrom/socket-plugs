@@ -583,6 +583,30 @@
           "FAST": "0xbDc0AE4974A75336726160895DF58b01cb9d45E3"
         }
       }
+    },
+    "HYPE": {
+      "isAppChain": true,
+      "MintableToken": "0x1AeC0cE2f05b958369bFF35290ED0e03E776b9F4",
+      "Controller": "0x9a65e766FB1DBa12b20787f45eB730CE1d055b7D",
+      "LyraTSAShareHandlerDepositHook": "0x84FB54859e8CA2E6E29f4A2D823e5463f35D9f80",
+      "connectors": {
+        "999": {
+          "FAST": "0xe8a708d94ceCCa38DB0286713bD7Cb42a451e8cA"
+        }
+      }
+    }
+  },
+  "999": {
+    "HYPE": {
+      "isAppChain": false,
+      "NonMintableToken": "0x5555555555555555555555555555555555555555",
+      "Vault": "0x2B4FaCC4B6bDc42074B3EFF9aB5943c8855A7860",
+      "LyraTSAShareHandlerDepositHook": "0xF982c812099d03AFFa0c8062aa1abcb584c23329",
+      "connectors": {
+        "957": {
+          "FAST": "0x44ed9cE901B367B1EF9DDBD4974C82A514c50DEc"
+        }
+      }
     }
   },
   "8453": {

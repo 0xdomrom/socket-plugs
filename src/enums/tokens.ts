@@ -44,4 +44,5 @@ export enum Tokens {
   OLAS = "OLAS",
   AAVE = "AAVE",
   MUSD = "MUSD", // Mezo USD
+  HYPE = "HYPE",
 }

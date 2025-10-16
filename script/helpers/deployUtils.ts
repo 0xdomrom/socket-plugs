@@ -190,6 +190,18 @@ export const verify = async (
     const chainSlug = await getChainSlug();
     if (chainSlug === 31337) return;
 
+    // forge verify-contract 0xAA8f9D05599F1a5d5929c40342c06a5Da063a4dE DeriveL2M --chain-id 999 --verifier sourcify --verifier-url https://sourcify.parsec.finance/verify
+    // forge verify-contract 0x9628BBa16DB41EA7fe1FD84f9CE53bC27c63f59b TransparentUpgradeableProxy --chain-id 999 --etherscan-api-key ZGTD4RRB27MBHVD228X1FDHMJUVZ287BH6
+
+    console.log(
+      `forge verify-contract ${address} ${contractName} --chain-id ${chainSlug} --verifier sourcify --verifier-url https://sourcify.parsec.finance/verify`
+    );
+    console.log(
+      `forge verify-contract ${address} ${contractName} --chain-id ${chainSlug} --etherscan-api-key ZGTD4RRB27MBHVD228X1FDHMJUVZ287BH6`
+    );
+
+    console.log("Verifying ", { address, contractName, path, args });
+
     await run("verify:verify", {
       address,
       contract: `${path}:${contractName}`,

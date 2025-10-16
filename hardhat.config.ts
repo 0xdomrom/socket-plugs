@@ -64,6 +64,7 @@ const liveNetworks = [
   HardhatChainName.AEVO_TESTNET,
   HardhatChainName.LYRA_TESTNET,
   HardhatChainName.LYRA,
+  HardhatChainName.HYPEREVM,
   HardhatChainName.SX_NETWORK_TESTNET,
   HardhatChainName.BASE,
   HardhatChainName.BLAST,
@@ -99,6 +100,7 @@ const config: HardhatUserConfig = {
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticTestnet: process.env.OPTIMISM_API_KEY || "",
       optimisticSepolia: process.env.OPTIMISM_API_KEY || "",
+      hyperevm: process.env.HYPEREVMSCAN_API_KEY || "",
       polygon: process.env.POLYGONSCAN_API_KEY || "",
       base: process.env.BASESCAN_API_KEY || "",
       blast: process.env.BLASTSCAN_API_KEY || "",
@@ -210,6 +212,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.reya.network/api",
           browserURL: "https://explorer.reya.network/",
+        },
+      },
+      {
+        network: "hyperevm",
+        chainId: 999,
+        urls: {
+          apiURL: "https://api.etherscan.io/v2/api?chainid=999",
+          browserURL: "https://hyperevmscan.io/",
         },
       },
     ],
