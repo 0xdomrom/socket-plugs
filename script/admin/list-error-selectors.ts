@@ -23,6 +23,8 @@ function recurseArtifacts(filePath: string) {
   return res;
 }
 
+const socketABIs = [];
+
 function main() {
   // load in all contracts from ./artifacts
   const allFiles = recurseArtifacts(path.join(__dirname, "../../artifacts"));
@@ -48,6 +50,19 @@ function main() {
       continue;
     }
     const abi = contractDetails.abi.filter((x) => x.type === "error");
+    for (const item of contractDetails.abi) {
+      // add only unique items to the socketABIs array
+      if (
+        !socketABIs.find(
+          (x) =>
+            x.name === item.name &&
+            JSON.stringify(x.inputs) === JSON.stringify(item.inputs)
+        )
+      ) {
+        contractDetails.abi;
+        socketABIs.push(item);
+      }
+    }
 
     const contract = new ethers.Contract(`0x${"0".repeat(40)}`, abi);
     Object.keys(contract.interface.errors).forEach((x) => uniqueErrors.add(x));
@@ -58,6 +73,12 @@ function main() {
   uniqueErrors.forEach((x: string) => {
     console.log(x, ethers.utils.id(x).slice(0, 10));
   });
+
+  // write socketABIs to a file
+  fs.writeFileSync(
+    path.join(__dirname, "socket-error-abis.json"),
+    JSON.stringify(socketABIs, null, 2)
+  );
 }
 
 main();
