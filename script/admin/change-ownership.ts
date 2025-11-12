@@ -209,7 +209,7 @@ export const main = async () => {
   try {
     const { tokens } = getConfigs();
     printConfigs();
-    const addresses = await getProjectAddresses();
+    const addresses = getProjectAddresses();
     const addressesToCheck = {};
     for (const chain of Object.keys(addresses)) {
       for (const token of tokens) {
@@ -225,7 +225,22 @@ export const main = async () => {
 
     await checkAndTransferOwnership(addressesToCheck);
     if (Object.keys(msTxs).length !== 0) {
-      console.log(msTxs);
+      for (const chain of Object.keys(msTxs)) {
+        console.log(
+          `\nMulti-sig transactions to be executed on chain ${chain} by expected owner ${chainToExpectedOwner[chain]}:`
+        );
+        for (const tx of msTxs[chain]) {
+          console.log(
+            `${tx[0]},0,${
+              tx[1] == "claimOwner()"
+                ? "0x3bd1adec"
+                : tx[1] == "acceptOwnership()"
+                ? "0x79ba5097"
+                : `ERRORERROR ${tx[1]} ERRORERROR`
+            }`
+          );
+        }
+      }
     }
   } catch (error) {
     console.log("Error while sending transaction", error);

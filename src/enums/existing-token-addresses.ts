@@ -30,6 +30,7 @@ export const ExistingTokenAddresses: {
     [Tokens.OLAS]: "0x0001a500a6b18995b03f44bb040a5ffc28e45cb0",
     [Tokens.AAVE]: "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
     [Tokens.MUSD]: "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
+    [Tokens.PUFETH]: "0xd9a442856c234a39a81a089c06451ebaa4306a72",
   },
   [ChainSlug.OPTIMISM]: {
     [Tokens.USDC]: "0x8e0b7e6062272B5eF4524250bFFF8e5Bd3497757",
@@ -176,6 +177,7 @@ export const ExistingTokenAddresses: {
     [Tokens.SUSDE]: "0xe21739C53fa561c5334Efd45c6cC3DB9ca99B5C3",
     [Tokens.MUSD]: "0x60BaAb7E9d27Ca7ad50892C94D199b3669FbD310",
     [Tokens.HYPE]: "0x15521322289c2d3b1811C3eF6E8158edD93A7323",
+    [Tokens.PUFETH]: "0xD3b60e7233705fDB4383fE1428acfC13E469772c",
   },
   [ChainSlug.AEVO_TESTNET]: {
     [Tokens.USDC]: "0x4D435C00E09034ec2113F63088CCD0be0a0fd06e",
@@ -218,6 +220,7 @@ export const ExistingTokenAddresses: {
     [Tokens.WEETHB]: "0x9ffB0Ee4447c491E3c842b62184BB0669A12b9e4",
     [Tokens.MUSD]: "0xEac55f18256497dD12A4FFB4c6658d74f8bc6Bed",
     [Tokens.HYPE]: "0x2c722DFcd05C49b0Df830160aa38EA078F691f84",
+    [Tokens.PUFETH]: "0xD1EF95A975D6403f0F92818f5e583D25F39Dd229",
   },
   [ChainSlug.LYRA]: {
     [Tokens.USDC]: "0x6879287835A86F50f784313dBEd5E5cCC5bb8481",
@@ -257,6 +260,7 @@ export const ExistingTokenAddresses: {
     [Tokens.LBTCB]: "0x2104654d6Da663961a86AC3Cf1751981C5dc62E8",
     [Tokens.MUSD]: "0xa30aB68436d26b3c6c303B777354105055Fc3A30",
     [Tokens.HYPE]: "0x1AeC0cE2f05b958369bFF35290ED0e03E776b9F4",
+    [Tokens.PUFETH]: "0x95d0e6282CE9A29f3051837b38ba76E1CF8227F0",
   },
   [ChainSlug.HYPEREVM]: {
     [Tokens.HYPE]: "0x5555555555555555555555555555555555555555",
